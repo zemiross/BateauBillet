@@ -56,7 +56,7 @@ export default function HomePage() {
             </h1>
             <p className="mx-auto max-w-xl text-base text-ocean-100/70 md:text-lg">
               Comparez horaires, prix et compagnies pour {STATS.routes} liaisons
-              ferry entre la France, le Maroc, l&apos;Espagne et l&apos;Algerie.
+              ferry entre la France, le Maroc, l&apos;Espagne et l&apos;Algerie. 
             </p>
           </div>
 

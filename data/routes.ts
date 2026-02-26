@@ -86,7 +86,7 @@ const buildRoute = (params: {
     operators,
     priceFrom,
     bookingUrl: DEFAULT_BOOKING_URL,
-    image: "/images/route-placeholder.svg",
+    image: `/images/${slug}.jpg`,
     canonicalPath: `/${country}/${slug}`,
     title: `Bateau ${origin} ${destination}, horaires et prix des ferries`,
     description: `Comparez les traverses ${origin} ${destination}: duree ${duration}, frequence ${frequency}, compagnies ${operators.join(", ")} et prix des ${priceFrom}EUR.`,

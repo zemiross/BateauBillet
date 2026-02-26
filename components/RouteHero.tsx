@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Route } from "@/data/routes";
 import { getCountryTheme } from "@/lib/country-theme";
 import { BOOKING_URL } from "@/lib/site";
@@ -14,10 +15,21 @@ export default function RouteHero({ route }: RouteHeroProps) {
 
   return (
     <section className="relative overflow-hidden">
-      <div className={`bg-gradient-to-br ${theme.gradient}`}>
-        {/* Decorative wave pattern */}
+      <div className="relative min-h-[320px] md:min-h-[380px]">
+        {/* Route image as background */}
+        <Image
+          src={route.image}
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/50" />
+        {/* Wave texture – very low opacity, barely visible */}
         <svg
-          className="absolute inset-0 h-full w-full opacity-[0.05]"
+          className="absolute inset-0 h-full w-full opacity-[0.04]"
           viewBox="0 0 400 200"
           preserveAspectRatio="none"
           aria-hidden="true"
@@ -31,13 +43,13 @@ export default function RouteHero({ route }: RouteHeroProps) {
         </svg>
 
         <div className="relative mx-auto max-w-6xl px-4 pb-16 pt-12 md:pb-20 md:pt-16">
-          <p className="mb-2 text-sm font-medium text-white/50">
+          <p className="mb-2 text-sm font-medium text-white/80">
             {theme.emoji} {theme.label}
           </p>
-          <h1 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold text-white drop-shadow-sm md:text-4xl lg:text-5xl">
             Ferry {route.origin} – {route.destination}
           </h1>
-          <p className="mb-8 max-w-2xl text-base leading-relaxed text-white/70">
+          <p className="mb-8 max-w-2xl text-base leading-relaxed text-white/90">
             {route.description}
           </p>
 

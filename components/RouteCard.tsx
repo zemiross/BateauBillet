@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Route } from "@/data/routes";
 import { getCountryTheme } from "@/lib/country-theme";
 import Icon from "./ui/Icon";
@@ -22,10 +23,17 @@ export default function RouteCard({
       href={route.canonicalPath}
       className={`group relative flex flex-col overflow-hidden rounded-xl border border-sand-200 bg-white shadow-[var(--shadow-card)] transition-all duration-250 hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)] ${className}`}
     >
-      {/* Gradient header */}
-      <div
-        className={`relative flex h-28 items-end bg-gradient-to-br p-4 ${theme.gradient}`}
-      >
+      {/* Header with route image */}
+      <div className="relative flex h-28 items-end overflow-hidden p-4">
+        <Image
+          src={route.image}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         {/* Decorative wave pattern */}
         <svg
           className="absolute inset-0 h-full w-full opacity-[0.07]"
@@ -40,14 +48,14 @@ export default function RouteCard({
         </svg>
 
         {featured && (
-          <Badge variant="price" className="absolute right-3 top-3">
+          <Badge variant="price" className="absolute right-3 top-3 z-10">
             Meilleur prix
           </Badge>
         )}
 
         <div className="relative z-10">
-          <p className="text-xs font-medium text-white/70">{theme.emoji} {theme.label.replace("Depuis ", "")}</p>
-          <h3 className="text-lg font-bold text-white">
+          <p className="text-xs font-medium text-white/80">{theme.emoji} {theme.label.replace("Depuis ", "")}</p>
+          <h3 className="text-lg font-bold text-white drop-shadow-sm">
             {route.origin} → {route.destination}
           </h3>
         </div>

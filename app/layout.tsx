@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   verification: {
     google: GOOGLE_SITE_VERIFICATION,
   },
+  icons: {
+    shortcut: "/favicon.png",
+    icon: { url: "/favicon.png", sizes: "16x16 32x32 64x64" },
+  },
 };
 
 export default function RootLayout({

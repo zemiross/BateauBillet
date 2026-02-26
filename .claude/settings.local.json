@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd //c \"rmdir /s /q node_modules\")",
+      "Bash(ls -la /c/Users/User/Projects/iLoveFerry/app/[country]/)",
+      "Bash(ls -la /c/Users/User/Projects/iLoveFerry/app/[slug]/)",
+      "WebFetch(domain:lawsofux.com)",
+      "WebFetch(domain:www.wowmakers.com)",
+      "WebFetch(domain:www.booking.com)",
+      "WebFetch(domain:www.ferryhopper.com)",
+      "WebFetch(domain:www.directferries.com)",
+      "WebFetch(domain:iloveferry.com)",
+      "Bash(npm run build)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(ls C:/Users/User/Projects/iLoveFerry/node_modules/.bin/next*)"
+    ]
+  }
+}

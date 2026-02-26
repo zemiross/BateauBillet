@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BateauBillet.com (Next.js App Router)
 
-## Getting Started
+Rebuild de bateaubillet.com en Next.js App Router avec TypeScript et Tailwind CSS.
+Le site est en francais et sert de portail d'information ferry avec redirection de reservation.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router (v16 compatible spec 14+)
+- TypeScript
+- Tailwind CSS v4
+- `next/font` pour la typographie
+- `next/image` pour les assets images
+- `@next/third-parties/google` pour Google Analytics 4 (`G-D3S5E9XFH1`)
+
+## Regles metier
+
+- Aucune reservation directe sur BateauBillet.
+- Toutes les CTA pointent vers `https://iloveferry.com/fr`.
+- Contenus orientes liaisons ferry Maroc, Espagne, Algerie, France.
+
+## Architecture
+
+- `app/layout.tsx`: layout global, metadata de base, verification Google, GA4.
+- `app/page.tsx`: homepage.
+- `app/[country]/[route]/page.tsx`: page route ferry dynamique (20 routes SSG).
+- `app/[slug]/page.tsx`: pages article/news.
+- `app/sitemap.ts` et `app/robots.ts`: SEO technique.
+- `components/*`: composants reutilisables (Navbar, Sidebar, HeroSlider, CTA, FAQ, Breadcrumb, SchemaTrip).
+- `data/routes.ts`: source de verite des routes ferries.
+- `data/news.ts`: articles.
+
+## SEO et schemas
+
+- Metadata via API Next (`title`, `description`, `canonical`, Open Graph).
+- JSON-LD injecte via script:
+  - `BreadcrumbList` (composant `Breadcrumb`)
+  - `Trip` (composant `SchemaTrip`)
+- Redirections legacy `.php` gerees dans `next.config.ts`.
+
+## Lancer le projet
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Puis ouvrir `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verifications
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Ajouter une nouvelle route ferry
 
-To learn more about Next.js, take a look at the following resources:
+1. Ajouter l'entree dans `data/routes.ts` avec `slug`, `country`, `canonicalPath`, `priceFrom`, FAQ, schedules.
+2. Verifier que `canonicalPath` est unique.
+3. Ajouter l'image correspondante dans `public/images`.
+4. Verifier `npm run build` pour generation SSG et sitemap.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Ajouter un article
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Ajouter l'article dans `data/news.ts` avec `slug` unique.
+2. Renseigner `title`, `description`, `publishedAt`, `content`.
+3. Verifier la page statique correspondante via `app/[slug]/page.tsx`.

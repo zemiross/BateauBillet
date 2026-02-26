@@ -1,0 +1,91 @@
+# ---------------------------------------------------------------------------
+# BateauBillet.com - Apache config (e.g. Vercel/static or Apache in front)
+# Redirects old .php indexed pages to new Next.js routes (no .php)
+# ---------------------------------------------------------------------------
+
+# HTTP -> HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://bateaubillet.com%{REQUEST_URI} [L,R=301]
+
+# www -> non-www
+RewriteCond %{HTTP_HOST} ^www\.bateaubillet\.com [NC]
+RewriteRule ^(.*)$ https://bateaubillet.com/$1 [L,R=301]
+
+# politica-cookies=1: strip query and .php, redirect to new clean URL
+RewriteCond %{QUERY_STRING} ^politica-cookies=1$ [NC]
+RewriteRule ^(algerie|espagne|france|maroc)/([^.]+)\.php$ https://bateaubillet.com/$1/$2? [L,R=301]
+RewriteCond %{QUERY_STRING} ^politica-cookies=1$ [NC]
+RewriteRule ^index\.php$ https://bateaubillet.com/? [L,R=301]
+
+# Typos (old URLs -> new URLs without .php)
+RewriteRule ^espagne/algesiras-tanger\.php$ https://bateaubillet.com/espagne/algeciras-tanger [L,R=301]
+RewriteRule ^maroc/tanger-algesiras\.php$ https://bateaubillet.com/maroc/tanger-algeciras [L,R=301]
+
+# index.php -> homepage
+RewriteRule ^index\.php$ https://bateaubillet.com/ [L,R=301]
+
+# Legal / static .php -> new paths
+RewriteRule ^bateau-avec-voiture\.php$ https://bateaubillet.com/info/avec-voiture [L,R=301]
+RewriteRule ^info/avec-voiture/bateau-avec-voiture\.php$ https://bateaubillet.com/info/avec-voiture [L,R=301]
+RewriteRule ^balearia\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
+RewriteRule ^balearia-regina-baltica\.php$ https://bateaubillet.com/navieras/balearia-regina-baltica [L,R=301]
+RewriteRule ^avis-juridique\.php$ https://bateaubillet.com/avis-juridique [L,R=301]
+RewriteRule ^conditions-de-utilisation\.php$ https://bateaubillet.com/conditions-de-utilisation [L,R=301]
+RewriteRule ^politique-de-confidentialite\.php$ https://bateaubillet.com/politique-de-confidentialite [L,R=301]
+RewriteRule ^politique-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
+RewriteRule ^changements-et-echanges\.php$ https://bateaubillet.com/changements-et-echanges [L,R=301]
+
+# Article .php -> new /article/slug URLs
+RewriteRule ^meilleure-periode-traversee-maroc-espagne\.php$ https://bateaubillet.com/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
+RewriteRule ^documents-voyage-ferry-maroc\.php$ https://bateaubillet.com/article/documents-voyage-ferry-maroc [L,R=301]
+RewriteRule ^ferry-avec-voiture-conseils\.php$ https://bateaubillet.com/article/ferry-avec-voiture-conseils [L,R=301]
+
+# Article URLs without .php -> /article/slug (Apache-only fallback)
+RewriteRule ^meilleure-periode-traversee-maroc-espagne$ https://bateaubillet.com/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
+RewriteRule ^documents-voyage-ferry-maroc$ https://bateaubillet.com/article/documents-voyage-ferry-maroc [L,R=301]
+RewriteRule ^ferry-avec-voiture-conseils$ https://bateaubillet.com/article/ferry-avec-voiture-conseils [L,R=301]
+
+# Navieras under /navieras/ path
+RewriteRule ^navieras/balearia\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
+RewriteRule ^navieras/balearia-regina-baltica\.php$ https://bateaubillet.com/navieras/balearia-regina-baltica [L,R=301]
+
+# Spanish spelling variant (politica -> politique)
+RewriteRule ^politica-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
+
+# Route .php (generic): /country/slug.php -> /country/slug
+RewriteRule ^(france|maroc|espagne|algerie)/([^.]+)\.php$ https://bateaubillet.com/$1/$2 [L,R=301]
+
+# ---------------------------------------------------------------------------
+# Cache / expires (unchanged from previous .htaccess)
+# ---------------------------------------------------------------------------
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault                                      "access plus 1 month"
+	ExpiresByType text/css                              "access plus 1 month"
+	ExpiresByType application/json                      "access plus 0 seconds"
+	ExpiresByType application/xml                       "access plus 0 seconds"
+	ExpiresByType text/xml                              "access plus 0 seconds"
+	ExpiresByType image/x-icon                          "access plus 1 month"
+	ExpiresByType text/x-component                      "access plus 1 month"
+	ExpiresByType text/html                             "access plus 0 seconds"
+	ExpiresByType application/javascript                "access plus 1 month"
+	ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+	ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+	ExpiresByType audio/ogg                             "access plus 1 month"
+	ExpiresByType image/gif                             "access plus 1 month"
+	ExpiresByType image/jpg                             "access plus 1 month"
+	ExpiresByType image/jpeg                            "access plus 1 month"
+	ExpiresByType image/webp                            "access plus 1 month"
+	ExpiresByType image/png                             "access plus 1 month"
+	ExpiresByType video/mp4                             "access plus 1 month"
+	ExpiresByType video/ogg                             "access plus 1 month"
+	ExpiresByType video/webm                            "access plus 1 month"
+	ExpiresByType application/atom+xml                  "access plus 1 hour"
+	ExpiresByType application/rss+xml                   "access plus 1 hour"
+	ExpiresByType application/font-woff                 "access plus 1 month"
+	ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+	ExpiresByType application/x-font-ttf                "access plus 1 month"
+	ExpiresByType font/opentype                         "access plus 1 month"
+	ExpiresByType image/svg+xml                         "access plus 1 month"
+</IfModule>

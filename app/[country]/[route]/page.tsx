@@ -118,11 +118,19 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           </svg>
         </div>
 
-        <div className="space-y-4 text-base leading-relaxed text-sand-900/80">
-          {article.content.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
+        <section aria-labelledby="guide-detail">
+          <h2 id="guide-detail" className="mb-4 text-xl font-bold text-sand-900">
+            Conseils et points clés pour votre traversée
+          </h2>
+          <h3 className="mb-3 text-lg font-semibold text-sand-900">
+            À retenir pour réserver votre ferry
+          </h3>
+          <div className="space-y-4 text-base leading-relaxed text-sand-900/80">
+            {article.content.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
 
         <div className="mt-10">
           <BookingCTA />
@@ -166,7 +174,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           {/* Schedules — left (wider) */}
           <div className="md:col-span-3">
             <h2 className="mb-4 text-xl font-bold text-sand-900">
-              Horaires {routeData.origin} – {routeData.destination}
+              Horaires et fréquence ferry {routeData.origin} – {routeData.destination}
             </h2>
             <InfoAccordion
               items={routeData.schedules.map((s) => ({
@@ -178,6 +186,9 @@ export default async function CountrySegmentPage({ params }: PageProps) {
 
           {/* Price card — right */}
           <div className="md:col-span-2">
+            <h2 className="sr-only">
+              Tarifs et réservation billet ferry {routeData.origin} {routeData.destination}
+            </h2>
             <div className="sticky top-24 rounded-xl border border-sand-200 bg-white p-6 shadow-[var(--shadow-card)]">
               <p className="mb-1 text-sm text-sand-900/50">Prix de reference</p>
               <p className="mb-4 text-4xl font-bold text-ocean-700">
@@ -196,23 +207,38 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         {/* Practical info — 2x2 card grid */}
         <AnimatedSection className="mb-10">
           <h2 className="mb-4 text-xl font-bold text-sand-900">
-            Informations pratiques
+            Informations pratiques traversée {routeData.origin} – {routeData.destination}
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <InfoCard icon="ship" title="Navires">
+            <InfoCard
+              icon="ship"
+              title={`Navires et compagnies ferry ${routeData.origin} ${routeData.destination}`}
+            >
               Les navires disponibles peuvent varier selon la periode. Consultez
               la disponibilite en temps reel via la plateforme de reservation.
             </InfoCard>
-            <InfoCard icon="map-pin" iconColor="text-coral-600" title="Guide villes">
-              Avant de partir de {routeData.origin} vers{" "}
-              {routeData.destination}, verifiez les acces portuaires, les
-              formalites et les conditions d&apos;embarquement.
+            <InfoCard
+              icon="map-pin"
+              iconColor="text-coral-600"
+              title={`Accès port et formalités ${routeData.origin} – ${routeData.destination}`}
+            >
+              Avant de partir de {routeData.origin} vers {routeData.destination},
+              verifiez les acces portuaires, les formalites et les conditions
+              d&apos;embarquement.
             </InfoCard>
-            <InfoCard icon="star" iconColor="text-amber-500" title="Avis voyageurs">
+            <InfoCard
+              icon="star"
+              iconColor="text-amber-500"
+              title={`Avis voyageurs ferry ${routeData.origin} ${routeData.destination}`}
+            >
               Les retours d&apos;experience varient selon la saison et
               l&apos;affluence. Comparez horaires et options avant de reserver.
             </InfoCard>
-            <InfoCard icon="compass" iconColor="text-teal-600" title="A propos de cette liaison">
+            <InfoCard
+              icon="compass"
+              iconColor="text-teal-600"
+              title={`À propos de la liaison ${routeData.origin} ${routeData.destination}`}
+            >
               {routeData.description}
             </InfoCard>
           </div>
@@ -221,7 +247,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         {/* FAQ */}
         <AnimatedSection className="mb-10">
           <h2 className="mb-4 text-xl font-bold text-sand-900">
-            Questions frequentes
+            Questions fréquentes : ferry {routeData.origin} {routeData.destination}
           </h2>
           <InfoAccordion items={routeData.faq} />
         </AnimatedSection>
@@ -230,7 +256,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         {altRoutes.length > 0 && (
           <AnimatedSection className="mb-10">
             <h2 className="mb-4 text-xl font-bold text-sand-900">
-              Liaisons alternatives
+              Liaisons alternatives depuis {routeData.origin} ou vers {routeData.destination}
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {altRoutes.map((alt) => (

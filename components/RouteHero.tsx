@@ -47,7 +47,7 @@ export default function RouteHero({ route }: RouteHeroProps) {
             {theme.emoji} {theme.label}
           </p>
           <h1 className="mb-4 text-3xl font-bold text-white drop-shadow-sm md:text-4xl lg:text-5xl">
-            Ferry {route.origin} – {route.destination}
+            Ferry {route.origin} – {route.destination} : horaires, prix et billets
           </h1>
           <p className="mb-8 max-w-2xl text-base leading-relaxed text-white/90">
             {route.description}

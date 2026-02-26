@@ -44,3 +44,26 @@ export function getAlternativeRoutes(route: Route, count: number = 4): Route[] {
     .filter((r) => r.country === route.country && r.slug !== route.slug)
     .slice(0, count);
 }
+
+/** Slug for port pages: lowercase, no spaces (e.g. "Sete" -> "sete"). */
+export function getPortSlug(portName: string): string {
+  return portName.toLowerCase().replace(/\s+/g, "-");
+}
+
+/** All ports with their URL slug for static generation. */
+export function getPortsWithSlugs(): { name: string; slug: string }[] {
+  return getUniquePorts().map((name) => ({ name, slug: getPortSlug(name) }));
+}
+
+/** Port display name from slug, or undefined if not found. */
+export function getPortNameBySlug(slug: string): string | undefined {
+  const ports = getUniquePorts();
+  return ports.find((p) => getPortSlug(p) === slug);
+}
+
+/** Routes that depart from or arrive at the given port. */
+export function getRoutesFromPort(portName: string): Route[] {
+  return routes.filter(
+    (r) => r.origin === portName || r.destination === portName
+  );
+}

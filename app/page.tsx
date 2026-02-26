@@ -50,12 +50,12 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 md:pb-28 md:pt-24">
           <div className="mb-10 text-center md:mb-14">
             <h1 className="mb-4 text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-              Trouvez votre traversee
+              Trouvez votre billet de bateau
               <br />
-              <span className="text-coral-500">en Mediterranee</span>
+              <span className="text-coral-500">pour traverser la Méditerranée</span>
             </h1>
             <p className="mx-auto max-w-xl text-base text-ocean-100/70 md:text-lg">
-              Comparez horaires, prix et compagnies pour {STATS.routes} liaisons
+              Comparez horaires et prix pour {STATS.routes} liaisons
               ferry entre la France, le Maroc, l&apos;Espagne et l&apos;Algerie. 
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <StatBadge value={STATS.routes} label="liaisons" icon="anchor" />
             <StatBadge value={STATS.countries} label="pays" icon="globe" />
-            <StatBadge value={STATS.operators} label="compagnies" icon="ship" />
+            <StatBadge value={STATS.operators} label="compagnie" icon="ship" />
           </div>
         </div>
 

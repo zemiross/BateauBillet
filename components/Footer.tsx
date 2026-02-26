@@ -112,7 +112,7 @@ export default function Footer() {
           </span>
           <span className="flex items-center gap-1.5">
             <Icon name="ship" size={14} />
-            Balearia · Trasmediterranea · GNV
+            Balearia
           </span>
           <span className="flex items-center gap-1.5">
             <Icon name="globe" size={14} />

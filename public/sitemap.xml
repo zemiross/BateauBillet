@@ -45,6 +45,46 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/espagne/barcelona-alger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/espagne/valence-alger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/espagne/valence-oran</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/espagne/tarifa-tanger-ville</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/algerie/alger-barcelona</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/algerie/alger-valence</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/algerie/oran-valence</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/maroc/tanger-med-motril</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/maroc/tanger-ville-tarifa</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/espagne/motril-tanger-med</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/maroc/tanger-motril</loc>
     <priority>0.7</priority>
   </url>

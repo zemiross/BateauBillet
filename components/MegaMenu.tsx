@@ -57,7 +57,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
             </div>
             <div className="border-t border-ocean-800 bg-ocean-900/50 px-6 py-3 text-center">
               <span className="text-xs text-ocean-100/50">
-                20 liaisons ferry disponibles en Mediterranee
+                {routes.length} liaisons ferry disponibles en Mediterranee
               </span>
             </div>
           </motion.div>

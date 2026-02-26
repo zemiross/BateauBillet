@@ -13,8 +13,8 @@ const trustItems = [
   },
   {
     icon: "ship" as const,
-    title: "3 compagnies",
-    subtitle: "Balearia, Trasmed, GNV",
+    title: "Compagnie",
+    subtitle: "Balearia",
   },
   {
     icon: "globe" as const,

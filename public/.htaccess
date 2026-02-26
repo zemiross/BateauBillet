@@ -53,6 +53,15 @@ RewriteRule ^navieras/balearia-regina-baltica\.php$ https://bateaubillet.com/nav
 # Spanish spelling variant (politica -> politique)
 RewriteRule ^politica-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
 
+# info/compagnies, info/informations, info/politiques -> new paths
+RewriteRule ^info/compagnies/balearia\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
+RewriteRule ^info/informations/balearia-black-friday\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
+RewriteRule ^info/politiques/changements-et-echanges\.php$ https://bateaubillet.com/changements-et-echanges [L,R=301]
+RewriteRule ^info/politiques/conditiona-de-utilisation\.php$ https://bateaubillet.com/conditions-de-utilisation [L,R=301]
+RewriteRule ^info/politiques/avis-juridique\.php$ https://bateaubillet.com/avis-juridique [L,R=301]
+RewriteRule ^info/politiques/politique-de-confidentialite\.php$ https://bateaubillet.com/politique-de-confidentialite [L,R=301]
+RewriteRule ^info/politiques/politique-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
+
 # Route .php (generic): /country/slug.php -> /country/slug
 RewriteRule ^(france|maroc|espagne|algerie)/([^.]+)\.php$ https://bateaubillet.com/$1/$2 [L,R=301]
 

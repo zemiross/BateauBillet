@@ -14,6 +14,11 @@ const legalRedirects = [
     permanent: true,
   },
   {
+    source: "/info/informations/bateau-valence-mostaganem-a-partir-de-95-euros.php",
+    destination: "/espagne/valence-mostaganem",
+    permanent: true,
+  },
+  {
     source: "/balearia.php",
     destination: "/navieras/balearia",
     permanent: true,
@@ -61,6 +66,41 @@ const legalRedirects = [
   {
     source: "/navieras/balearia-regina-baltica.php",
     destination: "/navieras/balearia-regina-baltica",
+    permanent: true,
+  },
+  {
+    source: "/info/compagnies/balearia.php",
+    destination: "/navieras/balearia",
+    permanent: true,
+  },
+  {
+    source: "/info/informations/balearia-black-friday.php",
+    destination: "/navieras/balearia",
+    permanent: true,
+  },
+  {
+    source: "/info/politiques/changements-et-echanges.php",
+    destination: "/changements-et-echanges",
+    permanent: true,
+  },
+  {
+    source: "/info/politiques/conditiona-de-utilisation.php",
+    destination: "/conditions-de-utilisation",
+    permanent: true,
+  },
+  {
+    source: "/info/politiques/avis-juridique.php",
+    destination: "/avis-juridique",
+    permanent: true,
+  },
+  {
+    source: "/info/politiques/politique-de-confidentialite.php",
+    destination: "/politique-de-confidentialite",
+    permanent: true,
+  },
+  {
+    source: "/info/politiques/politique-de-cookies.php",
+    destination: "/politique-de-cookies",
     permanent: true,
   },
 ];

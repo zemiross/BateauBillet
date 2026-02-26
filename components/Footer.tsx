@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <div className="mb-4 flex items-center gap-2">
             <Image
-              src="/images/favicon_no_bg.png"
+              src="/favicon_no_bg.png"
               alt=""
               width={32}
               height={32}

@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     google: GOOGLE_SITE_VERIFICATION,
   },
   icons: {
-    shortcut: "/favicon.png",
-    icon: { url: "/favicon.png", sizes: "16x16 32x32 64x64" },
+    shortcut: "/favicon_no_bg.png",
+    icon: { url: "/favicon_no_bg.png", sizes: "16x16 32x32 64x64" },
   },
 };
 

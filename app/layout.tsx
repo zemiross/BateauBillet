@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { GA_ID, GOOGLE_SITE_VERIFICATION, SITE_NAME, SITE_URL } from "@/lib/site";
+
+const GA_MEASUREMENT_ID = "G-NEG94NYQ2S";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,6 +44,19 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.variable} ${dmSerif.variable} antialiased`}>
+        {/* Google tag (gtag.js) - beforeInteractive injects into head */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="beforeInteractive"
+        />
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

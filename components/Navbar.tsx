@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { BOOKING_URL, SITE_NAME } from "@/lib/site";
 import Icon from "./ui/Icon";
@@ -17,9 +18,13 @@ export default function Navbar() {
       <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-coral-600 text-xs font-bold text-white">
-            BB
-          </div>
+          <Image
+            src="/images/favicon_no_bg.png"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-lg object-contain"
+          />
           <span className="font-[var(--font-dm-serif)] text-lg font-bold text-white">
             {SITE_NAME}
           </span>

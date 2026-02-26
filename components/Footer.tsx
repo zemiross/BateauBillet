@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/site";
 import { routes } from "@/data/routes";
@@ -29,9 +30,13 @@ export default function Footer() {
         {/* Brand column */}
         <div>
           <div className="mb-4 flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-coral-600 text-xs font-bold text-white">
-              BB
-            </div>
+            <Image
+              src="/images/favicon_no_bg.png"
+              alt=""
+              width={32}
+              height={32}
+              className="h-8 w-8 rounded-lg object-contain"
+            />
             <span className="text-lg font-bold text-white">{SITE_NAME}</span>
           </div>
           <p className="text-sm leading-relaxed text-ocean-100/50">

@@ -46,6 +46,12 @@ npm run dev
 
 Puis ouvrir `http://localhost:3000`.
 
+## Deployment (Cursor → GitHub → Vercel)
+
+1. **Connect the repo to Vercel** (one-time): In [Vercel](https://vercel.com), import the GitHub repo `zemiross/BateauBillet`. Leave default settings (Framework: Next.js, Build: `next build`, Output: auto).
+2. **Push from Cursor**: Use **Source Control → Sync** (or **Push**) so changes go to `origin/main`. Vercel deploys automatically on every push to the production branch.
+3. **Branch**: Production deploys use the branch configured in Vercel (usually `main`). Ensure you push to that branch.
+
 ## Verifications
 
 ```bash

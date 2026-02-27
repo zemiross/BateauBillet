@@ -44,7 +44,13 @@ function escapeXml(s) {
     .replace(/"/g, "&quot;");
 }
 
-const localePrefix = new RegExp(`^(${LOCALES.join("|")})/`);
+// Strip all leading locale segments so path is locale-free (e.g. fr/fr/espagne/... -> espagne/...)
+const stripAllLocalePrefixes = (path) => {
+  let p = path.replace(new RegExp(`^((${LOCALES.join("|")})\\/)+`, "g"), "").replace(/^\/+/, "") || "";
+  // Single segment that is a locale (e.g. homepage /fr) -> treat as empty path
+  if (LOCALES.includes(p)) return "";
+  return p;
+};
 
 function parseExistingSitemap(content) {
   const seen = new Map();
@@ -55,8 +61,8 @@ function parseExistingSitemap(content) {
     if (!locMatch || !priMatch) continue;
     const fullUrl = locMatch[1].trim();
     let path = fullUrl.replace(baseUrl, "").replace(/^\//, "") || "";
-    // Strip any locale prefix to get the canonical path
-    path = path.replace(localePrefix, "");
+    // Strip all locale prefixes so we get a single canonical path (no double locale slugs)
+    path = stripAllLocalePrefixes(path);
     const priority = priMatch[1].trim();
     if (!seen.has(path)) seen.set(path, priority);
   }

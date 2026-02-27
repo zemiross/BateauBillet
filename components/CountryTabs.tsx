@@ -12,7 +12,7 @@ export default function CountryTabs() {
   const locale = useLocale();
   const t = useTranslations("countries");
   const tPorts = useTranslations("ports");
-  const [active, setActive] = useState<Country>("france");
+  const [active, setActive] = useState<Country>("maroc");
 
   const countryRoutes = routes.filter((r) => r.country === active);
 

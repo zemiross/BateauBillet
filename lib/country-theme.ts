@@ -43,4 +43,5 @@ export function getCountryTheme(country: Country): CountryTheme {
   return countryThemes[country];
 }
 
-export const countryOrder: Country[] = ["france", "maroc", "espagne", "algerie"];
+/** Display order: Maroc first, France last (for "Toutes les liaisons par pays" and header menu). */
+export const countryOrder: Country[] = ["maroc", "algerie", "espagne", "france"];

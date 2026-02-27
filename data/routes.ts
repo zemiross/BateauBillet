@@ -117,7 +117,7 @@ const buildRoute = (params: {
   };
 };
 
-export const routes: Route[] = [
+const routesList: Route[] = [
   buildRoute({
     slug: "sete-nador",
     country: "france",
@@ -395,6 +395,12 @@ export const routes: Route[] = [
   }),
   // Málaga ↔ Melilla (already present as malaga-melilla / melilla-malaga)
 ];
+
+/** Routes sorted alphabetically by origin then destination (header menu and "Toutes les liaisons par pays"). */
+export const routes = [...routesList].sort((a, b) => {
+  const byOrigin = a.origin.localeCompare(b.origin);
+  return byOrigin !== 0 ? byOrigin : a.destination.localeCompare(b.destination);
+});
 
 const routeByCanonical = new Map<string, Route>(
   routes.map((route) => [`${route.country}/${route.slug}`, route]),

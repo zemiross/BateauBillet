@@ -34,11 +34,11 @@
     "liaisonsPopulairesDesc": "Les traversées les plus recherchées au meilleur prix",
     "toutesLiaisons": "Toutes les liaisons par pays",
     "toutesLiaisonsDesc": "Explorez les traversées depuis chaque pays de départ",
-    "commentCaMarche": "Comment ça marche ?",
+    "commentCaMarche": "Comment ça marche?",
     "commentCaMarcheDesc": "Trouvez et réservez votre ferry en 3 étapes simples",
     "guidesVoyage": "Conseils et guides de voyage",
     "guidesVoyageDesc": "Préparez votre traversée avec nos guides pratiques",
-    "pretEmbarquer": "Prêt à embarquer ?",
+    "pretEmbarquer": "Prêt à embarquer?",
     "pretEmbarquerDesc": "Trouvez les meilleurs tarifs ferry pour votre prochaine traversée en Méditerranée.",
     "voirHorairesPrix": "Voir les horaires et prix",
     "liaisons": "liaisons",
@@ -47,7 +47,7 @@
   },
   "guides": {
     "pageTitle": "Guides et conseils de voyage ferry",
-    "pageDescription": "Tous nos guides pour préparer votre traversée : documents, meilleure période, ferry avec voiture, destinations et actualités.",
+    "pageDescription": "Tous nos guides pour préparer votre traversée: documents, meilleure période, ferry avec voiture, destinations et actualités.",
     "metaTitle": "Guides voyage ferry Méditerranée | Bateau Billet",
     "metaDescription": "Guides et articles pour réserver votre ferry vers le Maroc, l'Espagne et l'Algérie. Conseils pratiques, documents et bonnes périodes."
   },
@@ -99,7 +99,7 @@
     "Tarifa": "Tarifa"
   },
   "route": {
-    "ferryTitle": "Ferry {origin} – {destination} : horaires, prix et billets",
+    "ferryTitle": "Ferry {origin} – {destination}: horaires, prix et billets",
     "horairesFrequence": "Horaires et fréquence ferry {origin} – {destination}",
     "tarifsReservation": "Tarifs et réservation billet ferry {origin} {destination}",
     "prixReference": "Prix de référence",
@@ -109,12 +109,12 @@
     "accesPort": "Accès port et formalités {origin} – {destination}",
     "avisVoyageurs": "Avis voyageurs ferry {origin} {destination}",
     "aproposLiaison": "À propos de la liaison {origin} {destination}",
-    "faq": "Questions fréquentes : ferry {origin} {destination}",
+    "faq": "Questions fréquentes: ferry {origin} {destination}",
     "liaisonsAlternatives": "Liaisons alternatives depuis {origin} ou vers {destination}",
     "voirHorairesPrix": "Voir les horaires et prix",
     "durationLabel": "Durée",
     "priceFromLabel": "À partir de",
-    "heroDescription": "Comparez les traversées {origin} {destination} : durée {duration}, fréquence {frequency}, compagnies {operators} et prix dès {price}EUR.",
+    "heroDescription": "Comparez les traversées {origin} {destination}: durée {duration}, fréquence {frequency}, compagnies {operators} et prix dès {price}EUR.",
     "schedule": {
       "frequence": "Fréquence",
       "enregistrement": "Enregistrement",
@@ -126,23 +126,23 @@
       "conseil": "Vérifiez la météo et les conditions du port de {origin} et {destination} avant le départ."
     },
     "faqItems": {
-      "priceQuestion": "Quel est le prix minimum pour {origin} - {destination} ?",
+      "priceQuestion": "Quel est le prix minimum pour {origin} - {destination}?",
       "priceAnswer": "Les tarifs commencent à partir de {price}EUR, selon saison, disponibilité et type de billet.",
-      "carQuestion": "Peut-on embarquer avec voiture sur {origin} - {destination} ?",
+      "carQuestion": "Peut-on embarquer avec voiture sur {origin} - {destination}?",
       "carAnswer": "Oui, selon la compagnie et le navire. Comparez les options passager et véhicule avant de réserver.",
-      "durationQuestion": "Combien de temps dure la traversée {origin} - {destination} ?",
+      "durationQuestion": "Combien de temps dure la traversée {origin} - {destination}?",
       "durationAnswer": "La traversée {origin} - {destination} dure environ {duration}. La durée peut varier selon les conditions météorologiques et le navire.",
-      "docsQuestion": "Quels documents faut-il pour la traversée {origin} - {destination} ?",
+      "docsQuestion": "Quels documents faut-il pour la traversée {origin} - {destination}?",
       "docsAnswer": "Un passeport ou une carte d'identité en cours de validité est nécessaire. Avec véhicule, la carte grise et l'assurance sont obligatoires. Vérifiez les exigences spécifiques selon votre nationalité.",
-      "amenitiesQuestion": "Quels services sont disponibles à bord du ferry {origin} - {destination} ?",
+      "amenitiesQuestion": "Quels services sont disponibles à bord du ferry {origin} - {destination}?",
       "amenitiesAnswer": "Les ferries proposent généralement un restaurant, un bar, des cabines, des fauteuils inclinables, le wifi et des espaces de jeux pour enfants. Les services varient selon le navire.",
-      "arrivalQuestion": "À quelle heure arriver au port pour le ferry {origin} - {destination} ?",
+      "arrivalQuestion": "À quelle heure arriver au port pour le ferry {origin} - {destination}?",
       "arrivalAnswer": "Arrivez au moins 90 minutes avant le départ pour les passagers à pied et 120 minutes avec véhicule. En haute saison, prévoyez plus de marge.",
-      "bookQuestion": "Où réserver le billet de ferry ?",
+      "bookQuestion": "Où réserver le billet de ferry?",
       "bookAnswer": "BateauBillet ne vend pas directement. Utilisez le bouton Réserver pour être redirigé vers le site de réservation Balearia."
     },
     "routeGuideTitle": "Guide de la traversée {origin} – {destination}",
-    "routeGuideContent": "La liaison ferry {origin} – {destination} est assurée par {operators}. La traversée dure environ {duration} avec une fréquence de {frequency}. Les tarifs commencent à partir de {price}EUR par passager. Les navires disposent de restaurants, bars, cabines et espaces de détente. Arrivez au port au moins 90 minutes à l'avance (120 min avec véhicule). Munissez-vous d'un passeport ou carte d'identité valide, ainsi que des documents du véhicule si applicable. Les prix varient selon la saison : réservez en avance pour les meilleures offres, notamment en dehors de la haute saison estivale (juillet-août).",
+    "routeGuideContent": "La liaison ferry {origin} – {destination} est assurée par {operators}. La traversée dure environ {duration} avec une fréquence de {frequency}. Les tarifs commencent à partir de {price}EUR par passager. Les navires disposent de restaurants, bars, cabines et espaces de détente. Arrivez au port au moins 90 minutes à l'avance (120 min avec véhicule). Munissez-vous d'un passeport ou carte d'identité valide, ainsi que des documents du véhicule si applicable. Les prix varient selon la saison: réservez en avance pour les meilleures offres, notamment en dehors de la haute saison estivale (juillet-août).",
     "naviresDesc": "Les navires disponibles peuvent varier selon la période. Consultez la disponibilité en temps réel via la plateforme de réservation.",
     "accesPortDesc": "Avant de partir de {origin} vers {destination}, vérifiez les accès portuaires, les formalités et les conditions d'embarquement.",
     "avisDesc": "Les retours d'expérience varient selon la saison et l'affluence. Comparez horaires et options avant de réserver."
@@ -172,17 +172,17 @@
   },
   "navieras": {
     "balearia": {
-      "metaTitle": "Balearia : ferry, horaires et réservation – BateauBillet",
+      "metaTitle": "Balearia: ferry, horaires et réservation – BateauBillet",
       "metaDescription": "Lignes ferry Balearia entre Espagne, Maroc, Algérie et France. Horaires, tarifs et réservation des billets pour les traversées Méditerranée.",
-      "metaOgTitle": "Balearia : ferry et traversées Méditerranée",
-      "title": "Balearia : ferry, horaires et réservation",
-      "intro": "Balearia est l'opérateur principal référencé sur BateauBillet pour les traversées en Méditerranée : France, Espagne, Maroc et Algérie.",
+      "metaOgTitle": "Balearia: ferry et traversées Méditerranée",
+      "title": "Balearia: ferry, horaires et réservation",
+      "intro": "Balearia est l'opérateur principal référencé sur BateauBillet pour les traversées en Méditerranée: France, Espagne, Maroc et Algérie.",
       "h2Lines": "Lignes et traversées ferry Balearia",
       "linesDesc": "La compagnie Balearia assure des liaisons régulières entre plusieurs ports. Comparez horaires et prix pour réserver votre billet.",
       "h2Tarifs": "Tarifs et réservation billet ferry Balearia",
       "h3Reserver": "Réserver un ferry Balearia",
       "tarifsDesc": "Les tarifs varient selon la liaison, la saison et le type de billet (passager ou véhicule). Réservez en avance pour profiter des meilleurs prix sur les traversées Balearia.",
-      "h2Infos": "Compagnie Balearia : informations pratiques",
+      "h2Infos": "Compagnie Balearia: informations pratiques",
       "h3Navires": "Navires et services à bord",
       "naviresDesc": "Balearia exploite plusieurs navires sur les lignes France–Maroc, Espagne–Maroc et Espagne–Algérie. Les services (restauration, cabines, wifi) dépendent du bateau et de la liaison. Consultez les horaires et conditions au moment de la réservation."
     },
@@ -192,7 +192,7 @@
     "reserver": "Réserver votre billet"
   },
   "port": {
-    "title": "Port de {name} : ferry, horaires et traversées",
+    "title": "Port de {name}: ferry, horaires et traversées",
     "description": "Retrouvez toutes les liaisons ferry au départ ou à l'arrivée du port de {name}. Comparez horaires, tarifs et compagnies pour réserver votre billet.",
     "departures": "Traversées au départ du port de {name}",
     "arrivals": "Traversées à l'arrivée au port de {name}",
@@ -204,8 +204,8 @@
   },
   "info": {
     "avecVoiture": {
-      "title": "Ferry avec voiture : horaires, prix et conseils",
-      "intro": "Voyager en ferry avec véhicule demande une préparation spécifique : enregistrement anticipé, documents à jour et respect des consignes d'embarquement.",
+      "title": "Ferry avec voiture: horaires, prix et conseils",
+      "intro": "Voyager en ferry avec véhicule demande une préparation spécifique: enregistrement anticipé, documents à jour et respect des consignes d'embarquement.",
       "h2Prep": "Préparer son trajet ferry avec voiture",
       "prepDesc": "Que vous partiez vers le Maroc, l'Espagne ou l'Algérie, les formalités et les délais d'embarquement sont similaires sur les principales lignes Méditerranéennes.",
       "h3Docs": "Documents et formalités pour embarquer en ferry avec véhicule",
@@ -219,7 +219,7 @@
     "guideDetailTitle": "Conseils et points clés pour votre traversée",
     "guideDetailSubtitle": "À retenir pour réserver votre ferry",
     "meilleure-periode-traversee-maroc-espagne": {
-      "title": "Quelle est la meilleure période pour réserver son ferry ?",
+      "title": "Quelle est la meilleure période pour réserver son ferry?",
       "description": "Guide pratique pour choisir la bonne saison, comparer les prix et éviter les périodes de forte affluence.",
       "content": {
         "0": "La haute saison concentre la demande et les tarifs les plus élevés.",
@@ -237,7 +237,7 @@
       }
     },
     "ferry-avec-voiture-conseils": {
-      "title": "Ferry avec voiture : 7 conseils pour bien préparer son trajet",
+      "title": "Ferry avec voiture: 7 conseils pour bien préparer son trajet",
       "description": "Nos recommandations pour l'embarquement, la sécurité du véhicule et le confort pendant la traversée.",
       "content": {
         "0": "Contrôlez l'état du véhicule et gardez les objets de valeur avec vous.",
@@ -247,7 +247,7 @@
     },
     "5-raisons-visiter-valence-printemps": {
       "title": "5 Raisons pour Visiter Valence ce Printemps | Guide Voyage 2025",
-      "description": "Découvrez pourquoi Valence est la destination parfaite ce printemps : climat idéal, prix abordables, ferries directs et activités famille. Réservez votre billet dès maintenant.",
+      "description": "Découvrez pourquoi Valence est la destination parfaite ce printemps: climat idéal, prix abordables, ferries directs et activités famille. Réservez votre billet dès maintenant.",
       "content": {
         "0": "Valence, troisième plus grande ville d'Espagne, s'éveille au printemps avec une énergie particulière. Située sur la côte méditerranéenne, cette destination combine patrimoine historique, architecture futuriste, gastronomie renommée et plages accessibles. Le printemps représente le moment idéal pour découvrir cette ville espagnole dynamique, loin des foules estivales et avec un climat parfait pour explorer ses nombreuses attractions. Que vous voyagiez en famille, en couple ou entre amis, réserver un billet de ferry vers Valence vous ouvre les portes d'une expérience méditerranéenne authentique à prix abordable.",
         "1": "H2: 1. Un Climat Méditerranéen Idéal en Avril et Mai",
@@ -266,7 +266,7 @@
         "14": "L'avantage économique s'étend au-delà du transport. Les hôtels valenciens appliquent des tarifs basse saison en avril et mai. Un hôtel 3 étoiles bien situé coûte entre 60€ et 90€ par nuit, contre 120€ à 180€ en été. Les appartements de location saisonnière proposent également des prix attractifs pour les familles recherchant plus d'espace.",
         "15": "La restauration reste accessible toute l'année à Valence, mais les terrasses printanières offrent un excellent rapport qualité-prix. Un menu del día (menu du jour) se trouve facilement entre 10€ et 15€, incluant entrée, plat, dessert et boisson. Les restaurants du Mercado Central permettent de déguster des produits frais à petits prix dans une atmosphère authentique.",
         "16": "H3: Budget Global pour une Semaine",
-        "17": "Pour une famille de quatre personnes, une semaine à Valence au printemps nécessite un budget approximatif de : transport en ferry (aller-retour avec véhicule) 250€ à 350€, hébergement 420€ à 630€, restauration 400€ à 600€, activités et visites 200€ à 300€. Total : 1270€ à 1880€. Ce budget permet des vacances confortables sans restrictions majeures, bien inférieur aux 2500€ à 3500€ nécessaires pour la même période en août.",
+        "17": "Pour une famille de quatre personnes, une semaine à Valence au printemps nécessite un budget approximatif de: transport en ferry (aller-retour avec véhicule) 250€ à 350€, hébergement 420€ à 630€, restauration 400€ à 600€, activités et visites 200€ à 300€. Total: 1270€ à 1880€. Ce budget permet des vacances confortables sans restrictions majeures, bien inférieur aux 2500€ à 3500€ nécessaires pour la même période en août.",
         "18": "H2: 3. Une Destination Parfaite pour les Familles",
         "19": "Valence s'affirme comme l'une des destinations méditerranéennes les plus adaptées aux vacances en famille. La ville combine attractions éducatives, espaces verts, plages sécurisées et infrastructure pensée pour les enfants.",
         "20": "H3: La Cité des Arts et des Sciences",
@@ -274,7 +274,7 @@
         "22": "Le Musée des Sciences Príncipe Felipe propose des expositions interactives où les enfants manipulent, expérimentent et apprennent par le jeu. Les démonstrations scientifiques en direct captivent toutes les tranches d'âge. L'Hemisfèric projette des films en format IMAX sur un écran concave géant, créant une immersion totale.",
         "23": "H3: Le Bioparc Valencia",
         "24": "Le Bioparc révolutionne le concept de zoo traditionnel. Ce parc animalier reproduit fidèlement les habitats naturels africains avec une philosophie de zoo-immersion. Les barrières visuelles disparaissent, créant l'impression de partager l'espace avec lions, éléphants, girafes et gorilles.",
-        "25": "Les enfants adorent les zones interactives et les explications pédagogiques des soigneurs. Le parcours de 3 à 4 heures traverse différents écosystèmes : savane, forêt équatoriale et Madagascar. Le printemps offre l'avantage d'une visite sans chaleur excessive, les animaux étant plus actifs.",
+        "25": "Les enfants adorent les zones interactives et les explications pédagogiques des soigneurs. Le parcours de 3 à 4 heures traverse différents écosystèmes: savane, forêt équatoriale et Madagascar. Le printemps offre l'avantage d'une visite sans chaleur excessive, les animaux étant plus actifs.",
         "26": "H3: Plages Familiales Accessibles",
         "27": "Les plages valenciennes, notamment La Malvarrosa et Las Arenas, sont facilement accessibles depuis le centre-ville en tramway ou vélo. Le sable fin en pente douce rassure les parents, et les zones surveillées garantissent la sécurité des baigneurs. Les premières baignades sont possibles dès fin avril quand l'eau atteint 18-19°C.",
         "28": "La promenade maritime (Paseo Marítimo) propose des aires de jeux, des locations de vélos et des restaurants adaptés aux familles. Le printemps permet de profiter des plages sans la saturation estivale, avec plus d'espace pour installer serviettes et parasols.",
@@ -295,37 +295,37 @@
         "43": "H3: Traditions Vivantes",
         "44": "Le Tribunal des Eaux (Tribunal de las Aguas) se réunit chaque jeudi à midi devant la Porte des Apôtres de la Cathédrale depuis plus de 1000 ans. Cette institution médiévale règle les conflits d'irrigation entre agriculteurs de la Huerta valencienne, perpétuant une tradition inscrite au patrimoine immatériel de l'UNESCO.",
         "45": "H2: 5. Une Gastronomie Méditerranéenne Authentique",
-        "46": "La gastronomie valencienne est réputée dans le monde entier : la paella est née dans la région, les agrumes et l'horchata font partie du patrimoine local, et les marchés comme le Mercado Central offrent des produits frais et une atmosphère unique. Le printemps est la saison idéale pour déguster les artichauts, les fèves et les primeurs sur les terrasses de la ville."
+        "46": "La gastronomie valencienne est réputée dans le monde entier: la paella est née dans la région, les agrumes et l'horchata font partie du patrimoine local, et les marchés comme le Mercado Central offrent des produits frais et une atmosphère unique. Le printemps est la saison idéale pour déguster les artichauts, les fèves et les primeurs sur les terrasses de la ville."
       }
     },
     "operation-marhaba-2026": {
-      "title": "Opération Marhaba 2026 : guide complet ferry Maroc",
-      "description": "Tout savoir sur l'Opération Marhaba 2026 : dates, routes ferry recommandées, prix et conseils pour traverser vers le Maroc en été.",
+      "title": "Opération Marhaba 2026: guide complet ferry Maroc",
+      "description": "Tout savoir sur l'Opération Marhaba 2026: dates, routes ferry recommandées, prix et conseils pour traverser vers le Maroc en été.",
       "content": {
         "0": "L'Opération Marhaba, aussi appelée Transit, est le dispositif mis en place chaque été pour faciliter le retour de la diaspora marocaine vers le Maroc. De juin à septembre, des centaines de milliers de voyageurs traversent la Méditerranée en ferry.",
         "1": "H2: Dates et périodes de l'Opération Marhaba 2026",
         "2": "L'Opération Marhaba 2026 devrait se dérouler du 5 juin au 15 septembre 2026. Les pics de trafic sont attendus en juillet et début août, notamment au départ d'Algésiras, Sète et Barcelone.",
         "3": "H2: Routes ferry recommandées",
-        "4": "Les principales liaisons sont Algésiras-Tanger Med, Sète-Nador, Sète-Tanger Med, Barcelone-Tanger Med et Almería-Nador. Réservez le plus tôt possible : les places avec véhicule se remplissent dès avril pour les départs de juillet.",
+        "4": "Les principales liaisons sont Algésiras-Tanger Med, Sète-Nador, Sète-Tanger Med, Barcelone-Tanger Med et Almería-Nador. Réservez le plus tôt possible: les places avec véhicule se remplissent dès avril pour les départs de juillet.",
         "5": "H3: Depuis l'Espagne",
         "6": "Algésiras-Tanger Med est la route la plus courte (environ 1h30). Tarifa-Tanger Ville offre une alternative rapide. Pour ceux venant du nord de l'Espagne, Barcelone-Tanger Med évite la traversée de l'Andalousie.",
         "7": "H3: Depuis la France",
         "8": "Sète-Nador et Sète-Tanger Med sont les départs directs depuis la France. La traversée dure entre 26 et 39 heures selon la destination. Réservez une cabine pour le confort.",
         "9": "H2: Conseils pratiques",
-        "10": "Arrivez au port 3 heures avant le départ pendant l'Opération Marhaba. Les files d'attente sont longues, surtout avec véhicule. Préparez tous vos documents à l'avance : passeport, carte grise, assurance véhicule verte.",
+        "10": "Arrivez au port 3 heures avant le départ pendant l'Opération Marhaba. Les files d'attente sont longues, surtout avec véhicule. Préparez tous vos documents à l'avance: passeport, carte grise, assurance véhicule verte.",
         "11": "H2: Prix et budget",
         "12": "Les prix augmentent significativement en juillet-août. Réservez dès que possible pour économiser 30 à 50% par rapport aux tarifs de dernière minute. Un aller-retour Algésiras-Tanger Med avec véhicule coûte environ 200-400€ en haute saison."
       }
     },
     "prix-ferry-ete-2026": {
-      "title": "Prix ferry Maroc été 2026 : comparaison et conseils",
+      "title": "Prix ferry Maroc été 2026: comparaison et conseils",
       "description": "Comparez les prix ferry vers le Maroc pour l'été 2026. Astuces pour trouver les meilleurs tarifs sur Algésiras-Tanger, Sète-Nador et autres routes.",
       "content": {
         "0": "L'été est la haute saison pour les ferries vers le Maroc et l'Algérie. Les prix peuvent doubler ou tripler par rapport au printemps. Voici comment obtenir les meilleurs tarifs pour vos traversées estivales.",
         "1": "H2: Évolution des prix par mois",
-        "2": "Mars-mai : basse saison, les meilleurs tarifs. Juin : les prix commencent à monter. Juillet-août : haute saison, tarifs maximums. Septembre : les prix redescendent progressivement.",
+        "2": "Mars-mai: basse saison, les meilleurs tarifs. Juin: les prix commencent à monter. Juillet-août: haute saison, tarifs maximums. Septembre: les prix redescendent progressivement.",
         "3": "H2: Comparaison des routes principales",
-        "4": "Algésiras-Tanger Med : à partir de 35€ en basse saison, 80-150€ en été. Sète-Nador : à partir de 61€ en basse saison, 150-300€ en été. Barcelone-Tanger Med : à partir de 90€ en basse saison, 200-400€ en été.",
+        "4": "Algésiras-Tanger Med: à partir de 35€ en basse saison, 80-150€ en été. Sète-Nador: à partir de 61€ en basse saison, 150-300€ en été. Barcelone-Tanger Med: à partir de 90€ en basse saison, 200-400€ en été.",
         "5": "H2: Astuces pour économiser",
         "6": "Réservez 2 à 3 mois à l'avance. Voyagez en semaine plutôt que le week-end. Considérez les départs de nuit pour économiser une nuit d'hôtel. Comparez les tarifs sur BateauBillet avant de réserver.",
         "7": "H3: Les erreurs à éviter",
@@ -334,7 +334,7 @@
     },
     "traversees-ramadan-2026": {
       "title": "Traversées ferry pendant le Ramadan 2026",
-      "description": "Informations pratiques pour voyager en ferry pendant le Ramadan 2026 : horaires, services à bord et conseils pour une traversée confortable.",
+      "description": "Informations pratiques pour voyager en ferry pendant le Ramadan 2026: horaires, services à bord et conseils pour une traversée confortable.",
       "content": {
         "0": "Le Ramadan 2026 devrait se dérouler approximativement de fin février à fin mars. Pour les voyageurs qui traversent la Méditerranée pendant cette période, voici les informations pratiques à connaître.",
         "1": "H2: Horaires et disponibilité pendant le Ramadan",

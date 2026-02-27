@@ -32,7 +32,7 @@ export default function RouteHero({
   const theme = getCountryTheme(route.country);
   const origin = displayOrigin ?? route.origin;
   const destination = displayDestination ?? route.destination;
-  const heading = title ?? `Ferry ${route.origin} – ${route.destination} : horaires, prix et billets`;
+  const heading = title ?? `Ferry ${route.origin} – ${route.destination}: horaires, prix et billets`;
   const introText = description ?? route.description;
 
   return (

@@ -35,35 +35,35 @@ const DEFAULT_BOOKING_URL =
 
 const buildFaq = (origin: string, destination: string, priceFrom: number, duration: string): FAQ[] => [
   {
-    question: `Quel est le prix minimum pour ${origin} - ${destination} ?`,
+    question: `Quel est le prix minimum pour ${origin} - ${destination}?`,
     answer: `Les tarifs commencent a partir de ${priceFrom}EUR, selon saison, disponibilite et type de billet.`,
   },
   {
-    question: `Combien de temps dure la traversee ${origin} - ${destination} ?`,
+    question: `Combien de temps dure la traversee ${origin} - ${destination}?`,
     answer: `La traversee ${origin} - ${destination} dure environ ${duration}. La duree peut varier selon les conditions meteorologiques et le navire.`,
   },
   {
-    question: `Peut-on embarquer avec voiture sur ${origin} - ${destination} ?`,
+    question: `Peut-on embarquer avec voiture sur ${origin} - ${destination}?`,
     answer:
       "Oui, selon la compagnie et le navire. Comparez les options passager et vehicule avant de reserver.",
   },
   {
-    question: `Quels documents faut-il pour la traversee ${origin} - ${destination} ?`,
+    question: `Quels documents faut-il pour la traversee ${origin} - ${destination}?`,
     answer:
       "Un passeport ou une carte d'identite en cours de validite est necessaire. Avec vehicule, la carte grise et l'assurance sont obligatoires. Verifiez les exigences specifiques selon votre nationalite.",
   },
   {
-    question: `Quels services sont disponibles a bord du ferry ${origin} - ${destination} ?`,
+    question: `Quels services sont disponibles a bord du ferry ${origin} - ${destination}?`,
     answer:
       "Les ferries proposent generalement un restaurant, un bar, des cabines, des fauteuils inclinables, le wifi et des espaces de jeux pour enfants. Les services varient selon le navire.",
   },
   {
-    question: `A quelle heure arriver au port pour le ferry ${origin} - ${destination} ?`,
+    question: `A quelle heure arriver au port pour le ferry ${origin} - ${destination}?`,
     answer:
       "Arrivez au moins 90 minutes avant le depart pour les passagers a pied et 120 minutes avec vehicule. En haute saison, prevoyez plus de marge.",
   },
   {
-    question: "Ou reserver le billet de ferry ?",
+    question: "Ou reserver le billet de ferry?",
     answer:
       "BateauBillet ne vend pas directement. Utilisez le bouton Reserver pour etre redirige vers le site de reservation Balearia.",
   },

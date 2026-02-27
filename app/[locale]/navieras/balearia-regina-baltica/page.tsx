@@ -15,14 +15,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const canonical = `${SITE_URL}/${locale}/navieras/balearia-regina-baltica`;
   return {
-    title: "Balearia Regina Baltica : navire, liaisons et réservation ferry",
+    title: "Balearia Regina Baltica: navire, liaisons et réservation ferry",
     description:
-      "Navire Regina Baltica : liaisons long courrier, services à bord et réservation des billets ferry Balearia.",
+      "Navire Regina Baltica: liaisons long courrier, services à bord et réservation des billets ferry Balearia.",
     alternates: { canonical, languages: buildHreflang("/navieras/balearia-regina-baltica") },
     openGraph: {
       locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",
-      title: "Balearia Regina Baltica : navire et traversées",
+      title: "Balearia Regina Baltica: navire et traversées",
       description: "Informations sur le Regina Baltica et réservation ferry.",
       url: canonical,
       siteName: SITE_NAME,
@@ -35,7 +35,7 @@ export default async function BaleariaReginaBalticaPage({ params }: Props) {
   return (
     <div className="mx-auto max-w-3xl space-y-10 px-4 py-12">
       <h1 className="text-3xl font-bold text-sand-900 md:text-4xl">
-        Balearia Regina Baltica : navire et traversées ferry
+        Balearia Regina Baltica: navire et traversées ferry
       </h1>
       <p className="text-lg leading-relaxed text-sand-900/70">
         Le Regina Baltica est utilisé selon les saisons sur certaines liaisons
@@ -45,7 +45,7 @@ export default async function BaleariaReginaBalticaPage({ params }: Props) {
 
       <section>
         <h2 className="mb-4 text-xl font-bold text-sand-900">
-          Navire Regina Baltica : lignes et horaires
+          Navire Regina Baltica: lignes et horaires
         </h2>
         <h3 className="mb-2 text-lg font-semibold text-sand-900">
           Liaisons ferry Regina Baltica

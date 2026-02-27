@@ -35,13 +35,13 @@ export async function generateMetadata({
   }
   const canonical = `${SITE_URL}/${locale}/ports/${port}`;
   return {
-    title: `Port de ${portName} : ferry, horaires et traversées`,
+    title: `Port de ${portName}: ferry, horaires et traversées`,
     description: `Traversées au départ et à l'arrivée du port de ${portName}. Horaires, prix et réservation des billets ferry.`,
     alternates: { canonical, languages: buildHreflang(`/ports/${port}`) },
     openGraph: {
       locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",
-      title: `Port de ${portName} : ferry et traversées`,
+      title: `Port de ${portName}: ferry et traversées`,
       url: canonical,
       siteName: SITE_NAME,
     },

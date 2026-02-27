@@ -1728,4 +1728,16 @@
     <loc>https://bateaubillet.com/es/article/traversees-ramadan-2026</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/guides</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/guides</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/guides</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>

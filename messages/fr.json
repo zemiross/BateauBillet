@@ -45,6 +45,12 @@
     "pays": "pays",
     "compagnie": "compagnie"
   },
+  "guides": {
+    "pageTitle": "Guides et conseils de voyage ferry",
+    "pageDescription": "Tous nos guides pour préparer votre traversée : documents, meilleure période, ferry avec voiture, destinations et actualités.",
+    "metaTitle": "Guides voyage ferry Méditerranée | Bateau Billet",
+    "metaDescription": "Guides et articles pour réserver votre ferry vers le Maroc, l'Espagne et l'Algérie. Conseils pratiques, documents et bonnes périodes."
+  },
   "finder": {
     "depart": "Départ",
     "arrivee": "Arrivée",

@@ -59,7 +59,7 @@ export default function Navbar() {
             {t("avecVoiture")}
           </Link>
           <Link
-            href={`/${locale}/article/meilleure-periode-traversee-maroc-espagne`}
+            href={`/${locale}/guides`}
             className="rounded-lg px-3 py-2 text-sm font-medium text-ocean-100/80 transition-colors hover:bg-ocean-800 hover:text-white"
           >
             {t("guides")}

@@ -45,6 +45,12 @@
     "pays": "países",
     "compagnie": "compañía"
   },
+  "guides": {
+    "pageTitle": "Guías y consejos de viaje en ferry",
+    "pageDescription": "Todos nuestros guías para preparar tu travesía: documentos, mejor época, ferry con coche, destinos y actualidades.",
+    "metaTitle": "Guías de viaje ferry Mediterráneo | Bateau Billet",
+    "metaDescription": "Guías y artículos para reservar tu ferry a Marruecos, España y Argelia. Consejos prácticos, documentos y mejores fechas."
+  },
   "finder": {
     "depart": "Salida",
     "arrivee": "Llegada",

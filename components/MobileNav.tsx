@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { routes } from "@/data/routes";
 import { countryOrder, countryThemes } from "@/lib/country-theme";
 import { BOOKING_URL } from "@/lib/site";
@@ -18,6 +18,7 @@ type MobileNavProps = {
 
 export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
   const locale = useLocale();
+  const t = useTranslations("nav");
   const prefersReduced = useReducedMotion();
   const [expandedCountry, setExpandedCountry] = useState<string | null>(null);
 
@@ -66,12 +67,22 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
               <ul className="space-y-1">
                 <li>
                   <Link
+                    href={`/${locale}/guides`}
+                    className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-ocean-100/90 transition-colors hover:bg-ocean-800 hover:text-white"
+                    onClick={onClose}
+                  >
+                    <Icon name="compass" size={18} />
+                    {t("guides")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href={`/${locale}/info/avec-voiture`}
                     className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-ocean-100/90 transition-colors hover:bg-ocean-800 hover:text-white"
                     onClick={onClose}
                   >
                     <Icon name="car" size={18} />
-                    Bateau avec voiture
+                    {t("avecVoiture")}
                   </Link>
                 </li>
                 <li>
@@ -81,7 +92,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     onClick={onClose}
                   >
                     <Icon name="ship" size={18} />
-                    Compagnies
+                    {t("compagnies")}
                   </Link>
                 </li>
               </ul>

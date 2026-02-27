@@ -8,6 +8,7 @@ import InfoAccordion from "@/components/InfoAccordion";
 import InfoCard from "@/components/InfoCard";
 import RouteCard from "@/components/RouteCard";
 import RouteHero from "@/components/RouteHero";
+import SchemaArticle from "@/components/SchemaArticle";
 import SchemaFAQ from "@/components/SchemaFAQ";
 import SchemaTrip from "@/components/SchemaTrip";
 import StickyBookingBar from "@/components/StickyBookingBar";
@@ -102,6 +103,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
 
   const tRoute = await getTranslations({ locale, namespace: "route" });
   const tPorts = await getTranslations({ locale, namespace: "ports" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
 
   /* ── Article pages (guides) ── */
   if (country === ARTICLE_COUNTRY) {
@@ -116,6 +118,12 @@ export default async function CountrySegmentPage({ params }: PageProps) {
     );
     return (
       <article className="mx-auto max-w-3xl px-4 py-12">
+        <SchemaArticle
+          article={article}
+          title={title}
+          description={description}
+          locale={locale}
+        />
         <div className="mb-8">
           <p className="mb-2 text-sm text-sand-900/50">
             {tArticles("publishedOn")} {article.publishedAt}
@@ -181,6 +189,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           <Breadcrumb
             items={[
               { name: SITE_NAME, href: `/${locale}` },
+              { name: tNav("guides"), href: `/${locale}/guides` },
               { name: title, href: `/${locale}${article.canonicalPath}` },
             ]}
           />

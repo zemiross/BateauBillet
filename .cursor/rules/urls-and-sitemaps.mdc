@@ -1,0 +1,31 @@
+---
+description: When changing URLs, always update .htaccess, sitemap, and image sitemap.
+globs: 
+alwaysApply: true
+---
+
+# URLs, .htaccess, and sitemaps
+
+Whenever you make **changes that affect URLs** (new routes, new pages, redirects, locale prefix changes, or path renames), you must:
+
+1. **Update `public/.htaccess`**  
+   - Ensure every redirect target uses the **locale-prefixed** path with default locale: `https://bateaubillet.com/fr/...` (e.g. `/fr/espagne/valence-mostaganem`, `/fr/navieras/balearia`).  
+   - Add or adjust rules for any new or changed paths so old URLs redirect to the correct canonical URL.
+
+2. **Regenerate the main sitemap**  
+   - Run: `npm run sitemap`  
+   - This updates `public/sitemap.xml` with locale-prefixed URLs (`/fr/...`, `/ar/...`) for all pages.  
+   - If you added new routes or pages, add their path + priority to the sitemap source (the script reads existing sitemap and adds port pages; for new route paths, add them to the sitemap first or extend the generator).
+
+3. **Regenerate the image sitemap**  
+   - Run: `npm run image-sitemap`  
+   - This updates `public/image-sitemap.xml` with all images under `public/images`, assigned to the correct locale-prefixed page URLs.  
+   - If you added new route images (new slugs), ensure `scripts/generate-image-sitemap.mjs` includes those route paths in its priority map so new images get the right page URL and priority.
+
+**Quick command to refresh both sitemaps:**  
+`npm run sitemaps`
+
+**Checklist when changing URLs:**  
+- [ ] `.htaccess` redirect targets use `/fr/...` (or correct locale)  
+- [ ] `npm run sitemap` run and `public/sitemap.xml` committed  
+- [ ] `npm run image-sitemap` run and `public/image-sitemap.xml` committed  

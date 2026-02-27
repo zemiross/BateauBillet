@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "image-sitemap": "node scripts/generate-image-sitemap.mjs",
+    "sitemaps": "npm run sitemap && npm run image-sitemap"
   },
   "dependencies": {
     "@next/third-parties": "^16.1.6",

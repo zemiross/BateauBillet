@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://bateaubillet.com</loc>
+    <loc>https://bateaubillet.com/fr</loc>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-billet.jpg</image:loc>
@@ -20,14 +20,40 @@
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/algerie/mostaganem-valence</loc>
+    <loc>https://bateaubillet.com/ar</loc>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/bateau-billet.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/bateau-valence-mostaganem-a-partir-de-95-euros.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/bateaubillet.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/bientot.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/billet-bateau.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/algerie/mostaganem-valence</loc>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/mostaganem-valence.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/valence-mostaganem</loc>
+    <loc>https://bateaubillet.com/ar/algerie/mostaganem-valence</loc>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/mostaganem-valence.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/valence-mostaganem</loc>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/valence-mostaganem.jpg</image:loc>
@@ -37,56 +63,213 @@
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/france/sete-nador</loc>
+    <loc>https://bateaubillet.com/ar/espagne/valence-mostaganem</loc>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/valence-mostaganem.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/valence-mostaganem.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/france/sete-nador</loc>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/sete-nador.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/france/sete-tanger</loc>
+    <loc>https://bateaubillet.com/ar/france/sete-nador</loc>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/sete-nador.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/france/sete-tanger</loc>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/sete-tanger.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/maroc/tanger-sete</loc>
+    <loc>https://bateaubillet.com/ar/france/sete-tanger</loc>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/sete-tanger.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/tanger-sete</loc>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/tanger-sete.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/algeciras-ceuta</loc>
+    <loc>https://bateaubillet.com/ar/maroc/tanger-sete</loc>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-sete.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/algerie/alger-barcelona</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/alger-barcelona.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/algerie/alger-barcelona</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/alger-barcelona.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/algerie/alger-valence</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/alger-valence.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/algerie/alger-valence</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/alger-valence.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/algerie/oran-valence</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/oran-valence.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/algerie/oran-valence</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/oran-valence.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/algeciras-ceuta</loc>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/algeciras-ceuta.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/algeciras-tanger</loc>
+    <loc>https://bateaubillet.com/ar/espagne/algeciras-ceuta</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/algeciras-ceuta.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/algeciras-tanger</loc>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/algeciras-tanger.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/almeria-nador</loc>
+    <loc>https://bateaubillet.com/ar/espagne/algeciras-tanger</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/algeciras-tanger.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/almeria-nador</loc>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/almeria-nador.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/ceuta-algeciras</loc>
+    <loc>https://bateaubillet.com/ar/espagne/almeria-nador</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/almeria-nador.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/barcelona-alger</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/barcelona-alger.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/espagne/barcelona-alger</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/barcelona-alger.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/ceuta-algeciras</loc>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/ceuta-algeciras.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/navieras/balearia</loc>
+    <loc>https://bateaubillet.com/ar/espagne/ceuta-algeciras</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/ceuta-algeciras.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/tarifa-tanger-ville</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tarifa-tanger-ville.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/espagne/tarifa-tanger-ville</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tarifa-tanger-ville.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/valence-alger</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/valence-alger.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/espagne/valence-alger</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/valence-alger.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/valence-oran</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/valence-oran.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/espagne/valence-oran</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/valence-oran.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/navieras/balearia</loc>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/balearia-bahama-mama.jpg</image:loc>
@@ -141,91 +324,298 @@
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/almeria-melilla</loc>
+    <loc>https://bateaubillet.com/ar/navieras/balearia</loc>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-bahama-mama.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-baleria.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-black-friday-pas-cher.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/1000x353%20(2)%20(1).jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/2-BA_HERO_MarruecosFM_PC_2023.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/Aereo_Rusadir_1570x1032.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/avmear4.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/bahama5.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/BA_BM_1920X400.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/BA_CABECERA-NAVIDAD-MARRUECOS_1920x400.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/BA_Semana_Internet_Marruecis_1920x400.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/En_Familia_1000x353%20(2).jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/hedy2.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/hypatia_de_alejandr%C3%ADa_pruebas_de_mar.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/morocco_fr-FR.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/BCO%20IMAGES/phpmTeAq0.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/almeria-melilla</loc>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/almeria-melilla.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/motril-tanger</loc>
+    <loc>https://bateaubillet.com/ar/espagne/almeria-melilla</loc>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://bateaubillet.com/images/motril-tanger.jpg</image:loc>
+      <image:loc>https://bateaubillet.com/images/almeria-melilla.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/maroc/nador-sete</loc>
+    <loc>https://bateaubillet.com/fr/espagne/motril-tanger-med</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/motril-tanger-med.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/espagne/motril-tanger-med</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/motril-tanger-med.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/nador-sete</loc>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/nador-sete.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/maroc/tanger-algeciras</loc>
+    <loc>https://bateaubillet.com/ar/maroc/nador-sete</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/nador-sete.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/tanger-algeciras</loc>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/tanger-algeciras.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/maroc/tanger-motril</loc>
+    <loc>https://bateaubillet.com/ar/maroc/tanger-algeciras</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-algeciras.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/tanger-med-motril</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-med-motril.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/maroc/tanger-med-motril</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-med-motril.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/tanger-motril</loc>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/tanger-motril.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/melilla-almeria</loc>
+    <loc>https://bateaubillet.com/ar/maroc/tanger-motril</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-motril.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/tanger-ville-tarifa</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-ville-tarifa.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/maroc/tanger-ville-tarifa</loc>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/tanger-ville-tarifa.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/melilla-almeria</loc>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/melilla-almeria.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/melilla-malaga</loc>
+    <loc>https://bateaubillet.com/ar/espagne/melilla-almeria</loc>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/melilla-almeria.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/melilla-malaga</loc>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/melilla-malaga.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/melilla-motril</loc>
+    <loc>https://bateaubillet.com/ar/espagne/melilla-malaga</loc>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/melilla-malaga.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/melilla-motril</loc>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/melilla-motril.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/motril-melilla</loc>
+    <loc>https://bateaubillet.com/ar/espagne/melilla-motril</loc>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/melilla-motril.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/motril-melilla</loc>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/motril-melilla.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/maroc/nador-almeria</loc>
+    <loc>https://bateaubillet.com/ar/espagne/motril-melilla</loc>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/motril-melilla.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/maroc/nador-almeria</loc>
     <priority>0.6</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/nador-almeria.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/espagne/malaga-melilla</loc>
+    <loc>https://bateaubillet.com/ar/maroc/nador-almeria</loc>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/nador-almeria.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/espagne/malaga-melilla</loc>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/malaga-melilla.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/info/avec-voiture</loc>
+    <loc>https://bateaubillet.com/ar/espagne/malaga-melilla</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/malaga-melilla.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/info/avec-voiture</loc>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-avec-voiture.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://bateaubillet.com/navieras/balearia-regina-baltica</loc>
+    <loc>https://bateaubillet.com/ar/info/avec-voiture</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/bateau-avec-voiture.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/navieras/balearia-regina-baltica</loc>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-01.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-02.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-03.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-04.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-05.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-06.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-bodega.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-butacas-01.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-butacas-02.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-camarotes-01.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-camarotes-02.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/balearia-regina-baltica.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/navieras/balearia-regina-baltica</loc>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/balearia-regina-baltica-01.jpg</image:loc>

@@ -12,58 +12,61 @@ RewriteRule ^ https://bateaubillet.com%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.bateaubillet\.com [NC]
 RewriteRule ^(.*)$ https://bateaubillet.com/$1 [L,R=301]
 
-# politica-cookies=1: strip query and .php, redirect to new clean URL
+# Default locale for redirects (site uses /fr/ and /ar/)
+RewriteRule ^$ https://bateaubillet.com/fr/ [L,R=301]
+
+# politica-cookies=1: strip query and .php, redirect to locale-prefixed URL
 RewriteCond %{QUERY_STRING} ^politica-cookies=1$ [NC]
-RewriteRule ^(algerie|espagne|france|maroc)/([^.]+)\.php$ https://bateaubillet.com/$1/$2? [L,R=301]
+RewriteRule ^(algerie|espagne|france|maroc)/([^.]+)\.php$ https://bateaubillet.com/fr/$1/$2? [L,R=301]
 RewriteCond %{QUERY_STRING} ^politica-cookies=1$ [NC]
-RewriteRule ^index\.php$ https://bateaubillet.com/? [L,R=301]
+RewriteRule ^index\.php$ https://bateaubillet.com/fr/? [L,R=301]
 
-# Typos (old URLs -> new URLs without .php)
-RewriteRule ^espagne/algesiras-tanger\.php$ https://bateaubillet.com/espagne/algeciras-tanger [L,R=301]
-RewriteRule ^maroc/tanger-algesiras\.php$ https://bateaubillet.com/maroc/tanger-algeciras [L,R=301]
+# Typos (old URLs -> new locale-prefixed URLs)
+RewriteRule ^espagne/algesiras-tanger\.php$ https://bateaubillet.com/fr/espagne/algeciras-tanger [L,R=301]
+RewriteRule ^maroc/tanger-algesiras\.php$ https://bateaubillet.com/fr/maroc/tanger-algeciras [L,R=301]
 
-# index.php -> homepage
-RewriteRule ^index\.php$ https://bateaubillet.com/ [L,R=301]
+# index.php -> homepage (default locale)
+RewriteRule ^index\.php$ https://bateaubillet.com/fr/ [L,R=301]
 
-# Legal / static .php -> new paths
-RewriteRule ^bateau-avec-voiture\.php$ https://bateaubillet.com/info/avec-voiture [L,R=301]
-RewriteRule ^info/avec-voiture/bateau-avec-voiture\.php$ https://bateaubillet.com/info/avec-voiture [L,R=301]
-RewriteRule ^balearia\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
-RewriteRule ^balearia-regina-baltica\.php$ https://bateaubillet.com/navieras/balearia-regina-baltica [L,R=301]
-RewriteRule ^avis-juridique\.php$ https://bateaubillet.com/avis-juridique [L,R=301]
-RewriteRule ^conditions-de-utilisation\.php$ https://bateaubillet.com/conditions-de-utilisation [L,R=301]
-RewriteRule ^politique-de-confidentialite\.php$ https://bateaubillet.com/politique-de-confidentialite [L,R=301]
-RewriteRule ^politique-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
-RewriteRule ^changements-et-echanges\.php$ https://bateaubillet.com/changements-et-echanges [L,R=301]
+# Legal / static .php -> new locale-prefixed paths
+RewriteRule ^bateau-avec-voiture\.php$ https://bateaubillet.com/fr/info/avec-voiture [L,R=301]
+RewriteRule ^info/avec-voiture/bateau-avec-voiture\.php$ https://bateaubillet.com/fr/info/avec-voiture [L,R=301]
+RewriteRule ^balearia\.php$ https://bateaubillet.com/fr/navieras/balearia [L,R=301]
+RewriteRule ^balearia-regina-baltica\.php$ https://bateaubillet.com/fr/navieras/balearia-regina-baltica [L,R=301]
+RewriteRule ^avis-juridique\.php$ https://bateaubillet.com/fr/avis-juridique [L,R=301]
+RewriteRule ^conditions-de-utilisation\.php$ https://bateaubillet.com/fr/conditions-de-utilisation [L,R=301]
+RewriteRule ^politique-de-confidentialite\.php$ https://bateaubillet.com/fr/politique-de-confidentialite [L,R=301]
+RewriteRule ^politique-de-cookies\.php$ https://bateaubillet.com/fr/politique-de-cookies [L,R=301]
+RewriteRule ^changements-et-echanges\.php$ https://bateaubillet.com/fr/changements-et-echanges [L,R=301]
 
-# Article .php -> new /article/slug URLs
-RewriteRule ^meilleure-periode-traversee-maroc-espagne\.php$ https://bateaubillet.com/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
-RewriteRule ^documents-voyage-ferry-maroc\.php$ https://bateaubillet.com/article/documents-voyage-ferry-maroc [L,R=301]
-RewriteRule ^ferry-avec-voiture-conseils\.php$ https://bateaubillet.com/article/ferry-avec-voiture-conseils [L,R=301]
+# Article .php -> locale-prefixed /article/slug
+RewriteRule ^meilleure-periode-traversee-maroc-espagne\.php$ https://bateaubillet.com/fr/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
+RewriteRule ^documents-voyage-ferry-maroc\.php$ https://bateaubillet.com/fr/article/documents-voyage-ferry-maroc [L,R=301]
+RewriteRule ^ferry-avec-voiture-conseils\.php$ https://bateaubillet.com/fr/article/ferry-avec-voiture-conseils [L,R=301]
 
-# Article URLs without .php -> /article/slug (Apache-only fallback)
-RewriteRule ^meilleure-periode-traversee-maroc-espagne$ https://bateaubillet.com/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
-RewriteRule ^documents-voyage-ferry-maroc$ https://bateaubillet.com/article/documents-voyage-ferry-maroc [L,R=301]
-RewriteRule ^ferry-avec-voiture-conseils$ https://bateaubillet.com/article/ferry-avec-voiture-conseils [L,R=301]
+# Article URLs without .php -> locale-prefixed (Apache-only fallback)
+RewriteRule ^meilleure-periode-traversee-maroc-espagne$ https://bateaubillet.com/fr/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
+RewriteRule ^documents-voyage-ferry-maroc$ https://bateaubillet.com/fr/article/documents-voyage-ferry-maroc [L,R=301]
+RewriteRule ^ferry-avec-voiture-conseils$ https://bateaubillet.com/fr/article/ferry-avec-voiture-conseils [L,R=301]
 
 # Navieras under /navieras/ path
-RewriteRule ^navieras/balearia\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
-RewriteRule ^navieras/balearia-regina-baltica\.php$ https://bateaubillet.com/navieras/balearia-regina-baltica [L,R=301]
+RewriteRule ^navieras/balearia\.php$ https://bateaubillet.com/fr/navieras/balearia [L,R=301]
+RewriteRule ^navieras/balearia-regina-baltica\.php$ https://bateaubillet.com/fr/navieras/balearia-regina-baltica [L,R=301]
 
 # Spanish spelling variant (politica -> politique)
-RewriteRule ^politica-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
+RewriteRule ^politica-de-cookies\.php$ https://bateaubillet.com/fr/politique-de-cookies [L,R=301]
 
-# info/compagnies, info/informations, info/politiques -> new paths
-RewriteRule ^info/compagnies/balearia\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
-RewriteRule ^info/informations/balearia-black-friday\.php$ https://bateaubillet.com/navieras/balearia [L,R=301]
-RewriteRule ^info/politiques/changements-et-echanges\.php$ https://bateaubillet.com/changements-et-echanges [L,R=301]
-RewriteRule ^info/politiques/conditiona-de-utilisation\.php$ https://bateaubillet.com/conditions-de-utilisation [L,R=301]
-RewriteRule ^info/politiques/avis-juridique\.php$ https://bateaubillet.com/avis-juridique [L,R=301]
-RewriteRule ^info/politiques/politique-de-confidentialite\.php$ https://bateaubillet.com/politique-de-confidentialite [L,R=301]
-RewriteRule ^info/politiques/politique-de-cookies\.php$ https://bateaubillet.com/politique-de-cookies [L,R=301]
+# info/compagnies, info/informations, info/politiques -> locale-prefixed paths
+RewriteRule ^info/compagnies/balearia\.php$ https://bateaubillet.com/fr/navieras/balearia [L,R=301]
+RewriteRule ^info/informations/balearia-black-friday\.php$ https://bateaubillet.com/fr/navieras/balearia [L,R=301]
+RewriteRule ^info/politiques/changements-et-echanges\.php$ https://bateaubillet.com/fr/changements-et-echanges [L,R=301]
+RewriteRule ^info/politiques/conditiona-de-utilisation\.php$ https://bateaubillet.com/fr/conditions-de-utilisation [L,R=301]
+RewriteRule ^info/politiques/avis-juridique\.php$ https://bateaubillet.com/fr/avis-juridique [L,R=301]
+RewriteRule ^info/politiques/politique-de-confidentialite\.php$ https://bateaubillet.com/fr/politique-de-confidentialite [L,R=301]
+RewriteRule ^info/politiques/politique-de-cookies\.php$ https://bateaubillet.com/fr/politique-de-cookies [L,R=301]
 
-# Route .php (generic): /country/slug.php -> /country/slug
-RewriteRule ^(france|maroc|espagne|algerie)/([^.]+)\.php$ https://bateaubillet.com/$1/$2 [L,R=301]
+# Route .php (generic): /country/slug.php -> /fr/country/slug
+RewriteRule ^(france|maroc|espagne|algerie)/([^.]+)\.php$ https://bateaubillet.com/fr/$1/$2 [L,R=301]
 
 # ---------------------------------------------------------------------------
 # Cache / expires (unchanged from previous .htaccess)

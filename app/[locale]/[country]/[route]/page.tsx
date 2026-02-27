@@ -144,9 +144,29 @@ export default async function CountrySegmentPage({ params }: PageProps) {
             {tArticles("guideDetailSubtitle")}
           </h3>
           <div className="space-y-4 text-base leading-relaxed text-sand-900/80">
-            {contentParagraphs.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {contentParagraphs.map((block, i) => {
+              if (block.startsWith("H2: ")) {
+                return (
+                  <h2
+                    key={i}
+                    className="mt-8 mb-3 text-xl font-bold text-sand-900 border-l-4 border-ocean-600 pl-4"
+                  >
+                    {block.slice(4)}
+                  </h2>
+                );
+              }
+              if (block.startsWith("H3: ")) {
+                return (
+                  <h3
+                    key={i}
+                    className="mt-6 mb-2 text-lg font-semibold text-sand-900"
+                  >
+                    {block.slice(4)}
+                  </h3>
+                );
+              }
+              return <p key={i}>{block}</p>;
+            })}
           </div>
         </section>
 

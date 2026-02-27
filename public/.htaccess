@@ -43,11 +43,13 @@ RewriteRule ^changements-et-echanges\.php$ https://bateaubillet.com/fr/changemen
 RewriteRule ^meilleure-periode-traversee-maroc-espagne\.php$ https://bateaubillet.com/fr/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
 RewriteRule ^documents-voyage-ferry-maroc\.php$ https://bateaubillet.com/fr/article/documents-voyage-ferry-maroc [L,R=301]
 RewriteRule ^ferry-avec-voiture-conseils\.php$ https://bateaubillet.com/fr/article/ferry-avec-voiture-conseils [L,R=301]
+RewriteRule ^5-raisons-visiter-valence-printemps\.php$ https://bateaubillet.com/fr/article/5-raisons-visiter-valence-printemps [L,R=301]
 
 # Article URLs without .php -> locale-prefixed (Apache-only fallback)
 RewriteRule ^meilleure-periode-traversee-maroc-espagne$ https://bateaubillet.com/fr/article/meilleure-periode-traversee-maroc-espagne [L,R=301]
 RewriteRule ^documents-voyage-ferry-maroc$ https://bateaubillet.com/fr/article/documents-voyage-ferry-maroc [L,R=301]
 RewriteRule ^ferry-avec-voiture-conseils$ https://bateaubillet.com/fr/article/ferry-avec-voiture-conseils [L,R=301]
+RewriteRule ^5-raisons-visiter-valence-printemps$ https://bateaubillet.com/fr/article/5-raisons-visiter-valence-printemps [L,R=301]
 
 # Navieras under /navieras/ path
 RewriteRule ^navieras/balearia\.php$ https://bateaubillet.com/fr/navieras/balearia [L,R=301]

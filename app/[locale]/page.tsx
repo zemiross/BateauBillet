@@ -49,11 +49,24 @@ export default async function HomePage({ params }: Props) {
           preserveAspectRatio="none"
           aria-hidden="true"
         >
-          <path d="M0 100 Q100 40 200 100 T400 100 V200 H0Z" fill="white" />
+          <path
+            d="M0 100 Q100 40 200 100 T400 100 V200 H0Z"
+            fill="white"
+            style={{
+              backgroundClip: "unset",
+              WebkitBackgroundClip: "unset",
+              backgroundImage: "none",
+            }}
+          />
           <path
             d="M0 140 Q100 80 200 140 T400 140 V200 H0Z"
             fill="white"
             opacity="0.5"
+            style={{
+              backgroundClip: "unset",
+              WebkitBackgroundClip: "unset",
+              backgroundImage: "none",
+            }}
           />
         </svg>
 
@@ -180,7 +193,15 @@ export default async function HomePage({ params }: Props) {
           preserveAspectRatio="none"
           aria-hidden="true"
         >
-          <path d="M0 100 Q100 40 200 100 T400 100 V200 H0Z" fill="white" />
+          <path
+            d="M0 100 Q100 40 200 100 T400 100 V200 H0Z"
+            fill="white"
+            style={{
+              backgroundClip: "unset",
+              WebkitBackgroundClip: "unset",
+              backgroundImage: "none",
+            }}
+          />
         </svg>
 
         <div className="relative mx-auto max-w-3xl px-4 py-16 text-center md:py-24">

@@ -2,13 +2,16 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { routes } from "@/data/routes";
 import { getUniqueOrigins, getDestinationsForOrigin, findRoute } from "@/lib/routes-utils";
 import Icon from "./ui/Icon";
 import Button from "./ui/Button";
 
 export default function RouteFinder() {
+  const locale = useLocale();
   const router = useRouter();
+  const t = useTranslations("finder");
   const [origin, setOrigin] = useState("");
   const [destination, setDestination] = useState("");
   const [error, setError] = useState("");
@@ -28,14 +31,14 @@ export default function RouteFinder() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!origin || !destination) {
-      setError("Selectionnez un port de depart et d'arrivee.");
+      setError(t("errorSelect"));
       return;
     }
     const route = findRoute(origin, destination);
     if (route) {
-      router.push(route.canonicalPath);
+      router.push(`/${locale}${route.canonicalPath}`);
     } else {
-      setError("Aucune liaison directe trouvee pour cette combinaison.");
+      setError(t("errorNotFound"));
     }
   }
 
@@ -62,7 +65,7 @@ export default function RouteFinder() {
               onChange={(e) => handleOriginChange(e.target.value)}
               className="w-full appearance-none rounded-xl border-0 bg-white py-3 pl-9 pr-8 text-sm font-medium text-sand-900 shadow-sm outline-none focus:ring-2 focus:ring-coral-500"
             >
-              <option value="">Port de depart</option>
+              <option value="">{t("portDepart")}</option>
               {origins.map((port) => (
                 <option key={port} value={port}>
                   {port}
@@ -83,7 +86,7 @@ export default function RouteFinder() {
             htmlFor="finder-dest"
             className="mb-1 block text-xs font-medium text-ocean-100/60"
           >
-            Arrivee
+            {t("arrivee")}
           </label>
           <div className="relative">
             <Icon
@@ -101,7 +104,7 @@ export default function RouteFinder() {
               disabled={!origin}
               className="w-full appearance-none rounded-xl border-0 bg-white py-3 pl-9 pr-8 text-sm font-medium text-sand-900 shadow-sm outline-none focus:ring-2 focus:ring-coral-500 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              <option value="">Port d&apos;arrivee</option>
+              <option value="">{t("portArrivee")}</option>
               {destinations.map((port) => (
                 <option key={port} value={port}>
                   {port}
@@ -124,7 +127,7 @@ export default function RouteFinder() {
           icon="search"
           className="w-full sm:w-auto"
         >
-          Rechercher
+          {t("rechercher")}
         </Button>
       </div>
 

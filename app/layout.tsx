@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { GOOGLE_SITE_VERIFICATION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const GA_MEASUREMENT_ID = "G-NEG94NYQ2S";
@@ -41,9 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html suppressHydrationWarning>
       <body className={`${inter.variable} ${dmSerif.variable} antialiased`}>
-        {/* Google tag (gtag.js) - beforeInteractive injects into head */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="beforeInteractive"
@@ -56,9 +53,7 @@ export default function RootLayout({
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

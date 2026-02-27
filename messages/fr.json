@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "liaisons": "Liaisons",
+    "compagnies": "Compagnies",
+    "avecVoiture": "Avec voiture",
+    "guides": "Guides",
+    "reserver": "Réserver",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "footer": {
+    "tagline": "Information et comparaison de traversées ferry en Méditerranée. Réservation via Balearia.",
+    "popularRoutes": "Liaisons populaires",
+    "informations": "Informations",
+    "legal": "Legal",
+    "reservationSecurisee": "Réservation sécurisée",
+    "copyright": "Site d'information. Réservation via balearia.com.",
+    "links": {
+      "avecVoiture": "Bateau avec voiture",
+      "balearia": "Balearia",
+      "changements": "Changements et échanges",
+      "guides": "Guides de voyage",
+      "avisJuridique": "Avis juridique",
+      "conditions": "Conditions d'utilisation",
+      "confidentialite": "Confidentialité",
+      "cookies": "Cookies"
+    }
+  },
+  "home": {
+    "title": "Trouvez votre billet de bateau",
+    "titleHighlight": "pour traverser la Méditerranée",
+    "subtitle": "Comparez horaires et prix pour {count} liaisons ferry entre la France, le Maroc, l'Espagne et l'Algérie.",
+    "liaisonsPopulaires": "Liaisons populaires",
+    "liaisonsPopulairesDesc": "Les traversées les plus recherchées au meilleur prix",
+    "toutesLiaisons": "Toutes les liaisons par pays",
+    "toutesLiaisonsDesc": "Explorez les traversées depuis chaque pays de départ",
+    "commentCaMarche": "Comment ça marche ?",
+    "commentCaMarcheDesc": "Trouvez et réservez votre ferry en 3 étapes simples",
+    "guidesVoyage": "Conseils et guides de voyage",
+    "guidesVoyageDesc": "Préparez votre traversée avec nos guides pratiques",
+    "pretEmbarquer": "Prêt à embarquer ?",
+    "pretEmbarquerDesc": "Trouvez les meilleurs tarifs ferry pour votre prochaine traversée en Méditerranée.",
+    "voirHorairesPrix": "Voir les horaires et prix",
+    "liaisons": "liaisons",
+    "pays": "pays",
+    "compagnie": "compagnie"
+  },
+  "finder": {
+    "depart": "Départ",
+    "arrivee": "Arrivée",
+    "portDepart": "Port de départ",
+    "portArrivee": "Port d'arrivée",
+    "rechercher": "Rechercher",
+    "errorSelect": "Sélectionnez un port de départ et d'arrivée.",
+    "errorNotFound": "Aucune liaison directe trouvée pour cette combinaison."
+  },
+  "trustBar": {
+    "reservation": "Réservation sécurisée",
+    "viaBalearia": "via Balearia",
+    "comparaison": "Comparaison gratuite",
+    "horairesPrix": "horaires et prix",
+    "compagnie": "Compagnie",
+    "balearia": "Balearia",
+    "pays": "4 pays",
+    "paysList": "France, Maroc, Espagne, Algérie"
+  },
+  "megaMenu": {
+    "liaisonsCount": "{count} liaisons ferry disponibles en Méditerranée"
+  },
+  "countries": {
+    "france": "Depuis la France",
+    "maroc": "Depuis le Maroc",
+    "espagne": "Depuis l'Espagne",
+    "algerie": "Depuis l'Algérie"
+  },
+  "ports": {
+    "Sete": "Sète",
+    "Nador": "Nador",
+    "Tanger Med": "Tanger Med",
+    "Tanger Ville": "Tanger Ville",
+    "Tanger": "Tanger",
+    "Algeciras": "Algésiras",
+    "Ceuta": "Ceuta",
+    "Almeria": "Almería",
+    "Melilla": "Melilla",
+    "Motril": "Motril",
+    "Malaga": "Málaga",
+    "Valence": "Valence",
+    "Mostaganem": "Mostaganem",
+    "Barcelona": "Barcelone",
+    "Alger": "Alger",
+    "Oran": "Oran",
+    "Tarifa": "Tarifa"
+  },
+  "route": {
+    "ferryTitle": "Ferry {origin} – {destination} : horaires, prix et billets",
+    "horairesFrequence": "Horaires et fréquence ferry {origin} – {destination}",
+    "tarifsReservation": "Tarifs et réservation billet ferry {origin} {destination}",
+    "prixReference": "Prix de référence",
+    "prixIndicatif": "Les prix évoluent selon la saison, la demande et le type de billet. Ce tarif est indicatif.",
+    "infosPratiques": "Informations pratiques traversée {origin} – {destination}",
+    "naviresCompagnies": "Navires et compagnies ferry {origin} {destination}",
+    "accesPort": "Accès port et formalités {origin} – {destination}",
+    "avisVoyageurs": "Avis voyageurs ferry {origin} {destination}",
+    "aproposLiaison": "À propos de la liaison {origin} {destination}",
+    "faq": "Questions fréquentes : ferry {origin} {destination}",
+    "liaisonsAlternatives": "Liaisons alternatives depuis {origin} ou vers {destination}",
+    "voirHorairesPrix": "Voir les horaires et prix",
+    "schedule": {
+      "frequence": "Fréquence",
+      "enregistrement": "Enregistrement",
+      "conseil": "Conseil pratique"
+    },
+    "scheduleDetails": {
+      "frequence": "{frequency}. Les départs exacts varient selon la saison.",
+      "enregistrement": "Arrivez au port au moins 90 minutes avant le départ passager, 120 minutes avec véhicule.",
+      "conseil": "Vérifiez la météo et les conditions du port de {origin} et {destination} avant le départ."
+    },
+    "faqItems": {
+      "priceQuestion": "Quel est le prix minimum pour {origin} - {destination} ?",
+      "priceAnswer": "Les tarifs commencent à partir de {price}EUR, selon saison, disponibilité et type de billet.",
+      "carQuestion": "Peut-on embarquer avec voiture sur {origin} - {destination} ?",
+      "carAnswer": "Oui, selon la compagnie et le navire. Comparez les options passager et véhicule avant de réserver.",
+      "bookQuestion": "Où réserver le billet de ferry ?",
+      "bookAnswer": "BateauBillet ne vend pas directement. Utilisez le bouton Réserver pour être redirigé vers le site de réservation Balearia."
+    },
+    "naviresDesc": "Les navires disponibles peuvent varier selon la période. Consultez la disponibilité en temps réel via la plateforme de réservation.",
+    "accesPortDesc": "Avant de partir de {origin} vers {destination}, vérifiez les accès portuaires, les formalités et les conditions d'embarquement.",
+    "avisDesc": "Les retours d'expérience varient selon la saison et l'affluence. Comparez horaires et options avant de réserver."
+  },
+  "howItWorks": {
+    "step": "Étape",
+    "step1Title": "Choisissez votre liaison",
+    "step1Desc": "Sélectionnez le port de départ et d'arrivée",
+    "step2Title": "Comparez les horaires",
+    "step2Desc": "Consultez les tarifs et fréquences",
+    "step3Title": "Réservez en direct",
+    "step3Desc": "Accédez à la réservation Balearia"
+  },
+  "routeCard": {
+    "from": "dès",
+    "reserver": "Réserver",
+    "eur": "EUR",
+    "bestPrice": "Meilleur prix",
+    "hours": "h",
+    "frequency": {
+      "1-2-weekly": "1 à 2 liaisons/sem.",
+      "2-plus-daily": "2+ départs/jour",
+      "3-5-weekly": "3 à 5 liaisons/sem.",
+      "1-daily": "1 départ/jour",
+      "2-plus-weekly": "2+ départs/sem."
+    }
+  },
+  "navieras": {
+    "balearia": {
+      "metaTitle": "Balearia : ferry, horaires et réservation – BateauBillet",
+      "metaDescription": "Lignes ferry Balearia entre Espagne, Maroc, Algérie et France. Horaires, tarifs et réservation des billets pour les traversées Méditerranée.",
+      "metaOgTitle": "Balearia : ferry et traversées Méditerranée",
+      "title": "Balearia : ferry, horaires et réservation",
+      "intro": "Balearia est l'opérateur principal référencé sur BateauBillet pour les traversées en Méditerranée : France, Espagne, Maroc et Algérie.",
+      "h2Lines": "Lignes et traversées ferry Balearia",
+      "linesDesc": "La compagnie Balearia assure des liaisons régulières entre plusieurs ports. Comparez horaires et prix pour réserver votre billet.",
+      "h2Tarifs": "Tarifs et réservation billet ferry Balearia",
+      "h3Reserver": "Réserver un ferry Balearia",
+      "tarifsDesc": "Les tarifs varient selon la liaison, la saison et le type de billet (passager ou véhicule). Réservez en avance pour profiter des meilleurs prix sur les traversées Balearia.",
+      "h2Infos": "Compagnie Balearia : informations pratiques",
+      "h3Navires": "Navires et services à bord",
+      "naviresDesc": "Balearia exploite plusieurs navires sur les lignes France–Maroc, Espagne–Maroc et Espagne–Algérie. Les services (restauration, cabines, wifi) dépendent du bateau et de la liaison. Consultez les horaires et conditions au moment de la réservation."
+    },
+    "breadcrumbNavieras": "Navieras"
+  },
+  "bookingCta": {
+    "reserver": "Réserver votre billet"
+  },
+  "port": {
+    "title": "Port de {name} : ferry, horaires et traversées",
+    "description": "Retrouvez toutes les liaisons ferry au départ ou à l'arrivée du port de {name}. Comparez horaires, tarifs et compagnies pour réserver votre billet.",
+    "departures": "Traversées au départ du port de {name}",
+    "arrivals": "Traversées à l'arrivée au port de {name}",
+    "noDepartures": "Aucune traversée au départ de {name} sur les lignes référencées.",
+    "noArrivals": "Aucune traversée à l'arrivée à {name} sur les lignes référencées.",
+    "accesInfo": "Accès et informations port de {name}",
+    "reserverTitle": "Réserver un ferry depuis ou vers {name}",
+    "reserverDesc": "Les horaires et tarifs varient selon la saison et la compagnie. Arrivez au port en avance pour l'enregistrement (environ 90 min passager, 2 h avec véhicule). Vérifiez les formalités et documents avant le départ."
+  },
+  "info": {
+    "avecVoiture": {
+      "title": "Ferry avec voiture : horaires, prix et conseils",
+      "intro": "Voyager en ferry avec véhicule demande une préparation spécifique : enregistrement anticipé, documents à jour et respect des consignes d'embarquement.",
+      "h2Prep": "Préparer son trajet ferry avec voiture",
+      "prepDesc": "Que vous partiez vers le Maroc, l'Espagne ou l'Algérie, les formalités et les délais d'embarquement sont similaires sur les principales lignes Méditerranéennes.",
+      "h3Docs": "Documents et formalités pour embarquer en ferry avec véhicule",
+      "h2Tarifs": "Tarifs et réservation billet ferry avec voiture",
+      "tarifsDesc": "Les prix varient selon la liaison, la saison et le type de véhicule. Comparez les horaires et réservez en avance pour bénéficier des meilleurs tarifs."
+    }
+  },
+  "articles": {
+    "publishedOn": "Publié le",
+    "readMore": "Lire la suite",
+    "guideDetailTitle": "Conseils et points clés pour votre traversée",
+    "guideDetailSubtitle": "À retenir pour réserver votre ferry",
+    "meilleure-periode-traversee-maroc-espagne": {
+      "title": "Quelle est la meilleure période pour réserver son ferry ?",
+      "description": "Guide pratique pour choisir la bonne saison, comparer les prix et éviter les périodes de forte affluence.",
+      "content": {
+        "0": "La haute saison concentre la demande et les tarifs les plus élevés.",
+        "1": "Pour économiser, anticipez la réservation et comparez plusieurs jours de départ.",
+        "2": "Les lignes vers le Maroc peuvent être très sollicitées pendant les vacances scolaires."
+      }
+    },
+    "documents-voyage-ferry-maroc": {
+      "title": "Documents nécessaires pour voyager en ferry vers le Maroc",
+      "description": "Passeport, carte grise, assurance et conseils pour embarquer sans stress avec ou sans véhicule.",
+      "content": {
+        "0": "Vérifiez la validité de votre passeport avant toute réservation.",
+        "1": "Avec véhicule, préparez les documents administratifs et assurances à présenter au port.",
+        "2": "Arrivez en avance pour les formalités d'enregistrement et de sûreté."
+      }
+    },
+    "ferry-avec-voiture-conseils": {
+      "title": "Ferry avec voiture : 7 conseils pour bien préparer son trajet",
+      "description": "Nos recommandations pour l'embarquement, la sécurité du véhicule et le confort pendant la traversée.",
+      "content": {
+        "0": "Contrôlez l'état du véhicule et gardez les objets de valeur avec vous.",
+        "1": "Suivez les consignes de l'équipage pour le stationnement à bord.",
+        "2": "Préparez un sac cabine avec l'essentiel pour la traversée."
+      }
+    }
+  },
+  "legal": {
+    "breadcrumbPorts": "Ports"
+  }
+}

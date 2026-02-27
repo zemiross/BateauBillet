@@ -8,10 +8,23 @@ import WaveDivider from "./WaveDivider";
 
 type RouteHeroProps = {
   route: Route;
+  displayOrigin?: string;
+  displayDestination?: string;
+  title?: string;
+  ctaLabel?: string;
 };
 
-export default function RouteHero({ route }: RouteHeroProps) {
+export default function RouteHero({
+  route,
+  displayOrigin,
+  displayDestination,
+  title,
+  ctaLabel = "Voir les horaires et prix",
+}: RouteHeroProps) {
   const theme = getCountryTheme(route.country);
+  const origin = displayOrigin ?? route.origin;
+  const destination = displayDestination ?? route.destination;
+  const heading = title ?? `Ferry ${route.origin} – ${route.destination} : horaires, prix et billets`;
 
   return (
     <section className="relative overflow-hidden">
@@ -47,7 +60,7 @@ export default function RouteHero({ route }: RouteHeroProps) {
             {theme.emoji} {theme.label}
           </p>
           <h1 className="mb-4 text-3xl font-bold text-white drop-shadow-sm md:text-4xl lg:text-5xl">
-            Ferry {route.origin} – {route.destination} : horaires, prix et billets
+            {heading}
           </h1>
           <p className="mb-8 max-w-2xl text-base leading-relaxed text-white/90">
             {route.description}
@@ -68,7 +81,7 @@ export default function RouteHero({ route }: RouteHeroProps) {
               size="lg"
               iconRight="external"
             >
-              Voir les horaires et prix
+              {ctaLabel}
             </Button>
           </div>
         </div>

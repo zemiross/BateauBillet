@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import AnimatedSection from "@/components/AnimatedSection";
 import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -10,33 +11,36 @@ import {
   getRoutesFromPort,
 } from "@/lib/routes-utils";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { routing } from "@/i18n/routing";
 
 type PageProps = {
-  params: Promise<{ port: string }>;
+  params: Promise<{ locale: string; port: string }>;
 };
 
 export async function generateStaticParams() {
-  return getPortsWithSlugs().map((p) => ({ port: p.slug }));
+  const ports = getPortsWithSlugs();
+  return routing.locales.flatMap((locale) =>
+    ports.map((p) => ({ locale, port: p.slug }))
+  );
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { port } = await params;
+  const { locale, port } = await params;
   const portName = getPortNameBySlug(port);
   if (!portName) {
     return { title: `${SITE_NAME} - Port introuvable`, robots: { index: false, follow: false } };
   }
-  const canonical = `${SITE_URL}/ports/${port}`;
+  const canonical = `${SITE_URL}/${locale}/ports/${port}`;
   return {
     title: `Port de ${portName} : ferry, horaires et traversées`,
-    description: `Traversées au départ et à l'arrivée du port de ${portName}. Horaires, prix et réservation des billets ferry vers l'Espagne, le Maroc, l'Algérie et la France.`,
+    description: `Traversées au départ et à l'arrivée du port de ${portName}. Horaires, prix et réservation des billets ferry.`,
     alternates: { canonical },
     openGraph: {
-      locale: "fr_FR",
+      locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",
       title: `Port de ${portName} : ferry et traversées`,
-      description: `Horaires et tarifs des ferries au départ ou à l'arrivée de ${portName}.`,
       url: canonical,
       siteName: SITE_NAME,
     },
@@ -45,9 +49,14 @@ export async function generateMetadata({
 }
 
 export default async function PortPage({ params }: PageProps) {
-  const { port } = await params;
+  const { locale, port } = await params;
   const portName = getPortNameBySlug(port);
   if (!portName) notFound();
+
+  const t = await getTranslations({ locale, namespace: "port" });
+  const tPorts = await getTranslations({ locale, namespace: "ports" });
+
+  const nameDisplay = tPorts(portName) || portName;
 
   const portRoutes = getRoutesFromPort(portName);
   const departures = portRoutes.filter((r) => r.origin === portName);
@@ -56,17 +65,15 @@ export default async function PortPage({ params }: PageProps) {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 md:py-14">
       <h1 className="mb-4 text-3xl font-bold text-sand-900 md:text-4xl">
-        Port de {portName} : ferry, horaires et traversées
+        {t("title", { name: nameDisplay })}
       </h1>
       <p className="mb-8 max-w-2xl text-lg leading-relaxed text-sand-900/70">
-        Retrouvez toutes les liaisons ferry au départ ou à l&apos;arrivée du port
-        de {portName}. Comparez horaires, tarifs et compagnies pour réserver
-        votre billet.
+        {t("description", { name: nameDisplay })}
       </p>
 
       <section className="mb-10">
         <h2 className="mb-4 text-xl font-bold text-sand-900">
-          Traversées au départ du port de {portName}
+          {t("departures", { name: nameDisplay })}
         </h2>
         {departures.length > 0 ? (
           <AnimatedSection>
@@ -78,14 +85,14 @@ export default async function PortPage({ params }: PageProps) {
           </AnimatedSection>
         ) : (
           <p className="text-sand-900/60">
-            Aucune traversée au départ de {portName} sur les lignes référencées.
+            {t("noDepartures", { name: nameDisplay })}
           </p>
         )}
       </section>
 
       <section className="mb-10">
         <h2 className="mb-4 text-xl font-bold text-sand-900">
-          Traversées à l&apos;arrivée au port de {portName}
+          {t("arrivals", { name: nameDisplay })}
         </h2>
         {arrivals.length > 0 ? (
           <AnimatedSection>
@@ -97,35 +104,29 @@ export default async function PortPage({ params }: PageProps) {
           </AnimatedSection>
         ) : (
           <p className="text-sand-900/60">
-            Aucune traversée à l&apos;arrivée à {portName} sur les lignes
-            référencées.
+            {t("noArrivals", { name: nameDisplay })}
           </p>
         )}
       </section>
 
       <section className="mb-10">
         <h2 className="mb-4 text-xl font-bold text-sand-900">
-          Accès et informations port de {portName}
+          {t("accesInfo", { name: nameDisplay })}
         </h2>
         <div className="rounded-xl border border-sand-200 bg-white p-6 shadow-[var(--shadow-card)]">
           <h3 className="mb-2 text-lg font-semibold text-sand-900">
-            Réserver un ferry depuis ou vers {portName}
+            {t("reserverTitle", { name: nameDisplay })}
           </h3>
-          <p className="mb-4 text-sand-900/70">
-            Les horaires et tarifs varient selon la saison et la compagnie.
-            Arrivez au port en avance pour l&apos;enregistrement (environ 90 min
-            passager, 2 h avec véhicule). Vérifiez les formalités et documents
-            avant le départ.
-          </p>
+          <p className="mb-4 text-sand-900/70">{t("reserverDesc")}</p>
           <BookingCTA />
         </div>
       </section>
 
       <Breadcrumb
         items={[
-          { name: SITE_NAME, href: "/" },
-          { name: "Ports", href: "/" },
-          { name: `Port de ${portName}`, href: `/ports/${port}` },
+          { name: SITE_NAME, href: `/${locale}` },
+          { name: locale === "ar" ? "الموانئ" : "Ports", href: `/${locale}/ports` },
+          { name: nameDisplay, href: `/${locale}/ports/${port}` },
         ]}
       />
     </div>

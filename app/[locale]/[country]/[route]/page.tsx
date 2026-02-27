@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import AnimatedSection from "@/components/AnimatedSection";
 import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -14,44 +15,51 @@ import { getRouteByCountryAndSlug, routes } from "@/data/routes";
 import { getArticleBySlug, newsArticles } from "@/data/news";
 import { getAlternativeRoutes } from "@/lib/routes-utils";
 import { BOOKING_URL, SITE_NAME, SITE_URL } from "@/lib/site";
+import { routing } from "@/i18n/routing";
 
 const ARTICLE_COUNTRY = "article";
 
 type PageProps = {
-  params: Promise<{
-    country: string;
-    route: string;
-  }>;
+  params: Promise<{ locale: string; country: string; route: string }>;
 };
 
-export async function generateStaticParams() {
-  const routeParams = routes.map((r) => ({
-    country: r.country,
-    route: r.slug,
-  }));
-  const articleParams = newsArticles.map((a) => ({
-    country: ARTICLE_COUNTRY,
-    route: a.slug,
-  }));
+export function generateStaticParams() {
+  const routeParams = routes.flatMap((r) =>
+    routing.locales.map((locale) => ({
+      locale,
+      country: r.country,
+      route: r.slug,
+    }))
+  );
+  const articleParams = newsArticles.flatMap((a) =>
+    routing.locales.map((locale) => ({
+      locale,
+      country: ARTICLE_COUNTRY,
+      route: a.slug,
+    }))
+  );
   return [...routeParams, ...articleParams];
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { country, route } = await params;
+  const { locale, country, route } = await params;
 
   if (country === ARTICLE_COUNTRY) {
     const article = getArticleBySlug(route);
     if (!article) return { title: `${SITE_NAME} - Article introuvable` };
-    const canonical = `${SITE_URL}${article.canonicalPath}`;
+    const tArticles = await getTranslations({ locale, namespace: "articles" });
+    const title = tArticles(`${route}.title`) || article.title;
+    const description = tArticles(`${route}.description`) || article.description;
+    const canonical = `${SITE_URL}/${locale}${article.canonicalPath}`;
     return {
-      title: article.title,
-      description: article.description,
+      title,
+      description,
       alternates: { canonical },
       openGraph: {
         type: "article",
-        locale: "fr_FR",
-        title: article.title,
-        description: article.description,
+        locale: locale === "ar" ? "ar_MA" : "fr_FR",
+        title,
+        description,
         url: canonical,
         siteName: SITE_NAME,
         images: [{ url: `${SITE_URL}${article.image}` }],
@@ -67,13 +75,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const canonical = `${SITE_URL}${routeData.canonicalPath}`;
+  const canonical = `${SITE_URL}/${locale}${routeData.canonicalPath}`;
   return {
     title: routeData.title,
     description: routeData.description,
     alternates: { canonical },
     openGraph: {
-      locale: "fr_FR",
+      locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",
       title: routeData.title,
       description: routeData.description,
@@ -86,27 +94,37 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function CountrySegmentPage({ params }: PageProps) {
-  const { country, route } = await params;
+  const { locale, country, route } = await params;
 
-  /* ── Article pages ── */
+  if (!routing.locales.includes(locale as "fr" | "ar")) notFound();
+
+  const tRoute = await getTranslations({ locale, namespace: "route" });
+  const tPorts = await getTranslations({ locale, namespace: "ports" });
+
+  /* ── Article pages (guides) ── */
   if (country === ARTICLE_COUNTRY) {
     const article = getArticleBySlug(route);
     if (!article) notFound();
+    const tArticles = await getTranslations({ locale, namespace: "articles" });
+    const title = tArticles(`${article.slug}.title`) || article.title;
+    const description = tArticles(`${article.slug}.description`) || article.description;
+    const contentParagraphs = article.content.map((_, i) =>
+      tArticles(`${article.slug}.content.${i}`) || article.content[i]
+    );
     return (
       <article className="mx-auto max-w-3xl px-4 py-12">
         <div className="mb-8">
           <p className="mb-2 text-sm text-sand-900/50">
-            Publie le {article.publishedAt}
+            {tArticles("publishedOn")} {article.publishedAt}
           </p>
           <h1 className="mb-4 text-3xl font-bold text-sand-900 md:text-4xl">
-            {article.title}
+            {title}
           </h1>
           <p className="text-lg leading-relaxed text-sand-900/70">
-            {article.description}
+            {description}
           </p>
         </div>
 
-        {/* Gradient header instead of image */}
         <div className="mb-8 h-48 rounded-xl bg-gradient-to-br from-ocean-800 to-ocean-600">
           <svg
             className="h-full w-full opacity-[0.07]"
@@ -120,13 +138,13 @@ export default async function CountrySegmentPage({ params }: PageProps) {
 
         <section aria-labelledby="guide-detail">
           <h2 id="guide-detail" className="mb-4 text-xl font-bold text-sand-900">
-            Conseils et points clés pour votre traversée
+            {tArticles("guideDetailTitle")}
           </h2>
           <h3 className="mb-3 text-lg font-semibold text-sand-900">
-            À retenir pour réserver votre ferry
+            {tArticles("guideDetailSubtitle")}
           </h3>
           <div className="space-y-4 text-base leading-relaxed text-sand-900/80">
-            {article.content.map((paragraph, i) => (
+            {contentParagraphs.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
           </div>
@@ -139,8 +157,8 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         <div className="mt-12">
           <Breadcrumb
             items={[
-              { name: SITE_NAME, href: "/" },
-              { name: article.title, href: article.canonicalPath },
+              { name: SITE_NAME, href: `/${locale}` },
+              { name: title, href: `/${locale}${article.canonicalPath}` },
             ]}
           />
         </div>
@@ -153,14 +171,20 @@ export default async function CountrySegmentPage({ params }: PageProps) {
   if (!routeData) notFound();
 
   const altRoutes = getAlternativeRoutes(routeData, 4);
+  const o = tPorts(routeData.origin);
+  const d = tPorts(routeData.destination);
 
   return (
     <>
-      {/* Hero */}
-      <RouteHero route={routeData} />
+      <RouteHero
+        route={routeData}
+        displayOrigin={o}
+        displayDestination={d}
+        title={tRoute("ferryTitle", { origin: o, destination: d })}
+        ctaLabel={tRoute("voirHorairesPrix")}
+      />
 
       <div className="mx-auto max-w-6xl px-4 py-10 md:py-14">
-        {/* Operator badges */}
         <AnimatedSection className="mb-10 flex flex-wrap gap-2">
           {routeData.operators.map((op) => (
             <Badge key={op} variant="operator" className="text-sm">
@@ -169,94 +193,108 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           ))}
         </AnimatedSection>
 
-        {/* Schedule + Prices — 2 column layout */}
         <AnimatedSection className="mb-10 grid gap-6 md:grid-cols-5">
-          {/* Schedules — left (wider) */}
           <div className="md:col-span-3">
             <h2 className="mb-4 text-xl font-bold text-sand-900">
-              Horaires et fréquence ferry {routeData.origin} – {routeData.destination}
+              {tRoute("horairesFrequence", { origin: o, destination: d })}
             </h2>
             <InfoAccordion
-              items={routeData.schedules.map((s) => ({
-                title: s.label,
-                content: s.details,
-              }))}
+              items={[
+                {
+                  title: tRoute("schedule.frequence"),
+                  content: tRoute("scheduleDetails.frequence", { frequency: routeData.frequency }),
+                },
+                {
+                  title: tRoute("schedule.enregistrement"),
+                  content: tRoute("scheduleDetails.enregistrement"),
+                },
+                {
+                  title: tRoute("schedule.conseil"),
+                  content: tRoute("scheduleDetails.conseil", { origin: o, destination: d }),
+                },
+              ]}
             />
           </div>
 
-          {/* Price card — right */}
           <div className="md:col-span-2">
             <h2 className="sr-only">
-              Tarifs et réservation billet ferry {routeData.origin} {routeData.destination}
+              {tRoute("tarifsReservation", { origin: o, destination: d })}
             </h2>
             <div className="sticky top-24 rounded-xl border border-sand-200 bg-white p-6 shadow-[var(--shadow-card)]">
-              <p className="mb-1 text-sm text-sand-900/50">Prix de reference</p>
+              <p className="mb-1 text-sm text-sand-900/50">{tRoute("prixReference")}</p>
               <p className="mb-4 text-4xl font-bold text-ocean-700">
                 {routeData.priceFrom}
-                <span className="text-lg font-medium">EUR</span>
+                <span className="text-lg font-medium"> EUR</span>
               </p>
               <p className="mb-6 text-xs leading-relaxed text-sand-900/50">
-                Les prix evoluent selon la saison, la demande et le type de
-                billet. Ce tarif est indicatif.
+                {tRoute("prixIndicatif")}
               </p>
               <BookingCTA className="w-full justify-center" />
             </div>
           </div>
         </AnimatedSection>
 
-        {/* Practical info — 2x2 card grid */}
         <AnimatedSection className="mb-10">
           <h2 className="mb-4 text-xl font-bold text-sand-900">
-            Informations pratiques traversée {routeData.origin} – {routeData.destination}
+            {tRoute("infosPratiques", { origin: o, destination: d })}
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <InfoCard
               icon="ship"
-              title={`Navires et compagnies ferry ${routeData.origin} ${routeData.destination}`}
+              title={tRoute("naviresCompagnies", { origin: o, destination: d })}
             >
-              Les navires disponibles peuvent varier selon la periode. Consultez
-              la disponibilite en temps reel via la plateforme de reservation.
+              {tRoute("naviresDesc")}
             </InfoCard>
             <InfoCard
               icon="map-pin"
               iconColor="text-coral-600"
-              title={`Accès port et formalités ${routeData.origin} – ${routeData.destination}`}
+              title={tRoute("accesPort", { origin: o, destination: d })}
             >
-              Avant de partir de {routeData.origin} vers {routeData.destination},
-              verifiez les acces portuaires, les formalites et les conditions
-              d&apos;embarquement.
+              {tRoute("accesPortDesc", { origin: o, destination: d })}
             </InfoCard>
             <InfoCard
               icon="star"
               iconColor="text-amber-500"
-              title={`Avis voyageurs ferry ${routeData.origin} ${routeData.destination}`}
+              title={tRoute("avisVoyageurs", { origin: o, destination: d })}
             >
-              Les retours d&apos;experience varient selon la saison et
-              l&apos;affluence. Comparez horaires et options avant de reserver.
+              {tRoute("avisDesc")}
             </InfoCard>
             <InfoCard
               icon="compass"
               iconColor="text-teal-600"
-              title={`À propos de la liaison ${routeData.origin} ${routeData.destination}`}
+              title={tRoute("aproposLiaison", { origin: o, destination: d })}
             >
               {routeData.description}
             </InfoCard>
           </div>
         </AnimatedSection>
 
-        {/* FAQ */}
         <AnimatedSection className="mb-10">
           <h2 className="mb-4 text-xl font-bold text-sand-900">
-            Questions fréquentes : ferry {routeData.origin} {routeData.destination}
+            {tRoute("faq", { origin: o, destination: d })}
           </h2>
-          <InfoAccordion items={routeData.faq} />
+          <InfoAccordion
+            items={[
+              {
+                title: tRoute("faqItems.priceQuestion", { origin: o, destination: d }),
+                content: tRoute("faqItems.priceAnswer", { price: routeData.priceFrom }),
+              },
+              {
+                title: tRoute("faqItems.carQuestion", { origin: o, destination: d }),
+                content: tRoute("faqItems.carAnswer"),
+              },
+              {
+                title: tRoute("faqItems.bookQuestion"),
+                content: tRoute("faqItems.bookAnswer"),
+              },
+            ]}
+          />
         </AnimatedSection>
 
-        {/* Alternative routes */}
         {altRoutes.length > 0 && (
           <AnimatedSection className="mb-10">
             <h2 className="mb-4 text-xl font-bold text-sand-900">
-              Liaisons alternatives depuis {routeData.origin} ou vers {routeData.destination}
+              {tRoute("liaisonsAlternatives", { origin: o, destination: d })}
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {altRoutes.map((alt) => (
@@ -266,20 +304,15 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           </AnimatedSection>
         )}
 
-        {/* Breadcrumb */}
         <Breadcrumb
           items={[
-            { name: SITE_NAME, href: "/" },
-            { name: routeData.country, href: `/${routeData.country}/${routeData.slug}` },
-            {
-              name: `${routeData.origin} ${routeData.destination}`,
-              href: routeData.canonicalPath,
-            },
+            { name: SITE_NAME, href: `/${locale}` },
+            { name: routeData.country, href: `/${locale}/${routeData.country}/${routeData.slug}` },
+            { name: `${o} ${d}`, href: `/${locale}${routeData.canonicalPath}` },
           ]}
         />
       </div>
 
-      {/* Sticky mobile CTA */}
       <StickyBookingBar
         priceFrom={routeData.priceFrom}
         bookingUrl={BOOKING_URL}

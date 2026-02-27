@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import { useLocale } from "next-intl";
 import { routes } from "@/data/routes";
 import { countryOrder, countryThemes } from "@/lib/country-theme";
 import { BOOKING_URL } from "@/lib/site";
@@ -16,6 +17,7 @@ type MobileNavProps = {
 };
 
 export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
+  const locale = useLocale();
   const prefersReduced = useReducedMotion();
   const [expandedCountry, setExpandedCountry] = useState<string | null>(null);
 
@@ -64,7 +66,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
               <ul className="space-y-1">
                 <li>
                   <Link
-                    href="/info/avec-voiture"
+                    href={`/${locale}/info/avec-voiture`}
                     className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-ocean-100/90 transition-colors hover:bg-ocean-800 hover:text-white"
                     onClick={onClose}
                   >
@@ -74,7 +76,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 </li>
                 <li>
                   <Link
-                    href="/navieras/balearia"
+                    href={`/${locale}/navieras/balearia`}
                     className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-ocean-100/90 transition-colors hover:bg-ocean-800 hover:text-white"
                     onClick={onClose}
                   >
@@ -123,7 +125,7 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                           {countryRoutes.map((route) => (
                             <li key={route.canonicalPath}>
                               <Link
-                                href={route.canonicalPath}
+                                href={`/${locale}${route.canonicalPath}`}
                                 className="block rounded-md py-2 pl-10 pr-3 text-sm text-ocean-100/70 transition-colors hover:bg-ocean-800 hover:text-white"
                                 onClick={onClose}
                               >

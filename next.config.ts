@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 import { routes } from "./data/routes";
 import { newsArticles } from "./data/news";
+
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 const legalRedirects = [
   {
@@ -109,18 +112,23 @@ const nextConfig: NextConfig = {
   async redirects() {
     const routeRedirects = routes.map((route) => ({
       source: `/${route.country}/${route.slug}.php`,
-      destination: `/${route.country}/${route.slug}`,
+      destination: `/fr/${route.country}/${route.slug}`,
       permanent: true,
     }));
 
     const articleRedirects = newsArticles.map((article) => ({
       source: `/${article.slug}`,
-      destination: `/article/${article.slug}`,
+      destination: `/fr/article/${article.slug}`,
       permanent: true,
     }));
 
-    return [...routeRedirects, ...articleRedirects, ...legalRedirects];
+    const localizedLegalRedirects = legalRedirects.map((r) => ({
+      ...r,
+      destination: r.destination.startsWith("/") ? `/fr${r.destination}` : `/fr/${r.destination}`,
+    }));
+
+    return [...routeRedirects, ...articleRedirects, ...localizedLegalRedirects];
   },
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

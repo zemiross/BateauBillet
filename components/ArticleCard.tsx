@@ -4,13 +4,27 @@ import Icon from "./ui/Icon";
 
 type ArticleCardProps = {
   article: NewsArticle;
+  locale?: string;
+  title?: string;
+  description?: string;
+  readMoreLabel?: string;
   className?: string;
 };
 
-export default function ArticleCard({ article, className = "" }: ArticleCardProps) {
+export default function ArticleCard({
+  article,
+  locale = "fr",
+  title: titleOverride,
+  description: descriptionOverride,
+  readMoreLabel = "Lire la suite",
+  className = "",
+}: ArticleCardProps) {
+  const href = locale ? `/${locale}${article.canonicalPath}` : article.canonicalPath;
+  const title = titleOverride ?? article.title;
+  const description = descriptionOverride ?? article.description;
   return (
     <Link
-      href={article.canonicalPath}
+      href={href}
       className={`group flex flex-col overflow-hidden rounded-xl border border-sand-200 bg-white shadow-[var(--shadow-card)] transition-all duration-250 hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)] ${className}`}
     >
       {/* Gradient header */}
@@ -30,13 +44,13 @@ export default function ArticleCard({ article, className = "" }: ArticleCardProp
 
       <div className="flex flex-1 flex-col p-4">
         <h3 className="mb-2 font-bold text-sand-900 group-hover:text-ocean-700">
-          {article.title}
+          {title}
         </h3>
         <p className="mb-4 flex-1 text-sm leading-relaxed text-sand-900/60">
-          {article.description}
+          {description}
         </p>
         <span className="flex items-center gap-1 text-sm font-semibold text-coral-600 transition-colors group-hover:text-coral-700">
-          Lire la suite
+          {readMoreLabel}
           <Icon name="arrow-right" size={14} />
         </span>
       </div>

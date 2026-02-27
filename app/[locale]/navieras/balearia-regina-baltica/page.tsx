@@ -2,25 +2,35 @@ import type { Metadata } from "next";
 import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { routing } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Balearia Regina Baltica : navire, liaisons et réservation ferry",
-  description:
-    "Navire Regina Baltica : liaisons long courrier, services à bord et réservation des billets ferry Balearia.",
-  alternates: {
-    canonical: `${SITE_URL}/navieras/balearia-regina-baltica`,
-  },
-  openGraph: {
-    locale: "fr_FR",
-    type: "website",
-    title: "Balearia Regina Baltica : navire et traversées",
-    description: "Informations sur le Regina Baltica et réservation ferry.",
-    url: `${SITE_URL}/navieras/balearia-regina-baltica`,
-    siteName: SITE_NAME,
-  },
-};
+type Props = { params: Promise<{ locale: string }> };
 
-export default function BaleariaReginaBalticaPage() {
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const canonical = `${SITE_URL}/${locale}/navieras/balearia-regina-baltica`;
+  return {
+    title: "Balearia Regina Baltica : navire, liaisons et réservation ferry",
+    description:
+      "Navire Regina Baltica : liaisons long courrier, services à bord et réservation des billets ferry Balearia.",
+    alternates: { canonical },
+    openGraph: {
+      locale: locale === "ar" ? "ar_MA" : "fr_FR",
+      type: "website",
+      title: "Balearia Regina Baltica : navire et traversées",
+      description: "Informations sur le Regina Baltica et réservation ferry.",
+      url: canonical,
+      siteName: SITE_NAME,
+    },
+  };
+}
+
+export default async function BaleariaReginaBalticaPage({ params }: Props) {
+  const { locale } = await params;
   return (
     <div className="mx-auto max-w-3xl space-y-10 px-4 py-12">
       <h1 className="text-3xl font-bold text-sand-900 md:text-4xl">
@@ -79,11 +89,11 @@ export default function BaleariaReginaBalticaPage() {
 
       <Breadcrumb
         items={[
-          { name: SITE_NAME, href: "/" },
-          { name: "Navieras", href: "/navieras/balearia" },
+          { name: SITE_NAME, href: `/${locale}` },
+          { name: "Navieras", href: `/${locale}/navieras/balearia` },
           {
             name: "Balearia Regina Baltica",
-            href: "/navieras/balearia-regina-baltica",
+            href: `/${locale}/navieras/balearia-regina-baltica`,
           },
         ]}
       />

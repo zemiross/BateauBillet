@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { SITE_NAME } from "@/lib/site";
 import { routes } from "@/data/routes";
 import Icon from "./ui/Icon";
@@ -8,26 +11,28 @@ const popularRoutes = [...routes]
   .sort((a, b) => a.priceFrom - b.priceFrom)
   .slice(0, 6);
 
-const infoLinks = [
-  { label: "Bateau avec voiture", href: "/info/avec-voiture" },
-  { label: "Balearia", href: "/navieras/balearia" },
-  { label: "Changements et echanges", href: "/changements-et-echanges" },
-  { label: "Guides de voyage", href: "/article/meilleure-periode-traversee-maroc-espagne" },
-];
+const infoLinkKeys = [
+  { key: "avecVoiture", href: "/info/avec-voiture" },
+  { key: "balearia", href: "/navieras/balearia" },
+  { key: "changements", href: "/changements-et-echanges" },
+  { key: "guides", href: "/article/meilleure-periode-traversee-maroc-espagne" },
+] as const;
 
-const legalLinks = [
-  { label: "Avis juridique", href: "/avis-juridique" },
-  { label: "Conditions d'utilisation", href: "/conditions-de-utilisation" },
-  { label: "Confidentialite", href: "/politique-de-confidentialite" },
-  { label: "Cookies", href: "/politique-de-cookies" },
-];
+const legalLinkKeys = [
+  { key: "avisJuridique", href: "/avis-juridique" },
+  { key: "conditions", href: "/conditions-de-utilisation" },
+  { key: "confidentialite", href: "/politique-de-confidentialite" },
+  { key: "cookies", href: "/politique-de-cookies" },
+] as const;
 
 export default function Footer() {
+  const locale = useLocale();
+  const t = useTranslations("footer");
+  const tPorts = useTranslations("ports");
+
   return (
     <footer className="bg-ocean-900 text-ocean-100/80">
-      {/* Main footer grid */}
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-4 md:gap-8">
-        {/* Brand column */}
         <div>
           <div className="mb-4 flex items-center gap-2">
             <Image
@@ -40,62 +45,58 @@ export default function Footer() {
             <span className="text-lg font-bold text-white">{SITE_NAME}</span>
           </div>
           <p className="text-sm leading-relaxed text-ocean-100/50">
-            Information et comparaison de traversees ferry en Mediterranee.
-            Reservation via Balearia.
+            {t("tagline")}
           </p>
         </div>
 
-        {/* Popular routes */}
         <div>
           <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-ocean-100/40">
-            Liaisons populaires
+            {t("popularRoutes")}
           </h3>
           <ul className="space-y-1.5">
             {popularRoutes.map((r) => (
               <li key={r.canonicalPath}>
                 <Link
-                  href={r.canonicalPath}
+                  href={`/${locale}${r.canonicalPath}`}
                   className="text-sm transition-colors hover:text-white"
                 >
-                  {r.origin} → {r.destination}
+                  {tPorts(r.origin)} → {tPorts(r.destination)}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Information */}
         <div>
           <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-ocean-100/40">
-            Informations
+            {t("informations")}
           </h3>
           <ul className="space-y-1.5">
-            {infoLinks.map((link) => (
-              <li key={link.href}>
+            {infoLinkKeys.map(({ key, href }) => (
+              <li key={href}>
                 <Link
-                  href={link.href}
+                  href={`/${locale}${href}`}
                   className="text-sm transition-colors hover:text-white"
                 >
-                  {link.label}
+                  {t(`links.${key}`)}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Legal */}
         <div>
           <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-ocean-100/40">
-            Legal
+            {t("legal")}
           </h3>
           <ul className="space-y-1.5">
-            {legalLinks.map((link) => (
-              <li key={link.href}>
+            {legalLinkKeys.map(({ key, href }) => (
+              <li key={href}>
                 <Link
-                  href={link.href}
+                  href={`/${locale}${href}`}
                   className="text-sm transition-colors hover:text-white"
                 >
-                  {link.label}
+                  {t(`links.${key}`)}
                 </Link>
               </li>
             ))}
@@ -103,29 +104,26 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Trust strip */}
       <div className="border-t border-ocean-800">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 px-4 py-4 text-xs text-ocean-100/40">
           <span className="flex items-center gap-1.5">
             <Icon name="shield" size={14} />
-            Reservation securisee
+            {t("reservationSecurisee")}
           </span>
           <span className="flex items-center gap-1.5">
             <Icon name="ship" size={14} />
-            Balearia
+            {t("links.balearia")}
           </span>
           <span className="flex items-center gap-1.5">
             <Icon name="globe" size={14} />
-            FR
+            FR / AR
           </span>
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="border-t border-ocean-800">
         <div className="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-ocean-100/30">
-          &copy; 2024-2026 {SITE_NAME}. Site d&apos;information. Reservation via
-          balearia.com.
+          &copy; 2024-2026 {SITE_NAME}. {t("copyright")}
         </div>
       </div>
     </footer>

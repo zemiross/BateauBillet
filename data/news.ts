@@ -15,7 +15,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Guide pratique pour choisir la bonne saison, comparer les prix et eviter les periodes de forte affluence.",
     publishedAt: "2026-02-20",
-    image: "/images/bateaubillet.svg",
+    image: "/images/Quelle-est-la-meilleure-période-pour-réserver-son-ferry.webp",
     canonicalPath: "/article/meilleure-periode-traversee-maroc-espagne",
     content: [
       "La haute saison concentre la demande et les tarifs les plus eleves.",
@@ -29,7 +29,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Passeport, carte grise, assurance et conseils pour embarquer sans stress avec ou sans vehicule.",
     publishedAt: "2026-02-21",
-    image: "/images/bateaubillet.svg",
+    image: "/images/Documents-nécessaires-pour-voyager-en-ferry-vers-le-Maroc.jpg",
     canonicalPath: "/article/documents-voyage-ferry-maroc",
     content: [
       "Verifiez la validite de votre passeport avant toute reservation.",
@@ -43,7 +43,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Nos recommandations pour l'embarquement, la securite du vehicule et le confort pendant la traversee.",
     publishedAt: "2026-02-22",
-    image: "/images/bateaubillet.svg",
+    image: "/images/Ferry-avec-voiture-7-conseils-pour-bien-préparer-son-trajet.webp",
     canonicalPath: "/article/ferry-avec-voiture-conseils",
     content: [
       "Controlez l'etat du vehicule et gardez les objets de valeur avec vous.",
@@ -57,7 +57,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Découvrez pourquoi Valence est la destination parfaite ce printemps: climat idéal, prix abordables, ferries directs et activités famille. Réservez votre billet dès maintenant.",
     publishedAt: "2025-02-27",
-    image: "/images/bateaubillet.svg",
+    image: "/images/5-raisons-visiter-valence-printemps.jpg",
     canonicalPath: "/article/5-raisons-visiter-valence-printemps",
     content: [
       "Valence, troisième plus grande ville d'Espagne, s'éveille au printemps avec une énergie particulière. Située sur la côte méditerranéenne, cette destination combine patrimoine historique, architecture futuriste, gastronomie renommée et plages accessibles. Le printemps représente le moment idéal pour découvrir cette ville espagnole dynamique, loin des foules estivales et avec un climat parfait pour explorer ses nombreuses attractions. Que vous voyagiez en famille, en couple ou entre amis, réserver un billet de ferry vers Valence vous ouvre les portes d'une expérience méditerranéenne authentique à prix abordable.",
@@ -115,7 +115,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Tout savoir sur l'Operation Marhaba 2026: dates, routes ferry recommandees, prix et conseils pour traverser vers le Maroc en ete.",
     publishedAt: "2026-02-25",
-    image: "/images/bateaubillet.svg",
+    image: "/images/operation-marhaba-2026.jpg",
     canonicalPath: "/article/operation-marhaba-2026",
     content: [
       "L'Operation Marhaba, aussi appelee Marhaba ou Transit, est le dispositif mis en place chaque ete pour faciliter le retour de la diaspora marocaine vers le Maroc. De juin a septembre, des centaines de milliers de voyageurs traversent la Mediterranee en ferry.",
@@ -139,7 +139,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Comparez les prix ferry vers le Maroc pour l'ete 2026. Astuces pour trouver les meilleurs tarifs sur Algeciras-Tanger, Sete-Nador et autres routes.",
     publishedAt: "2026-02-25",
-    image: "/images/bateaubillet.svg",
+    image: "/images/prix-ferry-ete-2026.webp",
     canonicalPath: "/article/prix-ferry-ete-2026",
     content: [
       "L'ete est la haute saison pour les ferries vers le Maroc et l'Algerie. Les prix peuvent doubler ou tripler par rapport au printemps. Voici comment obtenir les meilleurs tarifs pour vos traversees estivales.",
@@ -159,7 +159,7 @@ export const newsArticles: NewsArticle[] = [
     description:
       "Informations pratiques pour voyager en ferry pendant le Ramadan 2026: horaires, services a bord et conseils pour une traversee confortable.",
     publishedAt: "2026-02-25",
-    image: "/images/bateaubillet.svg",
+    image: "/images/traversees-ramadan-2026.jpg",
     canonicalPath: "/article/traversees-ramadan-2026",
     content: [
       "Le Ramadan 2026 devrait se derouler approximativement de fin fevrier a fin mars. Pour les voyageurs qui traversent la Mediterranee pendant cette periode, voici les informations pratiques a connaitre.",

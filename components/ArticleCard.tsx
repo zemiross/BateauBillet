@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { NewsArticle } from "@/data/news";
 import Icon from "./ui/Icon";
 
@@ -22,23 +23,37 @@ export default function ArticleCard({
   const href = locale ? `/${locale}${article.canonicalPath}` : article.canonicalPath;
   const title = titleOverride ?? article.title;
   const description = descriptionOverride ?? article.description;
+  const isPhoto = /\.(jpg|jpeg|png|webp)$/i.test(article.image);
   return (
     <Link
       href={href}
       className={`group flex flex-col overflow-hidden rounded-xl border border-sand-200 bg-white shadow-[var(--shadow-card)] transition-all duration-250 hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)] ${className}`}
     >
-      {/* Gradient header */}
-      <div className="relative flex h-32 items-end bg-gradient-to-br from-ocean-800 to-ocean-600 p-4">
-        <svg
-          className="absolute inset-0 h-full w-full opacity-[0.07]"
-          viewBox="0 0 200 100"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path d="M0 50 Q50 20 100 50 T200 50 V100 H0Z" fill="white" />
-        </svg>
+      {/* Card header: photo or gradient */}
+      <div className="relative flex h-32 shrink-0 items-end overflow-hidden bg-gradient-to-br from-ocean-800 to-ocean-600 p-4">
+        {isPhoto ? (
+          <>
+            <Image
+              src={article.image}
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" aria-hidden />
+          </>
+        ) : (
+          <svg
+            className="absolute inset-0 h-full w-full opacity-[0.07]"
+            viewBox="0 0 200 100"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path d="M0 50 Q50 20 100 50 T200 50 V100 H0Z" fill="white" />
+          </svg>
+        )}
         <div className="relative z-10">
-          <p className="text-xs text-white/60">{article.publishedAt}</p>
+          <p className="text-xs text-white/80 drop-shadow-sm">{article.publishedAt}</p>
         </div>
       </div>
 

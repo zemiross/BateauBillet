@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { buildHreflang } from "@/lib/hreflang";
 import { BOOKING_URL, SITE_NAME, SITE_URL, STATS } from "@/lib/site";
 import { getPopularRoutes } from "@/lib/routes-utils";
-import { getTodaysDepartures } from "@/lib/departures";
+import { getTodaysDepartures } from "@/lib/departures-server";
 import { newsArticles } from "@/data/news";
 import AnimatedSection from "@/components/AnimatedSection";
 import ArticleCard from "@/components/ArticleCard";

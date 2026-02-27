@@ -170,6 +170,9 @@ export default async function HomePage({ params }: Props) {
         </div>
       </section>
 
+      {/* Same wave transition as hero → content, but light above → dark CTA/footer below */}
+      <WaveDivider color="var(--color-ocean-900)" flip />
+
       <section className="relative overflow-hidden bg-gradient-to-br from-ocean-950 to-ocean-800">
         <svg
           className="absolute inset-0 h-full w-full opacity-[0.04]"

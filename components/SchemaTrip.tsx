@@ -35,7 +35,8 @@ export default function SchemaTrip({ route, locale = "fr" }: SchemaTripProps) {
     "@type": "Product",
     name: `Billet ferry ${route.origin} – ${route.destination}`,
     description: route.description,
-    brand: { "@type": "Organization", name: route.operators[0] },
+    image: `${SITE_URL}${route.image}`,
+    brand: { "@type": "Brand", name: route.operators[0] },
     offers: {
       "@type": "Offer",
       priceCurrency: "EUR",
@@ -43,6 +44,21 @@ export default function SchemaTrip({ route, locale = "fr" }: SchemaTripProps) {
       availability: "https://schema.org/InStock",
       url: route.bookingUrl,
       validFrom: new Date().toISOString().split("T")[0],
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "DAY" },
+          transitTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 0, unitCode: "DAY" },
+        },
+        shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "EUR" },
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 0,
+        applicableCountry: "FR",
+      },
     },
   };
 

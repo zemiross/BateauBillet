@@ -18,7 +18,7 @@ export const newsArticles: NewsArticle[] = [
     image: "/images/Quelle-est-la-meilleure-période-pour-réserver-son-ferry.webp",
     canonicalPath: "/article/meilleure-periode-traversee-maroc-espagne",
     content: [
-      "La haute saison concentre la demande et les tarifs les plus eleves.",
+      "La haute saison concentre la demande et les tarifs les plus eleves.", 
       "Pour economiser, anticipez la reservation et comparez plusieurs jours de depart.",
       "Les lignes vers le Maroc peuvent etre tres sollicitees pendant les vacances scolaires.",
     ],

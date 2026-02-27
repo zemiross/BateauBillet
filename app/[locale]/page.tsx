@@ -3,10 +3,12 @@ import { getTranslations } from "next-intl/server";
 import { buildHreflang } from "@/lib/hreflang";
 import { BOOKING_URL, SITE_NAME, SITE_URL, STATS } from "@/lib/site";
 import { getPopularRoutes } from "@/lib/routes-utils";
+import { getTodaysDepartures } from "@/lib/departures";
 import { newsArticles } from "@/data/news";
 import AnimatedSection from "@/components/AnimatedSection";
 import ArticleCard from "@/components/ArticleCard";
 import CountryTabs from "@/components/CountryTabs";
+import TodayDepartures from "@/components/TodayDepartures";
 import HowItWorks from "@/components/HowItWorks";
 import RouteCard from "@/components/RouteCard";
 import RouteFinder from "@/components/RouteFinder";
@@ -35,6 +37,8 @@ export default async function HomePage({ params }: Props) {
   const t = await getTranslations("home");
   const tArticles = await getTranslations({ locale, namespace: "articles" });
   const popularRoutes = getPopularRoutes(6);
+  const departuresData = getTodaysDepartures();
+  const departures = departuresData?.departures ?? [];
 
   return (
     <>
@@ -95,6 +99,21 @@ export default async function HomePage({ params }: Props) {
               <RouteCard route={route} featured={i === 0} />
             </AnimatedSection>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-sand-100/50 py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4">
+          <AnimatedSection className="mb-10 text-center">
+            <h2 className="mb-3 text-2xl font-bold text-sand-900 md:text-3xl">
+              {t("departuresTitle")}
+            </h2>
+            <p className="text-sand-900/60">{t("departuresDesc")}</p>
+          </AnimatedSection>
+
+          <AnimatedSection delay={0.1}>
+            <TodayDepartures departures={departures} locale={locale} />
+          </AnimatedSection>
         </div>
       </section>
 

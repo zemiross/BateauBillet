@@ -2,3 +2,4 @@ node_modules
 .next
 .vscode/sftp.json
 sftp.json
+data/scrape-debug.html

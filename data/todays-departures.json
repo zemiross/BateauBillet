@@ -1,0 +1,188 @@
+{
+  "date": "2026-02-27",
+  "scrapedAt": "2026-02-27T15:03:32.758Z",
+  "departures": [
+    {
+      "origin": "Sete",
+      "destination": "Nador",
+      "departureTime": "",
+      "routeSlug": "sete-nador",
+      "country": "france"
+    },
+    {
+      "origin": "Tanger Med",
+      "destination": "Algeciras",
+      "departureTime": "",
+      "routeSlug": "tanger-algeciras",
+      "country": "maroc"
+    },
+    {
+      "origin": "Tanger Med",
+      "destination": "Motril",
+      "departureTime": "",
+      "routeSlug": "tanger-motril",
+      "country": "maroc"
+    },
+    {
+      "origin": "Nador",
+      "destination": "Almeria",
+      "departureTime": "",
+      "routeSlug": "nador-almeria",
+      "country": "maroc"
+    },
+    {
+      "origin": "Nador",
+      "destination": "Sete",
+      "departureTime": "",
+      "routeSlug": "nador-sete",
+      "country": "maroc"
+    },
+    {
+      "origin": "Algeciras",
+      "destination": "Ceuta",
+      "departureTime": "",
+      "routeSlug": "algeciras-ceuta",
+      "country": "espagne"
+    },
+    {
+      "origin": "Algeciras",
+      "destination": "Tanger Med",
+      "departureTime": "",
+      "routeSlug": "algeciras-tanger",
+      "country": "espagne"
+    },
+    {
+      "origin": "Ceuta",
+      "destination": "Algeciras",
+      "departureTime": "",
+      "routeSlug": "ceuta-algeciras",
+      "country": "espagne"
+    },
+    {
+      "origin": "Almeria",
+      "destination": "Nador",
+      "departureTime": "",
+      "routeSlug": "almeria-nador",
+      "country": "espagne"
+    },
+    {
+      "origin": "Almeria",
+      "destination": "Melilla",
+      "departureTime": "",
+      "routeSlug": "almeria-melilla",
+      "country": "espagne"
+    },
+    {
+      "origin": "Melilla",
+      "destination": "Almeria",
+      "departureTime": "",
+      "routeSlug": "melilla-almeria",
+      "country": "espagne"
+    },
+    {
+      "origin": "Melilla",
+      "destination": "Malaga",
+      "departureTime": "",
+      "routeSlug": "melilla-malaga",
+      "country": "espagne"
+    },
+    {
+      "origin": "Melilla",
+      "destination": "Motril",
+      "departureTime": "",
+      "routeSlug": "melilla-motril",
+      "country": "espagne"
+    },
+    {
+      "origin": "Malaga",
+      "destination": "Melilla",
+      "departureTime": "",
+      "routeSlug": "malaga-melilla",
+      "country": "espagne"
+    },
+    {
+      "origin": "Motril",
+      "destination": "Melilla",
+      "departureTime": "",
+      "routeSlug": "motril-melilla",
+      "country": "espagne"
+    },
+    {
+      "origin": "Motril",
+      "destination": "Tanger Med",
+      "departureTime": "",
+      "routeSlug": "motril-tanger-med",
+      "country": "espagne"
+    },
+    {
+      "origin": "Valence",
+      "destination": "Mostaganem",
+      "departureTime": "",
+      "routeSlug": "valence-mostaganem",
+      "country": "espagne"
+    },
+    {
+      "origin": "Mostaganem",
+      "destination": "Valence",
+      "departureTime": "",
+      "routeSlug": "mostaganem-valence",
+      "country": "algerie"
+    },
+    {
+      "origin": "Barcelona",
+      "destination": "Alger",
+      "departureTime": "",
+      "routeSlug": "barcelona-alger",
+      "country": "espagne"
+    },
+    {
+      "origin": "Alger",
+      "destination": "Barcelona",
+      "departureTime": "",
+      "routeSlug": "alger-barcelona",
+      "country": "algerie"
+    },
+    {
+      "origin": "Valence",
+      "destination": "Alger",
+      "departureTime": "",
+      "routeSlug": "valence-alger",
+      "country": "espagne"
+    },
+    {
+      "origin": "Alger",
+      "destination": "Valence",
+      "departureTime": "",
+      "routeSlug": "alger-valence",
+      "country": "algerie"
+    },
+    {
+      "origin": "Valence",
+      "destination": "Oran",
+      "departureTime": "",
+      "routeSlug": "valence-oran",
+      "country": "espagne"
+    },
+    {
+      "origin": "Oran",
+      "destination": "Valence",
+      "departureTime": "",
+      "routeSlug": "oran-valence",
+      "country": "algerie"
+    },
+    {
+      "origin": "Tarifa",
+      "destination": "Tanger Ville",
+      "departureTime": "",
+      "routeSlug": "tarifa-tanger-ville",
+      "country": "espagne"
+    },
+    {
+      "origin": "Tanger Ville",
+      "destination": "Tarifa",
+      "departureTime": "",
+      "routeSlug": "tanger-ville-tarifa",
+      "country": "maroc"
+    }
+  ]
+}

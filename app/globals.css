@@ -96,6 +96,11 @@ h2 {
   background: #c5bdb3;
 }
 
+/* Reset SVG transform so only explicit utilities (e.g. WaveDivider scale-y-[-1]) apply */
+svg {
+  transform: none;
+}
+
 /* Focus ring for accessibility */
 :focus-visible {
   outline: 2px solid var(--color-ocean-600);

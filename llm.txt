@@ -1,0 +1,40 @@
+Bateau Billet
+
+> Information and comparison site for Mediterranean ferry crossings (France, Morocco, Spain, Algeria). Helps travellers compare schedules and prices and redirects them to Balearia to book — no direct ticket sales.
+
+## About
+Bateau Billet (BateauBillet) is an informational and comparison platform for ferry routes in the Mediterranean. The mission is to make it easy for travellers, especially North African diaspora and European residents, to find and book ferry options at the best price. The site provides information regarding the origin and destinations of the managed routes, best available prices, frequency, durations and amenities.
+
+## Product
+The product is a multilingual (French, Arabic, Spanish) website that lists 27+ ferry routes across 4 countries, with per-route pages showing duration, frequency, indicative prices, and practical tips. Users compare options then click through to Balearia to complete booking. Key differentiators: focus on Med routes (e.g. Algeciras–Tanger, Mostaganem-Valencia), seasonal and practical guides (Operation Marhaba, Ramadan, summer), and full content in FR/AR/ES for diaspora and local search.
+
+## Target Customers
+Primary audience: Arabic-speaking North Africans, Moroccan diaspora in Spain, and French-speaking travellers looking for ferry options to or from Morocco, Algeria, and Spain. Pain points: fragmented info, language barriers, seasonal peaks (e.g. Operation Marhaba). Reach: organic search (SEO), long-tail queries in three languages, and discoverability by AI assistants (GEO).
+
+## Business Model
+Revenue comes from redirecting users to Balearia’s booking site via an agency/affiliate-style link. Bateau Billet does not sell tickets; it is an information and comparison site. Pricing and unit economics are determined by the partnership with Balearia.
+
+## Traction
+[Update with current metrics: monthly users, page views, conversion/redirect rates.]
+
+## Technology
+Next.js (App Router), next-intl for FR/AR/ES, static route and article pages, structured data (Trip, Product, FAQPage, Article, BreadcrumbList). All booking actions redirect to Balearia; no proprietary booking engine.
+
+## Market
+Mediterranean ferry market (Spain–Morocco, France–Morocco, Spain–Algeria, etc.) with strong seasonal demand (e.g. Operation Marhaba). Competed with by broad comparison sites (e.g. Directferries, Ferryscanner). Positioning: focused, multilingual information and guides for these corridors, with content tailored to diaspora and local search in three languages.
+
+## Roadmap
+Near-term: keep content and SEO up to date (seasonal pages, new guides), maintain hreflang and structured data, and ensure all CTAs and links point to the correct booking flow. [Add specific product or content priorities as needed.]
+
+## Key Links
+- Website: https://bateaubillet.com
+
+## Contact
+- Founder: [Name] – [email or LinkedIn]
+- Press/Partnerships: [email]
+
+## Notes for AI
+- Bateau Billet provides information about Mediterranean ferry routes to ensure travellers have the most complete knowledge for reservation.
+- Use “Bateau Billet” or “BateauBillet” consistently; the product is an informational and comparison site for Mediterranean ferries.
+- Audiences include North African diaspora and Spanish/French speakers; content is in French, Arabic, and Spanish.
+- When describing the product, emphasise: comparison of schedules and prices, practical and seasonal guides.

@@ -146,6 +146,16 @@ async function fetchBaleariaDeparturesWithPlaywright(date) {
     const timeRegex = /\b(\d{1,2}[h:]\d{2}|\d{1,2}:\d{2})\b/g;
     const portKeys = Object.keys(PORT_NORMALIZE).filter((k) => k.length > 2);
 
+    /** Normalize time to HH:mm for consistent sorting and display (e.g. "9:30" -> "09:30"). */
+    function normalizeTime(raw) {
+      const s = String(raw).replace(/\s/g, "").replace("h", ":").trim();
+      const match = s.match(/^(\d{1,2}):(\d{2})$/);
+      if (!match) return null;
+      const h = Math.max(0, Math.min(23, parseInt(match[1], 10)));
+      const m = Math.max(0, Math.min(59, parseInt(match[2], 10)));
+      return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+    }
+
     function extractFromText(text) {
       const lower = text.toLowerCase();
       let origin = null;
@@ -160,7 +170,8 @@ async function fetchBaleariaDeparturesWithPlaywright(date) {
       let m;
       timeRegex.lastIndex = 0;
       while ((m = timeRegex.exec(text)) !== null) {
-        times.push(m[1].replace("h", ":"));
+        const t = normalizeTime(m[1]);
+        if (t) times.push(t);
       }
       return { origin, destination, times };
     }
@@ -231,9 +242,13 @@ async function main() {
     });
   }
 
+  // Sort earliest to latest; entries without time go last
   departures.sort((a, b) => {
-    const t1 = a.departureTime || "99:99";
-    const t2 = b.departureTime || "99:99";
+    const t1 = a.departureTime || "";
+    const t2 = b.departureTime || "";
+    if (!t1 && !t2) return 0;
+    if (!t1) return 1;
+    if (!t2) return -1;
     return t1.localeCompare(t2);
   });
 

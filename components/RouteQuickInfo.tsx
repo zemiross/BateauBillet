@@ -6,6 +6,9 @@ type RouteQuickInfoProps = {
   frequency: string;
   priceFrom: number;
   operators: string[];
+  durationLabel?: string;
+  frequencyLabel?: string;
+  priceFromLabel?: string;
 };
 
 export default function RouteQuickInfo({
@@ -13,13 +16,16 @@ export default function RouteQuickInfo({
   frequency,
   priceFrom,
   operators,
+  durationLabel = "Durée",
+  frequencyLabel = "Fréquence",
+  priceFromLabel = "À partir de",
 }: RouteQuickInfoProps) {
   return (
     <div className="flex flex-wrap items-center gap-3 rounded-xl bg-white/10 p-4 backdrop-blur-sm md:gap-6">
       <div className="flex items-center gap-2">
         <Icon name="clock" size={18} className="text-coral-500" />
         <div>
-          <p className="text-xs text-white/50">Duree</p>
+          <p className="text-xs text-white/50">{durationLabel}</p>
           <p className="text-sm font-semibold text-white">{duration}</p>
         </div>
       </div>
@@ -29,7 +35,7 @@ export default function RouteQuickInfo({
       <div className="flex items-center gap-2">
         <Icon name="calendar" size={18} className="text-coral-500" />
         <div>
-          <p className="text-xs text-white/50">Frequence</p>
+          <p className="text-xs text-white/50">{frequencyLabel}</p>
           <p className="text-sm font-semibold text-white">{frequency}</p>
         </div>
       </div>
@@ -39,7 +45,7 @@ export default function RouteQuickInfo({
       <div className="flex items-center gap-2">
         <Icon name="euro" size={18} className="text-coral-500" />
         <div>
-          <p className="text-xs text-white/50">A partir de</p>
+          <p className="text-xs text-white/50">{priceFromLabel}</p>
           <p className="text-sm font-semibold text-white">
             {priceFrom}
             <span className="font-normal">EUR</span>

@@ -12,7 +12,7 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const root = join(__dirname, "..");
 const imagesDir = join(root, "public", "images");
 const baseUrl = "https://bateaubillet.com";
-const LOCALES = ["fr", "ar"];
+const LOCALES = ["fr", "ar", "es"];
 
 // Route path without locale (country/slug) → priority (from main sitemap, 0.4–0.9)
 const routePriority = new Map([

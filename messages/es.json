@@ -1,0 +1,348 @@
+{
+  "nav": {
+    "liaisons": "Rutas",
+    "compagnies": "Compañías",
+    "avecVoiture": "Con coche",
+    "guides": "Guías",
+    "reserver": "Reservar",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "footer": {
+    "tagline": "Información y comparación de travesías en ferry por el Mediterráneo. Reserva a través de Balearia.",
+    "popularRoutes": "Rutas populares",
+    "informations": "Información",
+    "legal": "Legal",
+    "reservationSecurisee": "Reserva segura",
+    "copyright": "Sitio informativo. Reserva a través de balearia.com.",
+    "links": {
+      "avecVoiture": "Ferry con coche",
+      "balearia": "Balearia",
+      "changements": "Cambios y devoluciones",
+      "guides": "Guías de viaje",
+      "avisJuridique": "Aviso legal",
+      "conditions": "Condiciones de uso",
+      "confidentialite": "Privacidad",
+      "cookies": "Cookies"
+    }
+  },
+  "home": {
+    "title": "Encuentra tu billete de ferry",
+    "titleHighlight": "para cruzar el Mediterráneo",
+    "subtitle": "Compara horarios y precios de {count} rutas de ferry entre Francia, Marruecos, España y Argelia.",
+    "liaisonsPopulaires": "Rutas populares",
+    "liaisonsPopulairesDesc": "Las travesías más buscadas al mejor precio",
+    "toutesLiaisons": "Todas las rutas por país",
+    "toutesLiaisonsDesc": "Explora las travesías desde cada país de salida",
+    "commentCaMarche": "¿Cómo funciona?",
+    "commentCaMarcheDesc": "Encuentra y reserva tu ferry en 3 sencillos pasos",
+    "guidesVoyage": "Consejos y guías de viaje",
+    "guidesVoyageDesc": "Prepara tu travesía con nuestras guías prácticas",
+    "pretEmbarquer": "¿Listo para embarcar?",
+    "pretEmbarquerDesc": "Encuentra las mejores tarifas de ferry para tu próxima travesía por el Mediterráneo.",
+    "voirHorairesPrix": "Ver horarios y precios",
+    "liaisons": "rutas",
+    "pays": "países",
+    "compagnie": "compañía"
+  },
+  "finder": {
+    "depart": "Salida",
+    "arrivee": "Llegada",
+    "portDepart": "Puerto de salida",
+    "portArrivee": "Puerto de llegada",
+    "rechercher": "Buscar",
+    "errorSelect": "Selecciona un puerto de salida y de llegada.",
+    "errorNotFound": "No se ha encontrado ninguna ruta directa para esta combinación."
+  },
+  "trustBar": {
+    "reservation": "Reserva segura",
+    "viaBalearia": "vía Balearia",
+    "comparaison": "Comparación gratuita",
+    "horairesPrix": "horarios y precios",
+    "compagnie": "Compañía",
+    "balearia": "Balearia",
+    "pays": "4 países",
+    "paysList": "Francia, Marruecos, España, Argelia"
+  },
+  "megaMenu": {
+    "liaisonsCount": "{count} rutas de ferry disponibles en el Mediterráneo"
+  },
+  "countries": {
+    "france": "Desde Francia",
+    "maroc": "Desde Marruecos",
+    "espagne": "Desde España",
+    "algerie": "Desde Argelia"
+  },
+  "ports": {
+    "Sete": "Sète",
+    "Nador": "Nador",
+    "Tanger Med": "Tánger Med",
+    "Tanger Ville": "Tánger Ciudad",
+    "Tanger": "Tánger",
+    "Algeciras": "Algeciras",
+    "Ceuta": "Ceuta",
+    "Almeria": "Almería",
+    "Melilla": "Melilla",
+    "Motril": "Motril",
+    "Malaga": "Málaga",
+    "Valence": "Valencia",
+    "Mostaganem": "Mostaganem",
+    "Barcelona": "Barcelona",
+    "Alger": "Argel",
+    "Oran": "Orán",
+    "Tarifa": "Tarifa"
+  },
+  "route": {
+    "ferryTitle": "Ferry {origin} – {destination}: horarios, precios y billetes",
+    "horairesFrequence": "Horarios y frecuencia ferry {origin} – {destination}",
+    "tarifsReservation": "Tarifas y reserva billete ferry {origin} {destination}",
+    "prixReference": "Precio de referencia",
+    "prixIndicatif": "Los precios varían según la temporada, la demanda y el tipo de billete. Esta tarifa es orientativa.",
+    "infosPratiques": "Información práctica travesía {origin} – {destination}",
+    "naviresCompagnies": "Barcos y compañías ferry {origin} {destination}",
+    "accesPort": "Acceso al puerto y trámites {origin} – {destination}",
+    "avisVoyageurs": "Opiniones viajeros ferry {origin} {destination}",
+    "aproposLiaison": "Sobre la ruta {origin} {destination}",
+    "faq": "Preguntas frecuentes: ferry {origin} {destination}",
+    "liaisonsAlternatives": "Rutas alternativas desde {origin} o hacia {destination}",
+    "voirHorairesPrix": "Ver horarios y precios",
+    "durationLabel": "Duración",
+    "priceFromLabel": "Desde",
+    "heroDescription": "Compara las travesías {origin} {destination}: duración {duration}, frecuencia {frequency}, compañías {operators} y precios desde {price}EUR.",
+    "schedule": {
+      "frequence": "Frecuencia",
+      "enregistrement": "Facturación",
+      "conseil": "Consejo práctico"
+    },
+    "scheduleDetails": {
+      "frequence": "{frequency}. Los horarios exactos varían según la temporada.",
+      "enregistrement": "Llega al puerto al menos 90 minutos antes de la salida para pasajeros, 120 minutos con vehículo.",
+      "conseil": "Consulta el tiempo y las condiciones del puerto de {origin} y {destination} antes de la salida."
+    },
+    "faqItems": {
+      "priceQuestion": "¿Cuál es el precio mínimo para {origin} - {destination}?",
+      "priceAnswer": "Las tarifas empiezan desde {price}EUR, según temporada, disponibilidad y tipo de billete.",
+      "carQuestion": "¿Se puede embarcar con coche en {origin} - {destination}?",
+      "carAnswer": "Sí, según la compañía y el barco. Compara las opciones de pasajero y vehículo antes de reservar.",
+      "durationQuestion": "¿Cuánto dura la travesía {origin} - {destination}?",
+      "durationAnswer": "La travesía {origin} - {destination} dura aproximadamente {duration}. La duración puede variar según las condiciones meteorológicas y el barco.",
+      "docsQuestion": "¿Qué documentos se necesitan para la travesía {origin} - {destination}?",
+      "docsAnswer": "Se necesita un pasaporte o documento de identidad en vigor. Con vehículo, la documentación del coche y el seguro son obligatorios. Verifica los requisitos según tu nacionalidad.",
+      "amenitiesQuestion": "¿Qué servicios hay a bordo del ferry {origin} - {destination}?",
+      "amenitiesAnswer": "Los ferries suelen ofrecer restaurante, bar, camarotes, butacas reclinables, wifi y zonas de juego para niños. Los servicios varían según el barco.",
+      "arrivalQuestion": "¿A qué hora hay que llegar al puerto para el ferry {origin} - {destination}?",
+      "arrivalAnswer": "Llega al menos 90 minutos antes de la salida para pasajeros a pie y 120 minutos con vehículo. En temporada alta, prevé más margen.",
+      "bookQuestion": "¿Dónde reservar el billete de ferry?",
+      "bookAnswer": "BateauBillet no vende directamente. Usa el botón Reservar para ser redirigido al sitio de reservas de Balearia."
+    },
+    "routeGuideTitle": "Guía de la travesía {origin} – {destination}",
+    "routeGuideContent": "La ruta de ferry {origin} – {destination} está operada por {operators}. La travesía dura aproximadamente {duration} con una frecuencia de {frequency}. Las tarifas empiezan desde {price}EUR por pasajero. Los barcos disponen de restaurantes, bares, camarotes y zonas de descanso. Llega al puerto al menos 90 minutos antes (120 min con vehículo). Lleva un pasaporte o DNI válido, además de la documentación del vehículo si aplica. Los precios varían según la temporada: reserva con antelación para las mejores ofertas, especialmente fuera de la temporada alta de verano (julio-agosto).",
+    "naviresDesc": "Los barcos disponibles pueden variar según el período. Consulta la disponibilidad en tiempo real en la plataforma de reservas.",
+    "accesPortDesc": "Antes de salir de {origin} hacia {destination}, verifica los accesos portuarios, trámites y condiciones de embarque.",
+    "avisDesc": "Las experiencias de los viajeros varían según la temporada y la afluencia. Compara horarios y opciones antes de reservar."
+  },
+  "howItWorks": {
+    "step": "Paso",
+    "step1Title": "Elige tu ruta",
+    "step1Desc": "Selecciona el puerto de salida y llegada",
+    "step2Title": "Compara horarios",
+    "step2Desc": "Consulta las tarifas y frecuencias",
+    "step3Title": "Reserva directamente",
+    "step3Desc": "Accede a la reserva de Balearia"
+  },
+  "routeCard": {
+    "from": "desde",
+    "reserver": "Reservar",
+    "eur": "EUR",
+    "bestPrice": "Mejor precio",
+    "hours": "h",
+    "frequency": {
+      "1-2-weekly": "1 a 2 travesías/sem.",
+      "2-plus-daily": "2+ salidas/día",
+      "3-5-weekly": "3 a 5 travesías/sem.",
+      "1-daily": "1 salida/día",
+      "2-plus-weekly": "2+ salidas/sem."
+    }
+  },
+  "navieras": {
+    "balearia": {
+      "metaTitle": "Balearia: ferry, horarios y reserva – BateauBillet",
+      "metaDescription": "Líneas de ferry Balearia entre España, Marruecos, Argelia y Francia. Horarios, tarifas y reserva de billetes para travesías por el Mediterráneo.",
+      "metaOgTitle": "Balearia: ferry y travesías Mediterráneo",
+      "title": "Balearia: ferry, horarios y reserva",
+      "intro": "Balearia es el operador principal referenciado en BateauBillet para las travesías por el Mediterráneo: Francia, España, Marruecos y Argelia.",
+      "h2Lines": "Líneas y travesías ferry Balearia",
+      "linesDesc": "La compañía Balearia opera rutas regulares entre varios puertos. Compara horarios y precios para reservar tu billete.",
+      "h2Tarifs": "Tarifas y reserva billete ferry Balearia",
+      "h3Reserver": "Reservar un ferry Balearia",
+      "tarifsDesc": "Las tarifas varían según la ruta, la temporada y el tipo de billete (pasajero o vehículo). Reserva con antelación para conseguir los mejores precios en las travesías Balearia.",
+      "h2Infos": "Compañía Balearia: información práctica",
+      "h3Navires": "Barcos y servicios a bordo",
+      "naviresDesc": "Balearia opera varios barcos en las líneas Francia–Marruecos, España–Marruecos y España–Argelia. Los servicios (restaurante, camarotes, wifi) dependen del barco y la ruta. Consulta horarios y condiciones en el momento de la reserva."
+    },
+    "breadcrumbNavieras": "Navieras"
+  },
+  "bookingCta": {
+    "reserver": "Reserva tu billete"
+  },
+  "port": {
+    "title": "Puerto de {name}: ferry, horarios y travesías",
+    "description": "Encuentra todas las rutas de ferry desde o hacia el puerto de {name}. Compara horarios, tarifas y compañías para reservar tu billete.",
+    "departures": "Travesías desde el puerto de {name}",
+    "arrivals": "Travesías hacia el puerto de {name}",
+    "noDepartures": "No hay travesías desde {name} en las líneas referenciadas.",
+    "noArrivals": "No hay travesías hacia {name} en las líneas referenciadas.",
+    "accesInfo": "Acceso e información del puerto de {name}",
+    "reserverTitle": "Reservar un ferry desde o hacia {name}",
+    "reserverDesc": "Los horarios y tarifas varían según la temporada y la compañía. Llega al puerto con antelación para la facturación (unos 90 min para pasajeros, 2 h con vehículo). Verifica los trámites y documentos antes de la salida."
+  },
+  "info": {
+    "avecVoiture": {
+      "title": "Ferry con coche: horarios, precios y consejos",
+      "intro": "Viajar en ferry con vehículo requiere una preparación específica: facturación anticipada, documentos en regla y cumplimiento de las instrucciones de embarque.",
+      "h2Prep": "Prepara tu viaje en ferry con coche",
+      "prepDesc": "Tanto si viajas a Marruecos, España o Argelia, los trámites y plazos de embarque son similares en las principales líneas del Mediterráneo.",
+      "h3Docs": "Documentos y trámites para embarcar en ferry con vehículo",
+      "h2Tarifs": "Tarifas y reserva billete ferry con coche",
+      "tarifsDesc": "Los precios varían según la ruta, la temporada y el tipo de vehículo. Compara horarios y reserva con antelación para conseguir las mejores tarifas."
+    }
+  },
+  "articles": {
+    "publishedOn": "Publicado el",
+    "readMore": "Leer más",
+    "guideDetailTitle": "Consejos y puntos clave para tu travesía",
+    "guideDetailSubtitle": "Lo que debes saber para reservar tu ferry",
+    "meilleure-periode-traversee-maroc-espagne": {
+      "title": "¿Cuál es la mejor época para reservar tu ferry?",
+      "description": "Guía práctica para elegir la temporada adecuada, comparar precios y evitar los períodos de mayor afluencia.",
+      "content": {
+        "0": "La temporada alta concentra la demanda y las tarifas más elevadas.",
+        "1": "Para ahorrar, anticipa la reserva y compara varios días de salida.",
+        "2": "Las líneas hacia Marruecos pueden estar muy solicitadas durante las vacaciones escolares."
+      }
+    },
+    "documents-voyage-ferry-maroc": {
+      "title": "Documentos necesarios para viajar en ferry a Marruecos",
+      "description": "Pasaporte, documentación del vehículo, seguro y consejos para embarcar sin estrés con o sin coche.",
+      "content": {
+        "0": "Verifica la validez de tu pasaporte antes de cualquier reserva.",
+        "1": "Con vehículo, prepara la documentación administrativa y los seguros para presentar en el puerto.",
+        "2": "Llega con antelación para los trámites de facturación y seguridad."
+      }
+    },
+    "ferry-avec-voiture-conseils": {
+      "title": "Ferry con coche: 7 consejos para preparar tu viaje",
+      "description": "Nuestras recomendaciones para el embarque, la seguridad del vehículo y la comodidad durante la travesía.",
+      "content": {
+        "0": "Revisa el estado del vehículo y lleva los objetos de valor contigo.",
+        "1": "Sigue las instrucciones de la tripulación para aparcar a bordo.",
+        "2": "Prepara una bolsa de cabina con lo esencial para la travesía."
+      }
+    },
+    "5-raisons-visiter-valence-printemps": {
+      "title": "5 Razones para Visitar Valencia esta Primavera | Guía de Viaje 2025",
+      "description": "Descubre por qué Valencia es el destino perfecto esta primavera: clima ideal, precios asequibles, ferries directos y actividades familiares. Reserva tu billete ahora.",
+      "content": {
+        "0": "Valencia, tercera ciudad más grande de España, despierta en primavera con una energía especial. Situada en la costa mediterránea, este destino combina patrimonio histórico, arquitectura futurista, gastronomía reconocida y playas accesibles. La primavera es el momento ideal para descubrir esta dinámica ciudad española, lejos de las multitudes veraniegas y con un clima perfecto para explorar sus numerosas atracciones.",
+        "1": "H2: 1. Un Clima Mediterráneo Ideal en Abril y Mayo",
+        "2": "La primavera transforma Valencia en un destino perfecto para las vacaciones. A diferencia del verano, cuando las temperaturas superan regularmente los 35°C, el período de abril a mayo ofrece condiciones meteorológicas óptimas para visitar la ciudad.",
+        "3": "H3: Temperaturas Agradables para Todas las Actividades",
+        "4": "Entre abril y mayo, Valencia disfruta de temperaturas medias entre 18°C y 24°C. Estas condiciones permiten pasear cómodamente por el centro histórico, visitar museos sin el calor sofocante y disfrutar de las playas desde finales de abril.",
+        "5": "El mes de marzo merece una atención especial con la celebración de las Fallas de Valencia, una fiesta espectacular inscrita en el patrimonio cultural inmaterial de la UNESCO.",
+        "6": "H3: Un Sol Generoso",
+        "7": "Valencia cuenta con unos 300 días de sol al año, y la primavera no es la excepción. Los días se alargan, ofreciendo más tiempo para explorar la ciudad.",
+        "8": "H2: 2. Tarifas Ventajosas para Viajar en Barco",
+        "9": "La primavera es un período económico para viajar a Valencia, especialmente si optas por el ferry. Las tarifas fuera de temporada alta permiten ahorros sustanciales en tu presupuesto vacacional.",
+        "10": "H3: Comparación de Precios de Billetes",
+        "11": "Los billetes de ferry hacia Valencia cuestan generalmente un 30-40% menos en primavera que en julio-agosto. Una travesía en camarote para dos adultos con vehículo puede pasar de 400€ en temporada alta a 250€ en abril o mayo.",
+        "12": "En BateauBillet puedes comparar las ofertas de las distintas compañías navieras y beneficiarte de las mejores tarifas.",
+        "13": "H3: Alojamiento y Restauración Más Asequibles",
+        "14": "La ventaja económica va más allá del transporte. Los hoteles valencianos aplican tarifas de temporada baja en abril y mayo. Un hotel de 3 estrellas bien situado cuesta entre 60€ y 90€ por noche, frente a 120€-180€ en verano.",
+        "15": "La restauración es accesible todo el año en Valencia. Un menú del día se encuentra fácilmente entre 10€ y 15€, incluyendo entrante, plato, postre y bebida.",
+        "16": "H3: Presupuesto Global para una Semana",
+        "17": "Para una familia de cuatro personas, una semana en Valencia en primavera requiere un presupuesto aproximado de: transporte en ferry (ida y vuelta con vehículo) 250€-350€, alojamiento 420€-630€, restauración 400€-600€, actividades 200€-300€. Total: 1.270€-1.880€.",
+        "18": "H2: 3. Un Destino Perfecto para Familias",
+        "19": "Valencia se afirma como uno de los destinos mediterráneos más adaptados para vacaciones en familia.",
+        "20": "H3: La Ciudad de las Artes y las Ciencias",
+        "21": "Este complejo arquitectónico futurista es el corazón de una visita familiar en Valencia. El Oceanogràfic, el acuario más grande de Europa, fascina a los niños con sus túneles submarinos y sus 500 especies marinas.",
+        "22": "El Museo de las Ciencias Príncipe Felipe ofrece exposiciones interactivas donde los niños manipulan, experimentan y aprenden jugando.",
+        "23": "H3: El Bioparc Valencia",
+        "24": "El Bioparc revoluciona el concepto de zoo tradicional. Este parque reproduce fielmente los hábitats naturales africanos con una filosofía de zoo-inmersión.",
+        "25": "A los niños les encantan las zonas interactivas y las explicaciones pedagógicas de los cuidadores. El recorrido de 3-4 horas atraviesa diferentes ecosistemas: sabana, selva ecuatorial y Madagascar.",
+        "26": "H3: Playas Familiares Accesibles",
+        "27": "Las playas valencianas, como La Malvarrosa y Las Arenas, son fácilmente accesibles desde el centro en tranvía o bicicleta.",
+        "28": "El Paseo Marítimo ofrece zonas de juego, alquiler de bicicletas y restaurantes adaptados para familias.",
+        "29": "H3: Parques y Espacios Verdes",
+        "30": "El Jardín del Turia, antiguo cauce del río Turia transformado en parque urbano de 9 kilómetros, atraviesa la ciudad de oeste a este.",
+        "31": "El Parque Gulliver presenta una escultura gigante del personaje de Jonathan Swift sobre la que los niños trepan, se deslizan y exploran.",
+        "32": "H2: 4. Un Patrimonio Cultural Rico y Accesible",
+        "33": "El centro histórico de Valencia concentra ocho siglos de historia en un perímetro fácilmente explorable a pie.",
+        "34": "H3: El Centro Histórico (Ciutat Vella)",
+        "35": "La Catedral de Valencia alberga el Santo Cáliz, considerado por algunos como el Santo Grial. La subida al Miguelete recompensa los 207 escalones con una vista panorámica de la ciudad y el mar.",
+        "36": "La Lonja de la Seda, declarada Patrimonio de la Humanidad por la UNESCO, impresiona por su arquitectura gótica tardía.",
+        "37": "H3: Las Plazas Emblemáticas",
+        "38": "La Plaza de la Virgen concentra la esencia de Valencia. Rodeada por la Catedral, la Basílica y el Palacio de la Generalitat.",
+        "39": "La Plaza del Ayuntamiento, con su ayuntamiento monumental y sus parterres de flores, sirve de escenario para los grandes eventos valencianos.",
+        "40": "H3: Museos y Centros Culturales",
+        "41": "El Museo de Bellas Artes de Valencia expone una colección importante de pintura valenciana del siglo XIV al XVII, incluyendo obras de Velázquez, El Greco y Goya. La entrada es gratuita.",
+        "42": "El Instituto Valenciano de Arte Moderno (IVAM) se centra en el arte del siglo XX con una colección permanente de vanguardia.",
+        "43": "H3: Tradiciones Vivas",
+        "44": "El Tribunal de las Aguas se reúne cada jueves al mediodía ante la Puerta de los Apóstoles de la Catedral desde hace más de 1.000 años, una tradición inscrita en el patrimonio inmaterial de la UNESCO.",
+        "45": "H2: 5. Una Gastronomía Mediterránea Auténtica",
+        "46": "La gastronomía valenciana es mundialmente famosa: la paella nació en la región, los cítricos y la horchata forman parte del patrimonio local, y mercados como el Mercado Central ofrecen productos frescos y un ambiente único."
+      }
+    },
+    "operation-marhaba-2026": {
+      "title": "Operación Marhaba 2026: guía completa ferry Marruecos",
+      "description": "Todo sobre la Operación Marhaba 2026: fechas, rutas de ferry recomendadas, precios y consejos para cruzar a Marruecos en verano.",
+      "content": {
+        "0": "La Operación Marhaba, también conocida como Tránsito, es el dispositivo organizado cada verano para facilitar el retorno de la diáspora marroquí a Marruecos. De junio a septiembre, cientos de miles de viajeros cruzan el Mediterráneo en ferry.",
+        "1": "H2: Fechas y períodos de la Operación Marhaba 2026",
+        "2": "La Operación Marhaba 2026 debería desarrollarse del 5 de junio al 15 de septiembre de 2026. Los picos de tráfico se esperan en julio y principios de agosto, especialmente desde Algeciras, Sète y Barcelona.",
+        "3": "H2: Rutas de ferry recomendadas",
+        "4": "Las principales rutas son Algeciras-Tánger Med, Sète-Nador, Sète-Tánger Med, Barcelona-Tánger Med y Almería-Nador. Reserva lo antes posible: las plazas con vehículo se llenan desde abril para las salidas de julio.",
+        "5": "H3: Desde España",
+        "6": "Algeciras-Tánger Med es la ruta más corta (aproximadamente 1h30). Tarifa-Tánger Ciudad ofrece una alternativa rápida. Para quienes vienen del norte de España, Barcelona-Tánger Med evita atravesar Andalucía.",
+        "7": "H3: Desde Francia",
+        "8": "Sète-Nador y Sète-Tánger Med son las salidas directas desde Francia. La travesía dura entre 26 y 39 horas según el destino. Reserva un camarote para mayor comodidad.",
+        "9": "H2: Consejos prácticos",
+        "10": "Llega al puerto 3 horas antes de la salida durante la Operación Marhaba. Las colas son largas, especialmente con vehículo. Prepara toda la documentación con antelación: pasaporte, documentación del coche, seguro.",
+        "11": "H2: Precios y presupuesto",
+        "12": "Los precios suben significativamente en julio-agosto. Reserva cuanto antes para ahorrar un 30-50% respecto a las tarifas de última hora. Un ida y vuelta Algeciras-Tánger Med con vehículo cuesta unos 200-400€ en temporada alta."
+      }
+    },
+    "prix-ferry-ete-2026": {
+      "title": "Precios ferry Marruecos verano 2026: comparación y consejos",
+      "description": "Compara los precios de ferry a Marruecos para el verano 2026. Trucos para encontrar las mejores tarifas en Algeciras-Tánger, Sète-Nador y otras rutas.",
+      "content": {
+        "0": "El verano es la temporada alta para los ferries a Marruecos y Argelia. Los precios pueden duplicarse o triplicarse respecto a la primavera. Así puedes conseguir las mejores tarifas para tus travesías estivales.",
+        "1": "H2: Evolución de precios por mes",
+        "2": "Marzo-mayo: temporada baja, las mejores tarifas. Junio: los precios empiezan a subir. Julio-agosto: temporada alta, tarifas máximas. Septiembre: los precios bajan progresivamente.",
+        "3": "H2: Comparación de las rutas principales",
+        "4": "Algeciras-Tánger Med: desde 35€ en temporada baja, 80-150€ en verano. Sète-Nador: desde 61€ en temporada baja, 150-300€ en verano. Barcelona-Tánger Med: desde 90€ en temporada baja, 200-400€ en verano.",
+        "5": "H2: Trucos para ahorrar",
+        "6": "Reserva con 2-3 meses de antelación. Viaja entre semana en lugar de fin de semana. Considera las salidas nocturnas para ahorrar una noche de hotel. Compara tarifas en BateauBillet antes de reservar.",
+        "7": "H3: Errores a evitar",
+        "8": "No reserves a última hora en julio-agosto. No subestimes el tiempo necesario en el puerto. Verifica las restricciones de equipaje y vehículo antes de salir."
+      }
+    },
+    "traversees-ramadan-2026": {
+      "title": "Travesías en ferry durante el Ramadán 2026",
+      "description": "Información práctica para viajar en ferry durante el Ramadán 2026: horarios, servicios a bordo y consejos para una travesía cómoda.",
+      "content": {
+        "0": "El Ramadán 2026 debería transcurrir aproximadamente desde finales de febrero hasta finales de marzo. Para los viajeros que cruzan el Mediterráneo durante este período, aquí tienes la información práctica.",
+        "1": "H2: Horarios y disponibilidad durante el Ramadán",
+        "2": "Las compañías navieras mantienen generalmente sus horarios habituales durante el Ramadán. Sin embargo, los servicios de restauración a bordo pueden adaptarse, con horarios especiales para el iftar.",
+        "3": "H2: Servicios a bordo",
+        "4": "La mayoría de los ferries ofrecen espacios tranquilos para los pasajeros que ayunan. Algunas compañías ofrecen comidas especiales de iftar a bordo. Infórmate en la compañía al reservar.",
+        "5": "H2: Consejos prácticos",
+        "6": "Reserva un camarote si es posible para mayor comodidad durante el ayuno. Lleva agua y dátiles para la ruptura del ayuno. Las travesías nocturnas son ideales durante el Ramadán.",
+        "7": "H2: Precios durante el Ramadán",
+        "8": "El Ramadán suele coincidir con temporada baja o media, lo que significa tarifas más ventajosas. Es un buen momento para viajar si buscas precios bajos."
+      }
+    }
+  },
+  "legal": {
+    "breadcrumbPorts": "Puertos"
+  }
+}

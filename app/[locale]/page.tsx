@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { buildHreflang } from "@/lib/hreflang";
 import { BOOKING_URL, SITE_NAME, SITE_URL, STATS } from "@/lib/site";
 import { getPopularRoutes } from "@/lib/routes-utils";
 import { newsArticles } from "@/data/news";
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale === "ar"
         ? "قارن العبارات المغرب إسبانيا الجزائر فرنسا: المواعيد والأسعار والعبور الشائعة مع إعادة التوجيه للحجز الآمن."
         : "Comparez les ferries Maroc Espagne Algerie France: horaires, prix et traversées populaires avec redirection réservation sécurisée.",
-    alternates: { canonical: `${SITE_URL}/${locale}` },
+    alternates: { canonical: `${SITE_URL}/${locale}`, languages: buildHreflang("") },
   };
 }
 

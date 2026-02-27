@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale === "ar"
         ? "معلومات عامة حول تعديلات وتبادلات تذاكر العبارة."
         : "Informations générales sur les modifications et échanges de billets ferry.",
-    alternates: { canonical: `${SITE_URL}/${locale}/changements-et-echanges` },
+    alternates: { canonical: `${SITE_URL}/${locale}/changements-et-echanges`, languages: buildHreflang("/changements-et-echanges") },
   };
 }
 

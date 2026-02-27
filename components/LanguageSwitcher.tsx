@@ -12,13 +12,15 @@ export default function LanguageSwitcher() {
   function switchLocale(newLocale: Locale) {
     if (newLocale === locale) return;
     // Replace existing locale prefix with new one
-    const withoutLocale = pathname.replace(/^\/(fr|ar)/, "") || "/";
+    const withoutLocale = pathname.replace(/^\/(fr|ar|es)/, "") || "/";
     router.push(`/${newLocale}${withoutLocale}`);
   }
 
+  const labels: Record<Locale, string> = { fr: "FR", ar: "العربية", es: "ES" };
+
   return (
     <div className="flex items-center gap-1 rounded-lg border border-ocean-700/50 bg-ocean-900/50 p-0.5">
-      {(["fr", "ar"] as const).map((loc) => (
+      {(["fr", "ar", "es"] as const).map((loc) => (
         <button
           key={loc}
           type="button"
@@ -31,7 +33,7 @@ export default function LanguageSwitcher() {
           aria-label={localeNames[loc]}
           aria-current={locale === loc ? "true" : undefined}
         >
-          {loc === "ar" ? "العربية" : "FR"}
+          {labels[loc]}
         </button>
       ))}
     </div>

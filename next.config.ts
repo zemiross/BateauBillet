@@ -110,8 +110,14 @@ const legalRedirects = [
 
 const nextConfig: NextConfig = {
   async redirects() {
-    const routeRedirects = routes.map((route) => ({
+    const routePhpRedirects = routes.map((route) => ({
       source: `/${route.country}/${route.slug}.php`,
+      destination: `/fr/${route.country}/${route.slug}`,
+      permanent: true,
+    }));
+
+    const routeBareRedirects = routes.map((route) => ({
+      source: `/${route.country}/${route.slug}`,
       destination: `/fr/${route.country}/${route.slug}`,
       permanent: true,
     }));
@@ -127,7 +133,7 @@ const nextConfig: NextConfig = {
       destination: r.destination.startsWith("/") ? `/fr${r.destination}` : `/fr/${r.destination}`,
     }));
 
-    return [...routeRedirects, ...articleRedirects, ...localizedLegalRedirects];
+    return [...routePhpRedirects, ...routeBareRedirects, ...articleRedirects, ...localizedLegalRedirects];
   },
 };
 

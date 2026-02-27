@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale === "ar"
         ? "شروط استخدام موقع BateauBillet.com"
         : "Conditions d'utilisation de BateauBillet.com",
-    alternates: { canonical: `${SITE_URL}/${locale}/conditions-de-utilisation` },
+    alternates: { canonical: `${SITE_URL}/${locale}/conditions-de-utilisation`, languages: buildHreflang("/conditions-de-utilisation") },
   };
 }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Balearia Regina Baltica : navire, liaisons et réservation ferry",
     description:
       "Navire Regina Baltica : liaisons long courrier, services à bord et réservation des billets ferry Balearia.",
-    alternates: { canonical },
+    alternates: { canonical, languages: buildHreflang("/navieras/balearia-regina-baltica") },
     openGraph: {
       locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",

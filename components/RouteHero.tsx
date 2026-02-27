@@ -11,7 +11,11 @@ type RouteHeroProps = {
   displayOrigin?: string;
   displayDestination?: string;
   title?: string;
+  description?: string;
   ctaLabel?: string;
+  durationLabel?: string;
+  frequencyLabel?: string;
+  priceFromLabel?: string;
 };
 
 export default function RouteHero({
@@ -19,12 +23,17 @@ export default function RouteHero({
   displayOrigin,
   displayDestination,
   title,
+  description,
   ctaLabel = "Voir les horaires et prix",
+  durationLabel,
+  frequencyLabel,
+  priceFromLabel,
 }: RouteHeroProps) {
   const theme = getCountryTheme(route.country);
   const origin = displayOrigin ?? route.origin;
   const destination = displayDestination ?? route.destination;
   const heading = title ?? `Ferry ${route.origin} – ${route.destination} : horaires, prix et billets`;
+  const introText = description ?? route.description;
 
   return (
     <section className="relative overflow-hidden">
@@ -36,7 +45,7 @@ export default function RouteHero({
           fill
           className="object-cover"
           priority
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, 1200px"
         />
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/50" />
@@ -63,7 +72,7 @@ export default function RouteHero({
             {heading}
           </h1>
           <p className="mb-8 max-w-2xl text-base leading-relaxed text-white/90">
-            {route.description}
+            {introText}
           </p>
 
           <RouteQuickInfo
@@ -71,6 +80,9 @@ export default function RouteHero({
             frequency={route.frequency}
             priceFrom={route.priceFrom}
             operators={route.operators}
+            durationLabel={durationLabel}
+            frequencyLabel={frequencyLabel}
+            priceFromLabel={priceFromLabel}
           />
 
           <div className="mt-8">

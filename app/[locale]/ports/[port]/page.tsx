@@ -10,6 +10,7 @@ import {
   getPortsWithSlugs,
   getRoutesFromPort,
 } from "@/lib/routes-utils";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -36,7 +37,7 @@ export async function generateMetadata({
   return {
     title: `Port de ${portName} : ferry, horaires et traversées`,
     description: `Traversées au départ et à l'arrivée du port de ${portName}. Horaires, prix et réservation des billets ferry.`,
-    alternates: { canonical },
+    alternates: { canonical, languages: buildHreflang(`/ports/${port}`) },
     openGraph: {
       locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",

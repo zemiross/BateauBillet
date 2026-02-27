@@ -26,20 +26,41 @@ export type Route = {
   schedules: Schedule[];
   faq: FAQ[];
   canonicalPath: string;
+  /** i18n key for route-specific rich content: route.<slug>.guide */
+  hasGuide?: boolean;
 };
 
 const DEFAULT_BOOKING_URL =
   "https://www.balearia.com/fr/web/balearia-agencias-microsite?Agencia=1045555&Usuario=ILOVEVIAJES&Clave=3324503f2c3b43&encripta=1";
 
-const buildFaq = (origin: string, destination: string, priceFrom: number): FAQ[] => [
+const buildFaq = (origin: string, destination: string, priceFrom: number, duration: string): FAQ[] => [
   {
     question: `Quel est le prix minimum pour ${origin} - ${destination} ?`,
     answer: `Les tarifs commencent a partir de ${priceFrom}EUR, selon saison, disponibilite et type de billet.`,
   },
   {
+    question: `Combien de temps dure la traversee ${origin} - ${destination} ?`,
+    answer: `La traversee ${origin} - ${destination} dure environ ${duration}. La duree peut varier selon les conditions meteorologiques et le navire.`,
+  },
+  {
     question: `Peut-on embarquer avec voiture sur ${origin} - ${destination} ?`,
     answer:
       "Oui, selon la compagnie et le navire. Comparez les options passager et vehicule avant de reserver.",
+  },
+  {
+    question: `Quels documents faut-il pour la traversee ${origin} - ${destination} ?`,
+    answer:
+      "Un passeport ou une carte d'identite en cours de validite est necessaire. Avec vehicule, la carte grise et l'assurance sont obligatoires. Verifiez les exigences specifiques selon votre nationalite.",
+  },
+  {
+    question: `Quels services sont disponibles a bord du ferry ${origin} - ${destination} ?`,
+    answer:
+      "Les ferries proposent generalement un restaurant, un bar, des cabines, des fauteuils inclinables, le wifi et des espaces de jeux pour enfants. Les services varient selon le navire.",
+  },
+  {
+    question: `A quelle heure arriver au port pour le ferry ${origin} - ${destination} ?`,
+    answer:
+      "Arrivez au moins 90 minutes avant le depart pour les passagers a pied et 120 minutes avec vehicule. En haute saison, prevoyez plus de marge.",
   },
   {
     question: "Ou reserver le billet de ferry ?",
@@ -91,7 +112,8 @@ const buildRoute = (params: {
     title: `Bateau ${origin} ${destination}, horaires et prix des ferries`,
     description: `Comparez les traverses ${origin} ${destination}: duree ${duration}, frequence ${frequency}, compagnies ${operators.join(", ")} et prix des ${priceFrom}EUR.`,
     schedules: buildSchedules(origin, destination, frequency),
-    faq: buildFaq(origin, destination, priceFrom),
+    faq: buildFaq(origin, destination, priceFrom, duration),
+    hasGuide: true,
   };
 };
 
@@ -245,16 +267,6 @@ export const routes: Route[] = [
     frequency: "2+ departs hebdomadaires",
     operators: ["Balearia"],
     priceFrom: 49,
-  }),
-  buildRoute({
-    slug: "motril-tanger",
-    country: "espagne",
-    origin: "Motril",
-    destination: "Tanger",
-    duration: "08:00h",
-    frequency: "3 a 5 itineraires hebdomadaires",
-    operators: ["Balearia"],
-    priceFrom: 47,
   }),
   buildRoute({
     slug: "valence-mostaganem",

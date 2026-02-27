@@ -70,6 +70,13 @@ RewriteRule ^info/politiques/politique-de-cookies\.php$ https://bateaubillet.com
 # Route .php (generic): /country/slug.php -> /fr/country/slug
 RewriteRule ^(france|maroc|espagne|algerie)/([^.]+)\.php$ https://bateaubillet.com/fr/$1/$2 [L,R=301]
 
+# Bare country/slug without locale prefix -> /fr/country/slug
+RewriteCond %{REQUEST_URI} !^/(fr|ar|es)/
+RewriteRule ^(france|maroc|espagne|algerie)/([^.]+)$ https://bateaubillet.com/fr/$1/$2 [L,R=301]
+
+# Catch-all: any remaining .php -> homepage
+RewriteRule ^(.+)\.php$ https://bateaubillet.com/fr/ [L,R=301]
+
 # ---------------------------------------------------------------------------
 # Cache / expires (unchanged from previous .htaccess)
 # ---------------------------------------------------------------------------

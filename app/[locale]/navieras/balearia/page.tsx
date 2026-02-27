@@ -5,6 +5,7 @@ import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
 import RouteCard from "@/components/RouteCard";
 import { routes } from "@/data/routes";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical },
+    alternates: { canonical, languages: buildHreflang("/navieras/balearia") },
     openGraph: {
       locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",

@@ -8,12 +8,14 @@ import InfoAccordion from "@/components/InfoAccordion";
 import InfoCard from "@/components/InfoCard";
 import RouteCard from "@/components/RouteCard";
 import RouteHero from "@/components/RouteHero";
+import SchemaFAQ from "@/components/SchemaFAQ";
 import SchemaTrip from "@/components/SchemaTrip";
 import StickyBookingBar from "@/components/StickyBookingBar";
 import Badge from "@/components/ui/Badge";
 import { getRouteByCountryAndSlug, routes } from "@/data/routes";
 import { getArticleBySlug, newsArticles } from "@/data/news";
 import { getAlternativeRoutes } from "@/lib/routes-utils";
+import { buildHreflang } from "@/lib/hreflang";
 import { BOOKING_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -54,7 +56,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
       title,
       description,
-      alternates: { canonical },
+      alternates: { canonical, languages: buildHreflang(article.canonicalPath) },
       openGraph: {
         type: "article",
         locale: locale === "ar" ? "ar_MA" : "fr_FR",
@@ -79,7 +81,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: routeData.title,
     description: routeData.description,
-    alternates: { canonical },
+    alternates: { canonical, languages: buildHreflang(routeData.canonicalPath) },
     openGraph: {
       locale: locale === "ar" ? "ar_MA" : "fr_FR",
       type: "website",
@@ -96,7 +98,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CountrySegmentPage({ params }: PageProps) {
   const { locale, country, route } = await params;
 
-  if (!routing.locales.includes(locale as "fr" | "ar")) notFound();
+  if (!routing.locales.includes(locale as "fr" | "ar" | "es")) notFound();
 
   const tRoute = await getTranslations({ locale, namespace: "route" });
   const tPorts = await getTranslations({ locale, namespace: "ports" });
@@ -106,6 +108,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
     const article = getArticleBySlug(route);
     if (!article) notFound();
     const tArticles = await getTranslations({ locale, namespace: "articles" });
+    const tBookingCta = await getTranslations({ locale, namespace: "bookingCta" });
     const title = tArticles(`${article.slug}.title`) || article.title;
     const description = tArticles(`${article.slug}.description`) || article.description;
     const contentParagraphs = article.content.map((_, i) =>
@@ -171,7 +174,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         </section>
 
         <div className="mt-10">
-          <BookingCTA />
+          <BookingCTA label={tBookingCta("reserver")} />
         </div>
 
         <div className="mt-12">
@@ -201,7 +204,18 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         displayOrigin={o}
         displayDestination={d}
         title={tRoute("ferryTitle", { origin: o, destination: d })}
+        description={tRoute("heroDescription", {
+          origin: o,
+          destination: d,
+          duration: routeData.duration,
+          frequency: routeData.frequency,
+          operators: routeData.operators.join(", "),
+          price: routeData.priceFrom,
+        })}
         ctaLabel={tRoute("voirHorairesPrix")}
+        durationLabel={tRoute("durationLabel")}
+        frequencyLabel={tRoute("schedule.frequence")}
+        priceFromLabel={tRoute("priceFromLabel")}
       />
 
       <div className="mx-auto max-w-6xl px-4 py-10 md:py-14">
@@ -249,7 +263,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
               <p className="mb-6 text-xs leading-relaxed text-sand-900/50">
                 {tRoute("prixIndicatif")}
               </p>
-              <BookingCTA className="w-full justify-center" />
+              <BookingCTA className="w-full justify-center" label={tRoute("voirHorairesPrix")} />
             </div>
           </div>
         </AnimatedSection>
@@ -289,6 +303,17 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           </div>
         </AnimatedSection>
 
+        {routeData.hasGuide && (
+          <AnimatedSection className="mb-10">
+            <h2 className="mb-4 text-xl font-bold text-sand-900">
+              {tRoute("routeGuideTitle", { origin: o, destination: d })}
+            </h2>
+            <div className="prose prose-sand max-w-none text-base leading-relaxed text-sand-900/80">
+              <p>{tRoute("routeGuideContent", { origin: o, destination: d, duration: routeData.duration, frequency: routeData.frequency, operators: routeData.operators.join(", "), price: routeData.priceFrom })}</p>
+            </div>
+          </AnimatedSection>
+        )}
+
         <AnimatedSection className="mb-10">
           <h2 className="mb-4 text-xl font-bold text-sand-900">
             {tRoute("faq", { origin: o, destination: d })}
@@ -300,8 +325,24 @@ export default async function CountrySegmentPage({ params }: PageProps) {
                 content: tRoute("faqItems.priceAnswer", { price: routeData.priceFrom }),
               },
               {
+                title: tRoute("faqItems.durationQuestion", { origin: o, destination: d }),
+                content: tRoute("faqItems.durationAnswer", { origin: o, destination: d, duration: routeData.duration }),
+              },
+              {
                 title: tRoute("faqItems.carQuestion", { origin: o, destination: d }),
                 content: tRoute("faqItems.carAnswer"),
+              },
+              {
+                title: tRoute("faqItems.docsQuestion", { origin: o, destination: d }),
+                content: tRoute("faqItems.docsAnswer"),
+              },
+              {
+                title: tRoute("faqItems.amenitiesQuestion", { origin: o, destination: d }),
+                content: tRoute("faqItems.amenitiesAnswer"),
+              },
+              {
+                title: tRoute("faqItems.arrivalQuestion", { origin: o, destination: d }),
+                content: tRoute("faqItems.arrivalAnswer"),
               },
               {
                 title: tRoute("faqItems.bookQuestion"),
@@ -338,7 +379,13 @@ export default async function CountrySegmentPage({ params }: PageProps) {
         bookingUrl={BOOKING_URL}
       />
 
-      <SchemaTrip route={routeData} />
+      <SchemaTrip route={routeData} locale={locale} />
+      <SchemaFAQ
+        items={routeData.faq.map((f) => ({
+          question: f.question,
+          answer: f.answer,
+        }))}
+      />
     </>
   );
 }

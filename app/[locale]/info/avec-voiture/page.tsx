@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: "Bateau avec voiture: horaires, prix et conseils",
     description:
       "Préparez votre trajet ferry avec voiture: formalités, embarquement, prix indicatifs et conseils pratiques.",
-    alternates: { canonical },
+    alternates: { canonical, languages: buildHreflang("/info/avec-voiture") },
   };
 }
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildHreflang } from "@/lib/hreflang";
 import { SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale === "ar"
         ? "سياسة الخصوصية ومعالجة البيانات الشخصية."
         : "Politique de confidentialité et traitement des données personnelles.",
-    alternates: { canonical: `${SITE_URL}/${locale}/politique-de-confidentialite` },
+    alternates: { canonical: `${SITE_URL}/${locale}/politique-de-confidentialite`, languages: buildHreflang("/politique-de-confidentialite") },
   };
 }
 

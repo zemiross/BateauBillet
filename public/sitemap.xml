@@ -9,11 +9,19 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr</loc>
+    <priority>1</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar</loc>
     <priority>1</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar</loc>
     <priority>1</priority>
   </url>
   <url>
@@ -25,11 +33,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/valence-mostaganem</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/valence-mostaganem</loc>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/valence-mostaganem</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/valence-mostaganem</loc>
     <priority>0.9</priority>
   </url>
   <url>
@@ -41,11 +57,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/france/sete-nador</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/france/sete-nador</loc>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/france/sete-nador</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/france/sete-nador</loc>
     <priority>0.9</priority>
   </url>
   <url>
@@ -57,11 +81,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/algerie/mostaganem-valence</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/algerie/mostaganem-valence</loc>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/algerie/mostaganem-valence</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/algerie/mostaganem-valence</loc>
     <priority>0.9</priority>
   </url>
   <url>
@@ -73,11 +105,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/france/sete-tanger</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/france/sete-tanger</loc>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/france/sete-tanger</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/france/sete-tanger</loc>
     <priority>0.9</priority>
   </url>
   <url>
@@ -89,11 +129,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/tanger-sete</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/tanger-sete</loc>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/tanger-sete</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/tanger-sete</loc>
     <priority>0.9</priority>
   </url>
   <url>
@@ -105,11 +153,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/algeciras-tanger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/algeciras-tanger</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/algeciras-tanger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/algeciras-tanger</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -121,11 +177,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/ceuta-algeciras</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/ceuta-algeciras</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/ceuta-algeciras</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/ceuta-algeciras</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -137,11 +201,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/algeciras-ceuta</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/algeciras-ceuta</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/algeciras-ceuta</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/algeciras-ceuta</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -153,11 +225,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/navieras/balearia</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/navieras/balearia</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/navieras/balearia</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/navieras/balearia</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -169,11 +249,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/almeria-nador</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/almeria-nador</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/almeria-nador</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/almeria-nador</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -185,11 +273,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/barcelona-alger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/barcelona-alger</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/barcelona-alger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/barcelona-alger</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -201,11 +297,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/valence-alger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/valence-alger</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/valence-alger</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/valence-alger</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -217,11 +321,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/valence-oran</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/valence-oran</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/valence-oran</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/valence-oran</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -233,11 +345,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/tarifa-tanger-ville</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/tarifa-tanger-ville</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/tarifa-tanger-ville</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/tarifa-tanger-ville</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -249,11 +369,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/algerie/alger-barcelona</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/algerie/alger-barcelona</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/algerie/alger-barcelona</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/algerie/alger-barcelona</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -265,11 +393,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/algerie/alger-valence</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/algerie/alger-valence</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/algerie/alger-valence</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/algerie/alger-valence</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -281,11 +417,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/algerie/oran-valence</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/algerie/oran-valence</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/algerie/oran-valence</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/algerie/oran-valence</loc>
     <priority>0.8</priority>
   </url>
   <url>
@@ -297,11 +441,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/tanger-med-motril</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/tanger-med-motril</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/tanger-med-motril</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/tanger-med-motril</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -313,11 +465,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/tanger-ville-tarifa</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/tanger-ville-tarifa</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/tanger-ville-tarifa</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/tanger-ville-tarifa</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -329,11 +489,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/motril-tanger-med</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/motril-tanger-med</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/motril-tanger-med</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/motril-tanger-med</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -345,11 +513,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/tanger-motril</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/tanger-motril</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/tanger-motril</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/tanger-motril</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -361,11 +537,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/nador-sete</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/nador-sete</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/nador-sete</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/nador-sete</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -377,11 +561,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/almeria-melilla</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/almeria-melilla</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/almeria-melilla</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/almeria-melilla</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -393,11 +585,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/motril-tanger</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/motril-tanger</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/motril-tanger</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/motril-tanger</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -409,11 +609,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/tanger-algeciras</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/tanger-algeciras</loc>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/tanger-algeciras</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/tanger-algeciras</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -425,11 +633,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/melilla-almeria</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/melilla-almeria</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/melilla-almeria</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/melilla-almeria</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -441,11 +657,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/melilla-motril</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/melilla-motril</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/melilla-motril</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/melilla-motril</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -457,11 +681,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/motril-melilla</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/motril-melilla</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/motril-melilla</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/motril-melilla</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -473,11 +705,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/maroc/nador-almeria</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/maroc/nador-almeria</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/maroc/nador-almeria</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/maroc/nador-almeria</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -489,11 +729,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/melilla-malaga</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/melilla-malaga</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/melilla-malaga</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/melilla-malaga</loc>
     <priority>0.6</priority>
   </url>
   <url>
@@ -505,11 +753,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/espagne/malaga-melilla</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/espagne/malaga-melilla</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/espagne/malaga-melilla</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/espagne/malaga-melilla</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -521,11 +777,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/info/avec-voiture</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/info/avec-voiture</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/info/avec-voiture</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/info/avec-voiture</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -537,11 +801,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/navieras/balearia-regina-baltica</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/navieras/balearia-regina-baltica</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/navieras/balearia-regina-baltica</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/navieras/balearia-regina-baltica</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -553,11 +825,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/article/meilleure-periode-traversee-maroc-espagne</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/article/meilleure-periode-traversee-maroc-espagne</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/article/meilleure-periode-traversee-maroc-espagne</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/article/meilleure-periode-traversee-maroc-espagne</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -569,11 +849,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/article/documents-voyage-ferry-maroc</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/article/documents-voyage-ferry-maroc</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/article/documents-voyage-ferry-maroc</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/article/documents-voyage-ferry-maroc</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -585,11 +873,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/article/ferry-avec-voiture-conseils</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/article/ferry-avec-voiture-conseils</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/article/ferry-avec-voiture-conseils</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/article/ferry-avec-voiture-conseils</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -601,11 +897,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/article/5-raisons-visiter-valence-printemps</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/article/5-raisons-visiter-valence-printemps</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/article/5-raisons-visiter-valence-printemps</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/article/5-raisons-visiter-valence-printemps</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -617,11 +921,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/changements-et-echanges</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/changements-et-echanges</loc>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/changements-et-echanges</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/changements-et-echanges</loc>
     <priority>0.4</priority>
   </url>
   <url>
@@ -633,11 +945,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/conditions-de-utilisation</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/conditions-de-utilisation</loc>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/conditions-de-utilisation</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/conditions-de-utilisation</loc>
     <priority>0.4</priority>
   </url>
   <url>
@@ -649,11 +969,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/avis-juridique</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/avis-juridique</loc>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/avis-juridique</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/avis-juridique</loc>
     <priority>0.4</priority>
   </url>
   <url>
@@ -665,11 +993,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/politique-de-confidentialite</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/politique-de-confidentialite</loc>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/politique-de-confidentialite</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/politique-de-confidentialite</loc>
     <priority>0.4</priority>
   </url>
   <url>
@@ -681,11 +1017,19 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/politique-de-cookies</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/politique-de-cookies</loc>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/politique-de-cookies</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/politique-de-cookies</loc>
     <priority>0.4</priority>
   </url>
   <url>
@@ -697,11 +1041,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/algeciras</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/algeciras</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/algeciras</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/algeciras</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -713,11 +1065,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/alger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/alger</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/alger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/alger</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -729,11 +1089,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/almeria</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/almeria</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/almeria</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/almeria</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -745,11 +1113,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/barcelona</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/barcelona</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/barcelona</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/barcelona</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -761,11 +1137,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/ceuta</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/ceuta</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/ceuta</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/ceuta</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -777,11 +1161,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/malaga</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/malaga</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/malaga</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/malaga</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -793,11 +1185,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/melilla</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/melilla</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/melilla</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/melilla</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -809,11 +1209,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/mostaganem</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/mostaganem</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/mostaganem</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/mostaganem</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -825,11 +1233,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/motril</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/motril</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/motril</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/motril</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -841,11 +1257,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/nador</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/nador</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/nador</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/nador</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -857,11 +1281,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/oran</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/oran</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/oran</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/oran</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -873,11 +1305,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/sete</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/sete</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/sete</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/sete</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -889,11 +1329,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/tanger-med</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/tanger-med</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/tanger-med</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/tanger-med</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -905,11 +1353,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/tanger-ville</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/tanger-ville</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/tanger-ville</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/tanger-ville</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -921,11 +1377,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/tarifa</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/tarifa</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/tarifa</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/tarifa</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -937,11 +1401,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/tanger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/tanger</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/tanger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/tanger</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -953,11 +1425,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/fr/ports/valence</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ar/ports/valence</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ar/ports/valence</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ar/ports/valence</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -969,11 +1449,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/algeciras</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/alger</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/alger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/alger</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -985,11 +1473,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/almeria</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/barcelona</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/barcelona</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/barcelona</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1001,11 +1497,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/ceuta</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/malaga</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/malaga</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/malaga</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1017,11 +1521,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/melilla</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/mostaganem</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/mostaganem</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/mostaganem</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1033,11 +1545,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/motril</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/nador</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/nador</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/nador</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1049,11 +1569,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/oran</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/sete</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/sete</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/sete</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1065,11 +1593,19 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/tanger-med</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/tanger-ville</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/tanger-ville</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/tanger-ville</loc>
     <priority>0.5</priority>
   </url>
   <url>
@@ -1081,6 +1617,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/tarifa</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/tanger</loc>
     <priority>0.5</priority>
   </url>
@@ -1089,11 +1629,103 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://bateaubillet.com/es/ports/tanger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://bateaubillet.com/fr/ports/valence</loc>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/ports/valence</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/ports/valence</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/meilleure-periode-traversee-maroc-espagne</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/meilleure-periode-traversee-maroc-espagne</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/meilleure-periode-traversee-maroc-espagne</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/documents-voyage-ferry-maroc</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/documents-voyage-ferry-maroc</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/documents-voyage-ferry-maroc</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/ferry-avec-voiture-conseils</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/ferry-avec-voiture-conseils</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/ferry-avec-voiture-conseils</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/5-raisons-visiter-valence-printemps</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/5-raisons-visiter-valence-printemps</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/5-raisons-visiter-valence-printemps</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/operation-marhaba-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/operation-marhaba-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/operation-marhaba-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/prix-ferry-ete-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/prix-ferry-ete-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/prix-ferry-ete-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/article/traversees-ramadan-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/article/traversees-ramadan-2026</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/article/traversees-ramadan-2026</loc>
     <priority>0.5</priority>
   </url>
 </urlset>

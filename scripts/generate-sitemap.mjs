@@ -13,7 +13,7 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const root = join(__dirname, "..");
 const sitemapPath = join(root, "public", "sitemap.xml");
 const baseUrl = "https://bateaubillet.com";
-const LOCALES = ["fr", "ar"];
+const LOCALES = ["fr", "ar", "es"];
 
 // Port slugs for port pages (from getPortsWithSlugs in lib/routes-utils)
 const PORT_SLUGS = [
@@ -44,19 +44,23 @@ function escapeXml(s) {
     .replace(/"/g, "&quot;");
 }
 
+const localePrefix = new RegExp(`^(${LOCALES.join("|")})/`);
+
 function parseExistingSitemap(content) {
-  const entries = [];
+  const seen = new Map();
   const urlBlocks = content.split(/<url>/).slice(1);
   for (const block of urlBlocks) {
     const locMatch = block.match(/<loc>([^<]+)<\/loc>/);
     const priMatch = block.match(/<priority>([^<]+)<\/priority>/);
     if (!locMatch || !priMatch) continue;
     const fullUrl = locMatch[1].trim();
-    const path = fullUrl.replace(baseUrl, "").replace(/^\//, "") || "";
+    let path = fullUrl.replace(baseUrl, "").replace(/^\//, "") || "";
+    // Strip any locale prefix to get the canonical path
+    path = path.replace(localePrefix, "");
     const priority = priMatch[1].trim();
-    entries.push({ path, priority });
+    if (!seen.has(path)) seen.set(path, priority);
   }
-  return entries;
+  return Array.from(seen, ([path, priority]) => ({ path, priority }));
 }
 
 function main() {
@@ -69,6 +73,18 @@ function main() {
     if (!pathSet.has(p)) {
       entries.push({ path: p, priority: "0.5" });
       pathSet.add(p);
+    }
+  }
+
+  // Auto-discover article slugs from data/news.ts by reading the file
+  const newsPath = join(root, "data", "news.ts");
+  const newsContent = readFileSync(newsPath, "utf8");
+  const slugMatches = [...newsContent.matchAll(/slug:\s*"([^"]+)"/g)];
+  for (const m of slugMatches) {
+    const articlePath = `article/${m[1]}`;
+    if (!pathSet.has(articlePath)) {
+      entries.push({ path: articlePath, priority: "0.5" });
+      pathSet.add(articlePath);
     }
   }
 

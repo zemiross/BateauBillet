@@ -162,7 +162,7 @@ export const newsArticles: NewsArticle[] = [
     title: "Bateau Maroc Espagne Pas Cher : Guide Complet 2025 pour Économiser",
     description:
       "Trouvez votre billet de bateau Maroc pas cher. Comparez les prix, découvrez les meilleures compagnies et astuces pour traverser entre le Maroc et l'Espagne économiquement.",
-    publishedAt: "2025-01-15",
+    publishedAt: "2026-02-28",
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=600&fit=crop",
     canonicalPath: "/article/bateau-maroc-espagne-pas-cher",
     faq: [
@@ -258,7 +258,7 @@ export const newsArticles: NewsArticle[] = [
     title: "Horaires Bateaux Maroc-Espagne 2025 : Guide Complet",
     description:
       "Découvrez tous les horaires de ferry entre le Maroc et l'Espagne : Tanger-Algésiras, Tanger-Tarifa, Tanger-Barcelone. Réservez au meilleur prix sur BateauBillet.com",
-    publishedAt: "2025-02-28",
+    publishedAt: "2026-02-28",
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=630&fit=crop",
     canonicalPath: "/article/horaires-bateaux-maroc-espagne",
     faq: [

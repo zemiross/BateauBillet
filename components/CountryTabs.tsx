@@ -6,12 +6,23 @@ import { useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { routes, type Country } from "@/data/routes";
 import { countryOrder, countryThemes } from "@/lib/country-theme";
+import { BOOKING_URL } from "@/lib/site";
 import Icon from "./ui/Icon";
+
+/** Maps route.frequency (FR) to routeCard.frequency.* translation key */
+const FREQUENCY_KEY_MAP: Record<string, string> = {
+  "1 a 2 itineraires hebdomadaires": "1-2-weekly",
+  "2+ departs quotidiens": "2-plus-daily",
+  "3 a 5 itineraires hebdomadaires": "3-5-weekly",
+  "1 depart quotidien": "1-daily",
+  "2+ departs hebdomadaires": "2-plus-weekly",
+};
 
 export default function CountryTabs() {
   const locale = useLocale();
   const t = useTranslations("countries");
   const tPorts = useTranslations("ports");
+  const tCard = useTranslations("routeCard");
   const [active, setActive] = useState<Country>("maroc");
 
   const countryRoutes = routes.filter((r) => r.country === active);
@@ -50,44 +61,58 @@ export default function CountryTabs() {
         })}
       </div>
 
-      {/* Route list */}
+      {/* Route list: left = route page, right = booking CTA */}
       <div className="overflow-hidden rounded-xl border border-sand-200 bg-white">
         <div className="grid gap-px bg-sand-100 sm:grid-cols-1">
-          {countryRoutes.map((route) => (
-            <Link
-              key={route.canonicalPath}
-              href={`/${locale}${route.canonicalPath}`}
-              className="flex items-center justify-between bg-white px-5 py-4 transition-colors hover:bg-ocean-50"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-ocean-50 text-ocean-700">
-                  <Icon name="ship" size={18} />
-                </div>
-                <div>
-                  <p className="font-semibold text-sand-900">
-                    {tPorts(route.origin)} → {tPorts(route.destination)}
-                  </p>
-                  <p className="text-xs text-sand-900/50">
-                    {route.duration} · {route.operators.join(", ")}
-                  </p>
-                </div>
+          {countryRoutes.map((route) => {
+            const frequencyKey = FREQUENCY_KEY_MAP[route.frequency];
+            const frequencyDisplay = frequencyKey
+              ? tCard(`frequency.${frequencyKey}`)
+              : route.frequency;
+            return (
+              <div
+                key={route.canonicalPath}
+                className="flex items-stretch bg-white transition-colors hover:bg-ocean-50"
+              >
+                <Link
+                  href={`/${locale}${route.canonicalPath}`}
+                  className="flex min-w-0 flex-1 items-center gap-3 px-5 py-4"
+                >
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-ocean-50 text-ocean-700">
+                    <Icon name="ship" size={18} />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="font-semibold text-sand-900">
+                      {tPorts(route.origin)} → {tPorts(route.destination)}
+                    </p>
+                    <p className="text-xs text-sand-900/50">
+                      {tCard("durationLabel")} {route.duration} · {tCard("frequencyLabel")} {frequencyDisplay} · {route.operators.join(", ")}
+                    </p>
+                  </div>
+                </Link>
+                <Link
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex shrink-0 items-center gap-4 px-5 py-4 transition-colors hover:bg-ocean-100/50"
+                  aria-label={tCard("reserver")}
+                >
+                  <div className="text-right">
+                    <p className="text-xs text-sand-900/50">{tCard("from")}</p>
+                    <p className="font-bold text-ocean-700">
+                      {route.priceFrom}
+                      <span className="text-xs font-medium"> {tCard("eur")}</span>
+                    </p>
+                  </div>
+                  <Icon
+                    name="chevron-right"
+                    size={16}
+                    className="text-sand-900/30"
+                  />
+                </Link>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="text-right">
-                  <p className="text-xs text-sand-900/50">des</p>
-                  <p className="font-bold text-ocean-700">
-                    {route.priceFrom}
-                    <span className="text-xs font-medium">EUR</span>
-                  </p>
-                </div>
-                <Icon
-                  name="chevron-right"
-                  size={16}
-                  className="text-sand-900/30"
-                />
-              </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>

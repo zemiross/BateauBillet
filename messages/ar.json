@@ -169,6 +169,8 @@
     "eur": "يورو",
     "bestPrice": "أفضل سعر",
     "hours": "س",
+    "durationLabel": "المدة",
+    "frequencyLabel": "التكرار",
     "frequency": {
       "1-2-weekly": "1–2 عبور/أسبوع",
       "2-plus-daily": "2+ مغادرة/يوم",

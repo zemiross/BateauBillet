@@ -169,6 +169,8 @@
     "eur": "EUR",
     "bestPrice": "Mejor precio",
     "hours": "h",
+    "durationLabel": "Duración",
+    "frequencyLabel": "Frecuencia",
     "frequency": {
       "1-2-weekly": "1 a 2 travesías/sem.",
       "2-plus-daily": "2+ salidas/día",

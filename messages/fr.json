@@ -169,6 +169,8 @@
     "eur": "EUR",
     "bestPrice": "Meilleur prix",
     "hours": "h",
+    "durationLabel": "Durée",
+    "frequencyLabel": "Fréquence",
     "frequency": {
       "1-2-weekly": "1 à 2 liaisons/sem.",
       "2-plus-daily": "2+ départs/jour",

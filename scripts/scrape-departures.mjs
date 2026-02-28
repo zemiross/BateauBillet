@@ -100,8 +100,8 @@ function findRoute(origin, destination) {
 }
 
 /**
- * Fetch Balearia timetable/sailings using Playwright (JS-rendered page).
- * Returns array of { origin, destination, departureTime } (our port keys).
+ * Fetch Balearia timetable/sailings using Playwright.
+ * Loops through managed routes, attempting to find departures for the given date.
  */
 async function fetchBaleariaDeparturesWithPlaywright(date) {
   const departures = [];
@@ -119,34 +119,8 @@ async function fetchBaleariaDeparturesWithPlaywright(date) {
       "Accept-Language": "fr-FR,fr;q=0.9",
     });
 
-    // Balearia is behind Cloudflare; wait for challenge to complete then load timetable
-    const url = "https://www.balearia.com/fr/horaires-et-lignes";
-    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 25000 });
-    await page.waitForLoadState("load");
-    // Cloudflare challenge may be shown; wait for redirect to real page (up to 25s)
-    const portRegex = /algeciras|ceuta|tanger|tarifa|nador|melilla|motril|valencia|barcelona|alger|oran|mostaganem|sete|sète/i;
-    let html = await page.content();
-    for (let i = 0; i < 5 && !portRegex.test(html); i++) {
-      await new Promise((r) => setTimeout(r, 5000));
-      html = await page.content();
-    }
-    if (process.env.DEBUG_SCRAPER) {
-      try {
-        const debugPath = join(REPO_ROOT, "data", "scrape-debug.html");
-        writeFileSync(debugPath, html, "utf8");
-        console.log("Debug: wrote page HTML to", debugPath);
-      } catch (_) {}
-    }
-    await browser.close();
-    browser = null;
-
-    const { load } = await import("cheerio");
-    const $ = load(html);
-
     const timeRegex = /\b(\d{1,2}[h:]\d{2}|\d{1,2}:\d{2})\b/g;
-    const portKeys = Object.keys(PORT_NORMALIZE).filter((k) => k.length > 2);
 
-    /** Normalize time to HH:mm for consistent sorting and display (e.g. "9:30" -> "09:30"). */
     function normalizeTime(raw) {
       const s = String(raw).replace(/\s/g, "").replace("h", ":").trim();
       const match = s.match(/^(\d{1,2}):(\d{2})$/);
@@ -156,52 +130,67 @@ async function fetchBaleariaDeparturesWithPlaywright(date) {
       return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
     }
 
-    function extractFromText(text) {
-      const lower = text.toLowerCase();
-      let origin = null;
-      let destination = null;
-      for (const key of portKeys) {
-        if (!lower.includes(key)) continue;
-        const ourPort = PORT_NORMALIZE[key];
-        if (!origin) origin = ourPort;
-        else if (ourPort !== origin) destination = ourPort;
-      }
-      const times = [];
-      let m;
-      timeRegex.lastIndex = 0;
-      while ((m = timeRegex.exec(text)) !== null) {
-        const t = normalizeTime(m[1]);
-        if (t) times.push(t);
-      }
-      return { origin, destination, times };
+    // Attempt to load the main timetable page to get past Cloudflare initially
+    const baseUrl = "https://www.balearia.com/fr/horaires-et-lignes";
+    await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 25000 }).catch(() => {});
+    await page.waitForLoadState("load").catch(() => {});
+    
+    // Cloudflare challenge may be shown; wait for redirect to real page (up to 25s)
+    let html = await page.content();
+    const portRegex = /algeciras|ceuta|tanger|tarifa|nador|melilla|motril|valencia|barcelona|alger|oran|mostaganem|sete|sète/i;
+    for (let i = 0; i < 5 && !portRegex.test(html); i++) {
+      await new Promise((r) => setTimeout(r, 5000));
+      html = await page.content();
     }
 
-    // Pass 1: per-element (rows, list items, cards)
-    $("tr, li, [class*='sailing'], [class*='departure'], [class*='route'], [class*='journey'], [class*='schedule'], article, .card").each((_, el) => {
-      const $el = $(el);
-      const text = $el.text();
-      if (text.length < 10 || text.length > 500) return;
-      const { origin, destination, times } = extractFromText(text);
-      if (origin && destination && findRoute(origin, destination)) {
-        times.forEach((t) => departures.push({ origin, destination, departureTime: t }));
-        if (times.length === 0) departures.push({ origin, destination, departureTime: "" });
-      }
-    });
-
-    // Pass 2: section-level (route name and times may be in different children)
-    if (departures.length === 0) {
-      $("main, [role='main'], section, .content, [class*='line'], [class*='schedule'], [class*='timetable']").each((_, el) => {
-        const blockText = $(el).text();
-        if (blockText.length < 20 || blockText.length > 3000) return;
-        const { origin, destination, times } = extractFromText(blockText);
-        if (origin && destination && findRoute(origin, destination)) {
-          times.forEach((t) => departures.push({ origin, destination, departureTime: t }));
-          if (times.length === 0) departures.push({ origin, destination, departureTime: "" });
+    // Now loop over each route to simulate individual searches
+    for (const route of MANAGED_ROUTES) {
+      // Small delay to avoid aggressive rate limiting
+      await new Promise(r => setTimeout(r, 2000));
+      
+      const { origin, destination } = route;
+      const slugOrigin = origin.toLowerCase().replace(/\s+/g, "-");
+      const slugDest = destination.toLowerCase().replace(/\s+/g, "-");
+      
+      // Navigate to route-specific page (or search URL)
+      // Note: Since booking API is behind Cloudflare/526, we use the route timetable page pattern
+      // e.g., /fr/lignes-et-horaires/ferry-algeciras-tanger-med
+      const routeUrl = `https://www.balearia.com/fr/lignes-et-horaires/ferry-${slugOrigin}-${slugDest}`;
+      
+      try {
+        await page.goto(routeUrl, { waitUntil: "domcontentloaded", timeout: 15000 });
+        let routeHtml = await page.content();
+        
+        // Very basic extraction of times from the page text
+        const { load } = await import("cheerio");
+        const $ = load(routeHtml);
+        const text = $("body").text();
+        
+        let foundTimes = false;
+        if (text.toLowerCase().includes(origin.toLowerCase()) && text.toLowerCase().includes(destination.toLowerCase())) {
+          timeRegex.lastIndex = 0;
+          let m;
+          while ((m = timeRegex.exec(text)) !== null) {
+            const t = normalizeTime(m[1]);
+            if (t) {
+              departures.push({ origin, destination, departureTime: t });
+              foundTimes = true;
+            }
+          }
         }
-      });
+        
+        // Fallback if no times found for this route
+        if (!foundTimes) {
+          departures.push({ origin, destination, departureTime: "" });
+        }
+      } catch (err) {
+        console.warn(`Failed to scrape route ${origin}-${destination}:`, err.message);
+        departures.push({ origin, destination, departureTime: "" });
+      }
     }
   } catch (e) {
     console.warn("Playwright scrape failed:", e.message);
+  } finally {
     if (browser) await browser.close().catch(() => {});
   }
 

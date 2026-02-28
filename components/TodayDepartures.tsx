@@ -10,6 +10,8 @@ import {
   type DepartureTimeGroup,
 } from "@/lib/departures";
 import Icon from "./ui/Icon";
+import Button from "./ui/Button";
+import { BOOKING_URL } from "@/lib/site";
 
 type TodayDeparturesProps = {
   departures: Departure[];
@@ -71,7 +73,7 @@ export default function TodayDepartures({ departures, locale }: TodayDeparturesP
               const href =
                 d.country && d.routeSlug ? `/${locale}/${d.country}/${d.routeSlug}` : null;
               const content = (
-                <>
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex items-center gap-3">
                     {d.departureTime ? (
                       <span
@@ -86,29 +88,35 @@ export default function TodayDepartures({ departures, locale }: TodayDeparturesP
                       </div>
                     )}
                     <div>
-                      <p className="font-semibold text-sand-900">
-                        {tPorts(d.origin)} → {tPorts(d.destination)}
-                      </p>
+                      {href ? (
+                        <Link href={href} className="group flex items-center gap-1 font-semibold text-sand-900 transition-colors hover:text-ocean-700">
+                          {tPorts(d.origin)} → {tPorts(d.destination)}
+                          <Icon name="chevron-right" size={14} className="opacity-0 transition-opacity group-hover:opacity-100" />
+                        </Link>
+                      ) : (
+                        <p className="font-semibold text-sand-900">
+                          {tPorts(d.origin)} → {tPorts(d.destination)}
+                        </p>
+                      )}
                     </div>
                   </div>
-                  {href && (
-                    <Icon name="chevron-right" size={16} className="text-sand-900/30" />
-                  )}
-                </>
+                  <div className="flex shrink-0 items-center justify-end sm:ml-4">
+                    <Button
+                      href={BOOKING_URL}
+                      external
+                      variant="primary"
+                      size="sm"
+                    >
+                      {tHome("voirHorairesPrix")}
+                    </Button>
+                  </div>
+                </div>
               );
 
-              return href ? (
-                <Link
-                  key={`${d.origin}-${d.destination}-${d.departureTime}-${i}`}
-                  href={href}
-                  className="flex items-center justify-between bg-white px-5 py-4 transition-colors hover:bg-ocean-50"
-                >
-                  {content}
-                </Link>
-              ) : (
+              return (
                 <div
                   key={`${d.origin}-${d.destination}-${d.departureTime}-${i}`}
-                  className="flex items-center justify-between bg-white px-5 py-4"
+                  className="bg-white px-5 py-4 transition-colors hover:bg-ocean-50/50"
                 >
                   {content}
                 </div>

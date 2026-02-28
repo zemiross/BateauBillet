@@ -3,18 +3,26 @@
  * Fetches today's sailings from managed ports and writes data/todays-departures.json.
  * Run from repo root. Scheduled via GitHub Actions at 00:30 UTC.
  *
- * Uses Playwright (Chromium) because the timetable is JS-rendered. Balearia is behind
- * Cloudflare; when the challenge blocks the request we get no sailings and fall back
- * to an indicative list of managed routes. Set DEBUG_SCRAPER=1 to save page HTML to
- * data/scrape-debug.html for inspection.
+ * Uses Playwright (Chromium) with stealth plugin and human-like delays to reduce
+ * Cloudflare blocks. Set DEBUG_SCRAPER=1 to save page HTML to data/scrape-debug.html.
  */
 
 import { writeFileSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { chromium } from "playwright-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+
+chromium.use(StealthPlugin());
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = join(__dirname, "..");
+
+/** Random delay in ms between min and max (inclusive). */
+function randomDelay(minMs, maxMs) {
+  const ms = minMs + Math.floor(Math.random() * (maxMs - minMs + 1));
+  return new Promise((r) => setTimeout(r, ms));
+}
 
 /** "Today" in Europe/Paris (target audience timezone). */
 function getTodayParis() {
@@ -108,10 +116,14 @@ async function fetchBaleariaDeparturesWithPlaywright(date) {
   let browser;
 
   try {
-    const { chromium } = await import("playwright");
     browser = await chromium.launch({
       headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-blink-features=AutomationControlled",
+        "--disable-dev-shm-usage",
+      ],
     });
     const page = await browser.newPage();
     await page.setViewportSize({ width: 1280, height: 720 });
@@ -130,37 +142,45 @@ async function fetchBaleariaDeparturesWithPlaywright(date) {
       return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
     }
 
-    // Attempt to load the main timetable page to get past Cloudflare initially
+    // Load main timetable page first (one session, reuse cookies)
     const baseUrl = "https://www.balearia.com/fr/horaires-et-lignes";
-    await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 25000 }).catch(() => {});
+    await page.goto(baseUrl, { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
     await page.waitForLoadState("load").catch(() => {});
-    
-    // Cloudflare challenge may be shown; wait for redirect to real page (up to 25s)
+    await randomDelay(2000, 5000);
+
     let html = await page.content();
     const portRegex = /algeciras|ceuta|tanger|tarifa|nador|melilla|motril|valencia|barcelona|alger|oran|mostaganem|sete|sète/i;
     for (let i = 0; i < 5 && !portRegex.test(html); i++) {
-      await new Promise((r) => setTimeout(r, 5000));
+      await randomDelay(4000, 6000);
       html = await page.content();
     }
 
-    // Now loop over each route to simulate individual searches
-    for (const route of MANAGED_ROUTES) {
-      // Small delay to avoid aggressive rate limiting
-      await new Promise(r => setTimeout(r, 2000));
-      
+    if (process.env.DEBUG_SCRAPER) {
+      try {
+        const debugPath = join(REPO_ROOT, "data", "scrape-debug.html");
+        writeFileSync(debugPath, html, "utf8");
+        console.log("Debug: wrote page HTML to", debugPath);
+      } catch (_) {}
+    }
+
+    // Per-route requests with human-like delays (5–15s between routes)
+    for (let i = 0; i < MANAGED_ROUTES.length; i++) {
+      const route = MANAGED_ROUTES[i];
+      if (i > 0) await randomDelay(5000, 15000);
+
       const { origin, destination } = route;
       const slugOrigin = origin.toLowerCase().replace(/\s+/g, "-");
       const slugDest = destination.toLowerCase().replace(/\s+/g, "-");
-      
-      // Navigate to route-specific page (or search URL)
-      // Note: Since booking API is behind Cloudflare/526, we use the route timetable page pattern
-      // e.g., /fr/lignes-et-horaires/ferry-algeciras-tanger-med
       const routeUrl = `https://www.balearia.com/fr/lignes-et-horaires/ferry-${slugOrigin}-${slugDest}`;
-      
+
+      await randomDelay(500, 2000);
+
       try {
-        await page.goto(routeUrl, { waitUntil: "domcontentloaded", timeout: 15000 });
-        let routeHtml = await page.content();
-        
+        await page.goto(routeUrl, { waitUntil: "domcontentloaded", timeout: 20000 });
+        await page.waitForLoadState("load").catch(() => {});
+        await randomDelay(1000, 3000);
+        const routeHtml = await page.content();
+
         // Very basic extraction of times from the page text
         const { load } = await import("cheerio");
         const $ = load(routeHtml);

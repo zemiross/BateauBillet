@@ -89,7 +89,6 @@ export default async function HomePage({ params }: Props) {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <StatBadge value={STATS.routes} label={t("liaisons")} icon="anchor" />
             <StatBadge value={STATS.countries} label={t("pays")} icon="globe" />
-            <StatBadge value={STATS.operators} label={t("compagnie")} icon="ship" />
           </div>
         </div>
 

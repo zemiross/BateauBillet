@@ -4,6 +4,9 @@
     <loc>https://bateaubillet.com/fr</loc>
     <priority>0.9</priority>
     <image:image>
+      <image:loc>https://bateaubillet.com/images/5-raisons-visiter-valence-printemps.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-billet.jpg</image:loc>
     </image:image>
     <image:image>
@@ -17,12 +20,30 @@
     </image:image>
     <image:image>
       <image:loc>https://bateaubillet.com/images/billet-bateau.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Documents-n%C3%A9cessaires-pour-voyager-en-ferry-vers-le-Maroc.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/operation-marhaba-2026.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/prix-ferry-ete-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Quelle-est-la-meilleure-p%C3%A9riode-pour-r%C3%A9server-son-ferry.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/traversees-ramadan-2026.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar</loc>
     <priority>0.9</priority>
     <image:image>
+      <image:loc>https://bateaubillet.com/images/5-raisons-visiter-valence-printemps.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-billet.jpg</image:loc>
     </image:image>
     <image:image>
@@ -36,12 +57,30 @@
     </image:image>
     <image:image>
       <image:loc>https://bateaubillet.com/images/billet-bateau.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Documents-n%C3%A9cessaires-pour-voyager-en-ferry-vers-le-Maroc.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/operation-marhaba-2026.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/prix-ferry-ete-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Quelle-est-la-meilleure-p%C3%A9riode-pour-r%C3%A9server-son-ferry.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/traversees-ramadan-2026.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://bateaubillet.com/es</loc>
     <priority>0.9</priority>
     <image:image>
+      <image:loc>https://bateaubillet.com/images/5-raisons-visiter-valence-printemps.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-billet.jpg</image:loc>
     </image:image>
     <image:image>
@@ -55,6 +94,21 @@
     </image:image>
     <image:image>
       <image:loc>https://bateaubillet.com/images/billet-bateau.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Documents-n%C3%A9cessaires-pour-voyager-en-ferry-vers-le-Maroc.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/operation-marhaba-2026.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/prix-ferry-ete-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Quelle-est-la-meilleure-p%C3%A9riode-pour-r%C3%A9server-son-ferry.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/traversees-ramadan-2026.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -846,6 +900,9 @@
     <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-avec-voiture.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Ferry-avec-voiture-7-conseils-pour-bien-pr%C3%A9parer-son-trajet.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://bateaubillet.com/ar/info/avec-voiture</loc>
@@ -853,12 +910,18 @@
     <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-avec-voiture.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Ferry-avec-voiture-7-conseils-pour-bien-pr%C3%A9parer-son-trajet.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://bateaubillet.com/es/info/avec-voiture</loc>
     <priority>0.5</priority>
     <image:image>
       <image:loc>https://bateaubillet.com/images/bateau-avec-voiture.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://bateaubillet.com/images/Ferry-avec-voiture-7-conseils-pour-bien-pr%C3%A9parer-son-trajet.webp</image:loc>
     </image:image>
   </url>
   <url>

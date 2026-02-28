@@ -1,3 +1,5 @@
+export type NewsArticleFAQ = { name: string; text: string };
+
 export type NewsArticle = {
   slug: string;
   title: string;
@@ -6,6 +8,8 @@ export type NewsArticle = {
   image: string;
   canonicalPath: string;
   content: string[];
+  /** Optional FAQ for FAQPage schema (SEO). */
+  faq?: NewsArticleFAQ[];
 };
 
 export const newsArticles: NewsArticle[] = [
@@ -151,6 +155,102 @@ export const newsArticles: NewsArticle[] = [
       "Reservez 2 a 3 mois a l'avance. Voyagez en semaine plutot que le week-end. Considerez les departs de nuit pour economiser une nuit d'hotel. Comparez les tarifs sur BateauBillet avant de reserver.",
       "H3: Les erreurs a eviter",
       "Ne reservez pas a la derniere minute en juillet-aout. Ne sous-estimez pas le temps necessaire au port. Verifiez les restrictions de bagages et de vehicule avant de partir.",
+    ],
+  },
+  {
+    slug: "bateau-maroc-espagne-pas-cher",
+    title: "Bateau Maroc Espagne Pas Cher : Guide Complet 2025 pour Économiser",
+    description:
+      "Trouvez votre billet de bateau Maroc pas cher. Comparez les prix, découvrez les meilleures compagnies et astuces pour traverser entre le Maroc et l'Espagne économiquement.",
+    publishedAt: "2025-01-15",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&h=600&fit=crop",
+    canonicalPath: "/article/bateau-maroc-espagne-pas-cher",
+    faq: [
+      {
+        name: "Quel est le prix moyen d'un billet de bateau entre le Maroc et l'Espagne ?",
+        text: "Le prix d'un billet de bateau entre le Maroc et l'Espagne varie entre 30€ et 80€ pour un passager adulte selon la compagnie, la période et la traversée choisie. Les tarifs augmentent pendant l'été et l'Opération Marhaba.",
+      },
+      {
+        name: "Quelle est la traversée la moins chère entre le Maroc et l'Espagne ?",
+        text: "La traversée Tanger Med-Algésiras est généralement la moins chère avec des tarifs à partir de 30€ par personne. Cette liaison est aussi la plus courte avec une durée de 1h à 1h30.",
+      },
+      {
+        name: "Quand réserver pour obtenir les meilleurs prix ?",
+        text: "Il est recommandé de réserver 2 à 3 mois à l'avance pour bénéficier des meilleurs tarifs. Évitez les périodes de haute saison (juillet-août) et l'Opération Marhaba où les prix peuvent doubler.",
+      },
+      {
+        name: "Peut-on voyager avec un véhicule à moindre coût ?",
+        text: "Oui, les tarifs véhicule commencent à partir de 80€ pour une voiture de moins de 5 mètres. Voyager en basse saison, réserver tôt et comparer les compagnies permet d'économiser jusqu'à 40% sur le transport automobile.",
+      },
+      {
+        name: "Quelles compagnies offrent les meilleurs tarifs ?",
+        text: "Les compagnies les plus compétitives sont Baleària, FRS et Inter Shipping pour les trajets courts. AML et Grandi Navi Veloci proposent des tarifs attractifs sur les liaisons longues. Comparez toujours plusieurs options avant de réserver.",
+      },
+    ],
+    content: [
+      "La traversée maritime entre le Maroc et l'Espagne représente une alternative économique et pratique pour les voyageurs, particulièrement pour ceux qui souhaitent transporter leur véhicule. Trouver un billet de bateau Maroc pas cher nécessite une planification stratégique et une bonne connaissance des options disponibles. Ce guide vous présente toutes les informations nécessaires pour réaliser des économies substantielles sur votre trajet maritime entre les deux rives du détroit de Gibraltar.",
+      "Avec plus de 30 traversées quotidiennes pendant la haute saison et des prix pouvant varier du simple au triple selon la période, il est essentiel de connaître les astuces pour optimiser votre budget. Que vous voyagiez seul, en famille ou avec un véhicule, ce guide vous aidera à naviguer parmi les différentes options et à réserver votre billet au meilleur prix.",
+      "H2: Les Principales Liaisons Maritimes Maroc-Espagne et Leurs Tarifs",
+      "Le détroit de Gibraltar offre plusieurs points de traversée avec des caractéristiques tarifaires distinctes. Comprendre ces différences vous permettra de choisir la liaison la plus économique selon vos besoins.",
+      "H3: Tanger Med - Algésiras : La Traversée Économique par Excellence",
+      "La liaison entre Tanger Med et Algésiras constitue le trajet le plus fréquenté et souvent le moins cher entre le Maroc et l'Espagne. Cette traversée de 1h à 1h30 bénéficie d'une forte concurrence entre plusieurs compagnies maritimes, ce qui maintient les prix compétitifs.",
+      "Les tarifs démarrent à partir de 30€ par passager adulte en basse saison, pouvant atteindre 65€ pendant l'été. Pour un véhicule de moins de 5 mètres, comptez entre 80€ et 180€ selon la période. Les compagnies opérant cette liaison incluent FRS, Baleària, Inter Shipping et AML (Afriquia Gaz).",
+      "H3: Tanger Med - Tarifa : L'Option Rapide pour les Piétons",
+      "Cette traversée ultrarapide de 35 à 40 minutes est idéale pour les passagers sans véhicule. FRS domine cette liaison avec des départs fréquents. Les tarifs oscillent entre 35€ et 55€ par personne. Bien que légèrement plus chère que la liaison vers Algésiras, elle permet un gain de temps considérable.",
+      "H3: Tanger Ville - Tarifa : Une Alternative Historique",
+      "Le port historique de Tanger Ville propose également des liaisons vers Tarifa, principalement assurées par FRS. Les prix sont similaires à ceux depuis Tanger Med, mais l'accessibilité du port en centre-ville peut représenter une économie sur les frais de transport terrestre si vous séjournez à Tanger.",
+      "H3: Nador - Almería et Motril : Les Liaisons Méditerranéennes",
+      "Pour les voyageurs du Maroc oriental, les traversées depuis Nador vers Almería (6-8 heures) ou Motril (7-8 heures) offrent des alternatives intéressantes. Les tarifs passager commencent autour de 45€, tandis que les véhicules sont facturés à partir de 120€. Grandi Navi Veloci et Baleària assurent ces liaisons plusieurs fois par semaine.",
+      "H3: Al Hoceima - Motril et Autres Liaisons Saisonnières",
+      "Des liaisons saisonnières existent également depuis Al Hoceima, Nador vers Motril, et Tanger Med vers Barcelone ou Motril. Ces options, bien que moins fréquentes, peuvent s'avérer économiques si elles correspondent à votre itinéraire, avec des tarifs promotionnels parfois disponibles en début ou fin de saison.",
+      "H2: Stratégies pour Trouver un Billet de Bateau Maroc Pas Cher",
+      "Économiser sur votre traversée maritime demande une approche méthodique. Voici les stratégies éprouvées pour réduire significativement vos coûts de transport.",
+      "H3: 1. Réservez le Plus Tôt Possible",
+      "La règle d'or pour obtenir les meilleurs tarifs reste la réservation anticipée. Les compagnies maritimes appliquent une tarification dynamique similaire aux compagnies aériennes. Réserver 2 à 3 mois à l'avance peut vous faire économiser entre 30% et 50% par rapport à une réservation de dernière minute.",
+      "Les périodes de forte demande comme l'Opération Marhaba (juin à septembre) voient les prix augmenter drastiquement. Si votre voyage coïncide avec cette période, visez une réservation dès mars ou avril pour bénéficier des tarifs les plus bas.",
+      "H3: 2. Voyagez en Basse Saison",
+      "Les mois d'octobre à mai (hors vacances scolaires) offrent les tarifs les plus avantageux. La différence peut être spectaculaire : un billet à 35€ en novembre peut coûter 75€ en août pour la même traversée. Si votre calendrier le permet, privilégiez ces périodes creuses.",
+      "H3: 3. Comparez Systématiquement les Compagnies",
+      "Ne vous limitez jamais à une seule compagnie. Pour une même liaison, les écarts de prix peuvent atteindre 20€ à 30€ par personne selon l'opérateur choisi. Utilisez des comparateurs de billets de bateau pour visualiser toutes les options en un coup d'œil.",
+      "H3: 4. Soyez Flexible sur les Horaires",
+      "Les traversées tôt le matin ou tard le soir sont généralement moins chères que celles en milieu de journée. Un départ à 6h du matin peut vous faire économiser 15€ à 20€ par personne comparé à un départ à 14h. Cette flexibilité devient particulièrement rentable pour les familles ou les groupes.",
+      "H3: 5. Voyagez Léger ou Optimisez Votre Véhicule",
+      "Si vous transportez un véhicule, sa longueur impacte directement le tarif. Une voiture de 4,5 mètres coûte moins cher qu'un véhicule de 5,5 mètres. Si vous louez, optez pour un modèle compact. Pour les passagers piétons, voyager sans véhicule représente l'économie la plus importante : vous paierez seulement le billet passager.",
+      "H3: 6. Surveillez les Promotions et Offres Spéciales",
+      "Les compagnies maritimes lancent régulièrement des promotions, particulièrement en début d'année et en septembre-octobre. Inscrivez-vous aux newsletters des principales compagnies et consultez régulièrement leurs sites officiels. Les réductions peuvent atteindre 20% à 30% sur les tarifs standards.",
+      "H3: 7. Profitez des Tarifs Résidents",
+      "Si vous êtes résident marocain ou membre de la diaspora marocaine résidant en Europe, vous pouvez bénéficier de tarifs préférentiels pendant l'Opération Marhaba. Ces réductions, négociées avec les autorités, peuvent représenter une économie de 15% à 25%. Vérifiez les conditions d'éligibilité et préparez les justificatifs nécessaires.",
+      "H2: Comparatif Détaillé des Compagnies Maritimes",
+      "Chaque compagnie possède ses avantages et spécificités tarifaires. Voici un aperçu des principaux opérateurs pour vous aider à faire le meilleur choix.",
+      "H3: FRS (Förde Reederei Seetouristik)",
+      "FRS propose des tarifs très compétitifs sur les liaisons Tanger-Tarifa et Tanger Med-Algésiras. Leur flotte moderne et leurs traversées rapides en font un choix populaire. Les prix démarrent à environ 32€ par passager en basse saison. FRS offre également un programme de fidélité permettant des réductions sur les voyages fréquents.",
+      "H3: Baleària",
+      "Cette compagnie espagnole assure des liaisons depuis plusieurs ports marocains. Reconnue pour son confort, Baleària pratique des tarifs légèrement supérieurs à la moyenne (à partir de 38€ par passager) mais propose régulièrement des promotions attractives, notamment pour les réservations anticipées. Leur service client et leur ponctualité sont appréciés des voyageurs réguliers.",
+      "H3: Inter Shipping",
+      "Opérateur économique sur la liaison Tanger Med-Algésiras, Inter Shipping affiche souvent les prix les plus bas du marché (dès 30€ en basse saison). Bien que les services à bord soient plus basiques, le rapport qualité-prix reste excellent pour les voyageurs au budget serré.",
+      "H3: AML (Afriquia Gaz)",
+      "Cette compagnie marocaine propose des tarifs moyens (35€ à 45€ par passager) avec une flotte moderne. AML se distingue par sa flexibilité tarifaire et ses offres spéciales régulières pour les résidents marocains. Leur service en arabe, français et espagnol facilite les démarches pour tous les voyageurs.",
+      "H3: Grandi Navi Veloci (GNV)",
+      "Pour les traversées plus longues vers Almería, Motril ou Barcelone, GNV offre un excellent rapport qualité-prix avec des installations confortables adaptées aux longs trajets. Les tarifs démarrent à 45€ par personne, avec des cabines disponibles pour les voyages de nuit à partir de 35€ supplémentaires.",
+      "H2: Conseils Pratiques pour Économiser Davantage",
+      "Au-delà du choix de la traversée et de la compagnie, plusieurs astuces peuvent réduire vos dépenses globales liées au voyage maritime.",
+      "H3: Évitez les Frais Cachés",
+      "Lisez attentivement les conditions tarifaires. Certains billets affichés comme \"pas chers\" excluent les taxes portuaires, les frais de réservation ou les bagages supplémentaires. Le prix final peut ainsi augmenter de 10€ à 15€ par personne. Vérifiez toujours le tarif \"tout compris\" avant de confirmer votre réservation.",
+      "H3: Regroupez Vos Réservations",
+      "Si vous voyagez en groupe ou en famille, certaines compagnies offrent des réductions pour les réservations groupées. À partir de 4 personnes, n'hésitez pas à contacter directement la compagnie pour négocier un tarif de groupe qui peut réduire le coût par personne de 10% à 15%.",
+      "H3: Optimisez Vos Frais de Restauration",
+      "Les services de restauration à bord sont souvent onéreux. Pour une traversée courte (moins de 2 heures), prévoyez vos propres provisions. Sur les liaisons longues, les restaurants à bord proposent des menus entre 12€ et 20€ : apporter des collations peut réduire cette dépense de moitié.",
+      "H2: Questions fréquentes",
+      "H3: Quel est le prix moyen d'un billet de bateau entre le Maroc et l'Espagne ?",
+      "Le prix d'un billet de bateau entre le Maroc et l'Espagne varie entre 30€ et 80€ pour un passager adulte selon la compagnie, la période et la traversée choisie. Les tarifs augmentent pendant l'été et l'Opération Marhaba.",
+      "H3: Quelle est la traversée la moins chère entre le Maroc et l'Espagne ?",
+      "La traversée Tanger Med-Algésiras est généralement la moins chère avec des tarifs à partir de 30€ par personne. Cette liaison est aussi la plus courte avec une durée de 1h à 1h30.",
+      "H3: Quand réserver pour obtenir les meilleurs prix ?",
+      "Il est recommandé de réserver 2 à 3 mois à l'avance pour bénéficier des meilleurs tarifs. Évitez les périodes de haute saison (juillet-août) et l'Opération Marhaba où les prix peuvent doubler.",
+      "H3: Peut-on voyager avec un véhicule à moindre coût ?",
+      "Oui, les tarifs véhicule commencent à partir de 80€ pour une voiture de moins de 5 mètres. Voyager en basse saison, réserver tôt et comparer les compagnies permet d'économiser jusqu'à 40% sur le transport automobile.",
+      "H3: Quelles compagnies offrent les meilleurs tarifs ?",
+      "Les compagnies les plus compétitives sont Baleària, FRS et Inter Shipping pour les trajets courts. AML et Grandi Navi Veloci proposent des tarifs attractifs sur les liaisons longues. Comparez toujours plusieurs options avant de réserver.",
     ],
   },
   {

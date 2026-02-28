@@ -69,6 +69,18 @@ export default function SchemaArticle({
     ],
   };
 
+  const faqSchema =
+    article.faq?.length &&
+    ({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: article.faq.map(({ name, text }) => ({
+        "@type": "Question",
+        name,
+        acceptedAnswer: { "@type": "Answer", text },
+      })),
+    });
+
   return (
     <>
       <script
@@ -79,6 +91,12 @@ export default function SchemaArticle({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
     </>
   );
 }

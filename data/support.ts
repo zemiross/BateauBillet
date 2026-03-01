@@ -33,6 +33,10 @@ export const supportCategories: SupportCategory[] = [
       "antelacion-embarquer-vehicule",
       "pasos-embarcar-vehicule",
       "reservas-vehicule-location",
+      "ficha-tecnica-diferente-web",
+      "motocicletas-ciclomotor",
+      "reservar-bicicleta",
+      "equipaje-en-coche",
     ],
   },
   {
@@ -94,15 +98,32 @@ export const supportCategories: SupportCategory[] = [
   },
 ];
 
+/** Number of content blocks per article (i18n content.0, content.1, …). Ensures all blocks render when fallback is used. */
+const articleContentLength: Partial<Record<string, number>> = {
+  "documentation-necessaire-embarcar": 10,
+  "pre-embarque-algeciras-ceuta-tanger": 5,
+  "entrada-extranjeros-union-europea-ees": 5,
+  "bus-lanzadera-valencia": 4,
+  "antelacion-embarquer-vehicule": 4,
+  "pasos-embarcar-vehicule": 3,
+  "reservas-vehicule-location": 4,
+  "ficha-tecnica-diferente-web": 4,
+  "motocicletas-ciclomotor": 3,
+  "reservar-bicicleta": 10,
+  "equipaje-en-coche": 5,
+};
+
 /** Build article records with fallback content */
 function buildSupportArticles(): SupportArticle[] {
+  const defaultBlock = "Contenu à venir. Consultez BateauBillet pour plus d'informations.";
   const articles: SupportArticle[] = [];
   for (const cat of supportCategories) {
     for (const slug of cat.articleSlugs) {
+      const length = articleContentLength[slug] ?? 1;
       articles.push({
         slug,
         categoryId: cat.id,
-        content: ["Contenu à venir. Consultez BateauBillet pour plus d'informations."],
+        content: Array.from({ length }, () => defaultBlock),
       });
     }
   }
@@ -114,6 +135,15 @@ export const supportArticles: SupportArticle[] = buildSupportArticles();
 
 export function getSupportArticle(slug: string): SupportArticle | undefined {
   return supportArticles.find((a) => a.slug === slug);
+}
+
+/** Other article slugs in the same category (for related-articles backlinks). */
+export function getRelatedArticleSlugs(slug: string): string[] {
+  const article = getSupportArticle(slug);
+  if (!article) return [];
+  const category = supportCategories.find((c) => c.id === article.categoryId);
+  if (!category) return [];
+  return category.articleSlugs.filter((s) => s !== slug);
 }
 
 export function getCategoriesWithArticles(): SupportCategory[] {

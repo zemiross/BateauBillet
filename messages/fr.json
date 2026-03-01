@@ -208,6 +208,7 @@
     "metaTitle": "Support voyageur – Questions fréquentes ferry | BateauBillet",
     "metaDescription": "Trouvez les réponses à vos questions sur les traversées ferry en Méditerranée : documents, embarquement, véhicules, animaux et plus.",
     "categoriesHeading": "Catégories d'articles",
+    "relatedArticlesHeading": "Articles de la même catégorie",
     "categories": {
       "embarque": "Informations sur l'embarquement",
       "vehicule": "Voyager avec un véhicule",
@@ -268,11 +269,93 @@
           "3": "Le bus ne fonctionne que pour le débarquement. Pour l'embarquement, vous devez vous rendre par vos propres moyens (taxi ou véhicule personnel) jusqu'au point d'embarquement. Il n'y a pas de transport public à l'intérieur de l'enceinte portuaire."
         }
       },
-      "bus-lanzadera-barcelona": { "title": "Bus lanzadera port de Barcelone", "content": { "0": "Un service de navette est disponible entre le terminal et le centre de Barcelone. Renseignez-vous auprès de la compagnie pour les horaires et tarifs." } },
+      "bus-lanzadera-barcelona": {
+        "title": "Bus lanzadera port de Barcelone",
+        "description": "Navette gratuite depuis la terminal Nord World Trade Center jusqu'au quai d'embarquement.",
+        "content": {
+          "0": "Baleària met à disposition de ses clients un bus lanzadera gratuit qui relie la terminal Nord World Trade Center aux différents quais d'embarquement selon la liaison et l'heure de départ.",
+          "1": "LINK: Voir l'emplacement de la terminal Nord WTC sur Google Maps|https://maps.app.goo.gl/VFshC42xFLMNY3o6A",
+          "2": "Le bus part de la terminal Nord World Trade Center 60 minutes avant le départ du navire (selon le nombre de passagers) et dessert directement le bateau sur lequel vous embarquez.",
+          "3": "H2: À qui s'adresse le service ?",
+          "4": "Le bus est réservé aux passagers à pied, quelle que soit la liaison. L'embarquement des véhicules est autorisé sur le ferry ; si vous voyagez en voiture, vous devez vous rendre par vos propres moyens au quai d'embarquement indiqué."
+        }
+      },
       "ou-embarquer": { "title": "Où dois-je embarquer ?", "content": { "0": "L'emplacement d'embarquement est indiqué sur votre carte d'embarquement. Chaque port a plusieurs terminaux ; vérifiez le terminal et le quai indiqués avant de vous rendre au port." } },
-      "antelacion-embarquer-vehicule": { "title": "Anticipation nécessaire pour embarquer avec un véhicule", "content": { "0": "Arrivez au port au moins 90 minutes avant le départ pour les passagers à pied, et 120 minutes avec un véhicule. En haute saison, prévoyez davantage de marge." } },
-      "pasos-embarcar-vehicule": { "title": "Étapes pour embarquer avec un véhicule", "content": { "0": "Présentez-vous au contrôle, faites enregistrer votre véhicule, puis suivez les indications pour le stationnement à bord. Gardez vos documents à portée de main." } },
-      "reservas-vehicule-location": { "title": "Réservations avec un véhicule de location", "content": { "0": "Vérifiez avec l'agence de location que le véhicule peut franchir les frontières. Certaines locations interdisent les traversées internationales." } },
+      "antelacion-embarquer-vehicule": {
+        "title": "Anticipation nécessaire pour embarquer avec un véhicule",
+        "description": "Heures d'arrivée au port selon la route : de 30 min à 9 h avant le départ.",
+        "content": {
+          "0": "Si vous voyagez avec un véhicule, respectez l'anticipation à laquelle vous devez vous présenter à l'embarquement. Au-delà du délai fixé, l'embarquement ne peut être garanti.",
+          "1": "H2: Tableau d'anticipation par route",
+          "2": "Algeciras – Tánger Med : 2 h avant. Almería – Nador : 2 h. Argel – València : 9 h. Barcelona – Argel : 5 h. Ceuta – Algeciras : 30 min. Ibiza – Formentera : 30 min. Mostaganem – València : 6 h. Motril – Tánger Med : 2 h. Orán – València : 7 h. València – Argel, València – Mostaganem, València – Orán : 5 h. Pour le reste des routes : 90 minutes avant le départ.",
+          "3": "Sur la liaison Formentera – Dénia (sens Formentera vers Dénia uniquement), l'embarquement se fait 60 minutes avant le départ (et non dans le sens Dénia – Formentera). Merci de respecter ces horaires pour garantir votre embarquement."
+        }
+      },
+      "pasos-embarcar-vehicule": {
+        "title": "Étapes pour embarquer avec un véhicule",
+        "description": "Conducteur seul avec le véhicule en cale ; passagers par les accès piétons. Exceptions Baléares.",
+        "content": {
+          "0": "Si vous voyagez avec votre voiture, suivez les étapes suivantes. Conformément à la normativa de l'Autorité portuaire, au moment de l'embarquement seul le conducteur du véhicule peut embarquer avec celui-ci ; les autres passagers doivent emprunter les accès piétons. Le personnel portuaire vous indiquera où stationner votre véhicule dans la cale.",
+          "1": "H2: Exception pour les Baléares",
+          "2": "Sur les lignes des Baléares, sauf indication contraire du personnel de la compagnie, les passagers du véhicule (conducteur et accompagnants) peuvent embarquer tous ensemble par la cale. Sur certains navires ou dans des circonstances particulières, les accompagnants peuvent devoir passer par les rampes et accès piétons. Respectez toujours les consignes en vigueur."
+        }
+      },
+      "reservas-vehicule-location": {
+        "title": "Réservations avec un véhicule de location",
+        "description": "Vérifier avec l'agence que l'embarquement est autorisé. Matrícula PENDIENTE si inconnue.",
+        "content": {
+          "0": "Avant de réserver, confirmez auprès de votre agence de location que vous pouvez embarquer le véhicule loué, certaines compagnies ne l'autorisent pas.",
+          "1": "Si vous ne connaissez pas encore la plaque d'immatriculation et/ou le modèle, choisissez un véhicule de catégorie similaire et, dans le champ « Número de matrícula », indiquez PENDIENTE.",
+          "2": "Si l'embarquement du véhicule est autorisé et que vous connaissez la plaque du véhicule de location, vous pouvez réserver comme pour un véhicule personnel.",
+          "3": "Une fois en possession des bonnes informations, vous pourrez les modifier facilement dans « Mis Reservas » (Mes réservations) sur le site de la compagnie."
+        }
+      },
+      "ficha-tecnica-diferente-web": {
+        "title": "Ficha técnica du véhicule différente de celle du site",
+        "description": "Réservation impossible en ligne : contacter le Contact Center ou les guichets.",
+        "content": {
+          "0": "Si les données de la ficha técnica (fiche technique) de votre véhicule ne correspondent à aucune option proposée sur le site, vous ne pourrez pas effectuer la réservation en ligne.",
+          "1": "H2: Contacter la compagnie",
+          "2": "Contactez le Contact Center : par WebChat (un spécialiste vous répondra), par téléphone au 912 66 02 15, ou aux guichets les plus proches.",
+          "3": "L'équipe vous demandera les données de la ficha técnica de votre véhicule ; ayez-la à portée de main."
+        }
+      },
+      "motocicletas-ciclomotor": {
+        "title": "Motocyclettes et cyclomoteurs",
+        "description": "Indiquer moto ou cyclomoteur lors de la réservation. Ibiza–Formentera : 125 cm³ ou moins gratuits.",
+        "content": {
+          "0": "Pour voyager avec une motocyclette ou un cyclomoteur, indiquez-le au moment de la réservation.",
+          "1": "H2: Ibiza – Formentera",
+          "2": "Sur la liaison Ibiza – Formentera, les motocyclettes de 125 cm³ ou moins s'embarquent gratuitement ; il faut toutefois les déclarer lors de la réservation."
+        }
+      },
+      "reservar-bicicleta": {
+        "title": "Comment réserver votre bicyclette",
+        "description": "À pied : cocher véhicule et indiquer le nombre de vélos. En voiture : toit, portillon, remorque ; règles de longueur et hauteur.",
+        "content": {
+          "0": "H2: Si vous embarquez à pied",
+          "1": "Sélectionnez la case « véhicule » et indiquez le nombre de bicyclettes. Une bicyclette par passager est autorisée.",
+          "2": "H2: Si vous embarquez en véhicule",
+          "3": "Si votre ou vos bicyclette(s) sont fixées au véhicule : choisissez le type de véhicule (voiture ou fourgon, caravane ou autocaravane) et confirmez.",
+          "4": "H3: Sur le toit",
+          "5": "La hauteur totale du véhicule (du sol au point le plus haut, bicyclette et chargement inclus) est prise en compte ; un supplément peut s'appliquer pour la hauteur supplémentaire.",
+          "6": "H3: À l'arrière du véhicule",
+          "7": "Portillon arrière, plateau ou remorque non motorisée : la longueur totale du véhicule (de l'avant de la carrosserie à l'extrémité arrière, remorque incluse) ne doit pas dépasser 7 mètres, sous peine de supplément par mètre dépassé. Pour les fourgons, véhicules commerciaux, caravanes ou véhicules spéciaux, la réservation se fait selon la longueur totale. Si les vélos sont fixés au portillon et que la longueur totale n'excède pas 7 m, ils sont inclus dans les mesures du véhicule.",
+          "8": "H3: Remorque ou plateau à vélo",
+          "9": "Remorque plateforme : sur plateforme à roues tractée par le véhicule (comptée comme remorque additionnelle). Attache simple : enganche pour vélos sans plateforme à roues. Remorque à vélos : réservée comme remorque additionnelle en indiquant la longueur."
+        }
+      },
+      "equipaje-en-coche": {
+        "title": "Puis-je mettre l'équipage dans la voiture ?",
+        "description": "Avec Baleària vous pouvez laisser les valises dans le véhicule pendant la traversée. Pas d'accès à la cale en navigation.",
+        "content": {
+          "0": "Avec Baleària vous pouvez garder tout votre équipage avec vous. Si vous voyagez avec votre véhicule (voiture, fourgon, caravane ou autocaravana), vous pouvez laisser toutes vos valises dans le véhicule pendant la traversée, sans avoir à les porter.",
+          "1": "Prenez uniquement l'indispensable pour la traversée : pendant la navigation, l'accès à la bodega où se trouvent les véhicules n'est pas autorisé.",
+          "2": "Tous les véhicules passent un contrôle de sécurité à l'embarquement ; les autorités peuvent enregistrer le contenu.",
+          "3": "H2: Mascotas",
+          "4": "Les mascotas ne peuvent en aucun cas voyager à l'intérieur du véhicule pendant la traversée. Des acomodaciones spécifiques pour mascotas sont prévues à bord. Si vous voyagez sans véhicule, vous pouvez transporter au maximum l'équipage que vous pouvez monter à bord vous-même, en une seule fois et sans aide."
+        }
+      },
       "reserver-avec-mascota": { "title": "Comment réserver avec un animal", "content": { "0": "Indiquez la présence d'un animal lors de la réservation. Les places pour animaux sont limitées. Des espaces dédiés existent à bord." } },
       "documentacion-mascota": { "title": "Documentation nécessaire pour votre animal", "content": { "0": "Passeport européen pour animaux (vaccination antirabique à jour) pour les chiens et chats. Pour le Maroc et l'Algérie, des exigences spécifiques s'appliquent." } },
       "mascota-maroc-algerie": { "title": "Voyager avec un animal vers le Maroc ou l'Algérie", "content": { "0": "Des certificats vétérinaires et parfois des traitements antiparasitaires sont requis. Consultez les autorités du pays de destination avant le voyage." } },

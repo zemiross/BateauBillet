@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import Breadcrumb from "@/components/Breadcrumb";
 import BookingCTA from "@/components/BookingCTA";
-import { getSupportArticle, supportArticles } from "@/data/support";
+import { getRelatedArticleSlugs, getSupportArticle, supportArticles } from "@/data/support";
 import { buildHreflang } from "@/lib/hreflang";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { routing } from "@/i18n/routing";
@@ -51,6 +52,7 @@ export default async function SupportArticlePage({ params }: Props) {
   const contentBlocks = article.content.map((_, i) =>
     t(`articles.${slug}.content.${i}`) || article.content[i]
   );
+  const relatedSlugs = getRelatedArticleSlugs(slug);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-10 md:py-14">
@@ -85,9 +87,45 @@ export default async function SupportArticlePage({ params }: Props) {
               </h3>
             );
           }
+          if (block.startsWith("LINK: ")) {
+            const parts = block.slice(6).split("|");
+            const [label, url] = parts.length >= 2 ? [parts[0], parts.slice(1).join("|")] : [block, "#"];
+            return (
+              <p key={i}>
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ocean-600 underline decoration-ocean-600/40 underline-offset-2 hover:decoration-ocean-600"
+                >
+                  {label}
+                </a>
+              </p>
+            );
+          }
           return <p key={i}>{block}</p>;
         })}
       </div>
+
+      {relatedSlugs.length > 0 && (
+        <aside className="mt-10 rounded-lg border border-sand-200 bg-sand-50/80 p-6" aria-label={t("relatedArticlesHeading")}>
+          <h2 className="mb-3 text-lg font-semibold text-sand-900">
+            {t("relatedArticlesHeading")}
+          </h2>
+          <ul className="space-y-2">
+            {relatedSlugs.map((relatedSlug) => (
+              <li key={relatedSlug}>
+                <Link
+                  href={`/${locale}/support/${relatedSlug}`}
+                  className="text-ocean-600 underline decoration-ocean-600/40 underline-offset-2 hover:decoration-ocean-600"
+                >
+                  {t(`articles.${relatedSlug}.title`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </aside>
+      )}
 
       <div className="mt-10">
         <BookingCTA label={tBookingCta("reserver")} />

@@ -208,6 +208,7 @@
     "metaTitle": "Apoyo al Viajero – Preguntas frecuentes ferry | BateauBillet",
     "metaDescription": "Encuentra respuestas a tus preguntas sobre travesías en ferry por el Mediterráneo: documentación, embarque, vehículos, animales y más.",
     "categoriesHeading": "Categorías de artículos",
+    "relatedArticlesHeading": "Artículos de la misma categoría",
     "categories": {
       "embarque": "Información sobre el embarque",
       "vehicule": "Viajar con vehículo",
@@ -267,11 +268,93 @@
           "3": "El servicio de autobús solo funciona para el desembarque. Para el embarque el cliente tiene que llegar por su cuenta hasta el punto de embarque, ya sea en taxi o coche propio. No hay transporte público dentro del recinto portuario."
         }
       },
-      "bus-lanzadera-barcelona": { "title": "Bus lanzadera puerto de Barcelona", "content": { "0": "Navetta disponible entre terminal y Barcelona. Consulta la compañía." } },
+      "bus-lanzadera-barcelona": {
+        "title": "Bus lanzadera puerto de Barcelona",
+        "description": "Autobús gratuito desde la terminal Nord World Trade Center hasta el muelle de embarque.",
+        "content": {
+          "0": "Baleària pone a disposición de sus clientes un bus lanzadera gratuito que conecta la terminal Nord World Trade Center con los diferentes muelles de embarque según la ruta y el horario de salida.",
+          "1": "LINK: Ver ubicación de la terminal Nord WTC en Google Maps|https://maps.app.goo.gl/VFshC42xFLMNY3o6A",
+          "2": "El bus sale desde la terminal Nord World Trade Center 60 minutos antes de la salida del buque (en función del número de pasajeros) y tiene como parada directa el buque en el que se va a embarcar.",
+          "3": "H2: ¿Para quién es el servicio?",
+          "4": "El servicio de bus es para pasajeros que viajen a pie, con independencia de la ruta. El embarque de vehículos está permitido en el ferry; si viajas con coche, debes llegar por tus propios medios hasta el muelle de embarque indicado."
+        }
+      },
       "ou-embarquer": { "title": "¿Dónde tengo que embarcar?", "content": { "0": "El punto de embarque figura en tu tarjeta. Verifica terminal y muelle antes de ir al puerto." } },
-      "antelacion-embarquer-vehicule": { "title": "Antelación para embarcar con vehículo", "content": { "0": "Llega 90 min antes (pasajeros) o 120 min (con vehículo). En temporada alta, más margen." } },
-      "pasos-embarcar-vehicule": { "title": "Pasos para embarcar con vehículo", "content": { "0": "Control, facturación del vehículo, indicaciones para aparcar a bordo." } },
-      "reservas-vehicule-location": { "title": "Reservas con vehículo de alquiler", "content": { "0": "Comprueba con la agencia si el coche puede cruzar fronteras." } },
+      "antelacion-embarquer-vehicule": {
+        "title": "Antelación necesaria para embarcar con vehículo",
+        "description": "Horas de llegada al puerto según la ruta: de 30 min a 9 h antes de la salida.",
+        "content": {
+          "0": "Si viajas con vehículo, ten en cuenta la antelación en la que debes presentarte al embarque. Pasado el tiempo establecido, no se puede garantizar la subida al barco.",
+          "1": "H2: Tabla de antelación por ruta",
+          "2": "Algeciras – Tánger Med: 2 h antes. Almería – Nador: 2 h. Argel – València: 9 h. Barcelona – Argel: 5 h. Ceuta – Algeciras: 30 min. Ibiza – Formentera: 30 min. Mostaganem – València: 6 h. Motril – Tánger Med: 2 h. Orán – València: 7 h. València – Argel, València – Mostaganem, València – Orán: 5 h. Resto de rutas: 90 minutos antes de la salida.",
+          "3": "En la ruta origen Formentera y destino Dénia el embarque se hará 60 minutos antes (no a la inversa de Dénia a Formentera). Te agradecemos que respetes esta hora para poder garantizar tu aceptación a bordo."
+        }
+      },
+      "pasos-embarcar-vehicule": {
+        "title": "Pasos para embarcar con vehículo",
+        "description": "Solo el conductor embarca con el vehículo en la bodega; el resto de pasajeros por accesos de pasaje. Excepción Baleares.",
+        "content": {
+          "0": "Si vas a viajar con tu coche, sigue los siguientes pasos. Atendiendo a la normativa de la Autoridad Portuaria, en el momento del embarque solo el conductor del vehículo podrá embarcar junto al mismo; el resto de los pasajeros deberán hacerlo por los accesos del pasaje. Los trabajadores portuarios te indicarán y guiarán para estacionar tu coche en la bodega del buque.",
+          "1": "H2: Excepción en las Islas Baleares",
+          "2": "En el caso de las islas Baleares, salvo contraindicación por parte del personal de la naviera, los pasajeros que viajen en su vehículo (conductor y acompañantes) pueden embarcar todos juntos accediendo por la bodega del buque. En determinados buques o circunstancias especiales, puede ser necesario que los acompañantes accedan a pie por las rampas y accesos peatonales. Por favor, respeta las normas en todo momento."
+        }
+      },
+      "reservas-vehicule-location": {
+        "title": "Reservas con un vehículo de alquiler",
+        "description": "Confirmar con la agencia que puedes embarcar el vehículo. Matrícula PENDIENTE si no la conoces.",
+        "content": {
+          "0": "Antes de reservar, debes confirmar con tu compañía de alquiler que puedes embarcar el vehículo alquilado, ya que hay compañías que no lo permiten.",
+          "1": "Si no sabes la matrícula del coche y/o el modelo, puedes elegir uno de categoría similar y, en el apartado «Número de matrícula», escribir PENDIENTE.",
+          "2": "Si puedes embarcar el vehículo y sabes la matrícula del coche de alquiler puedes realizar la reserva como si fuera un coche normal.",
+          "3": "Una vez dispongas de la información correcta, podrás modificarla fácilmente accediendo a Mis Reservas en la web de la compañía."
+        }
+      },
+      "ficha-tecnica-diferente-web": {
+        "title": "¿Qué pasa si la ficha técnica de mi vehículo es diferente a la que pone en la web?",
+        "description": "No podrás reservar por la web: contacta con el Contact Center o taquillas.",
+        "content": {
+          "0": "En este caso no podrás realizar la reserva a través de la web.",
+          "1": "H2: Ponte en contacto con la compañía",
+          "2": "Contacta con el Contact Center: por WebChat (un especialista te atenderá en el momento), por teléfono al 912 66 02 15, o en las taquillas más cercanas.",
+          "3": "Nuestro equipo de atención al cliente te pedirá datos de la ficha técnica de tu vehículo; tenla a mano."
+        }
+      },
+      "motocicletas-ciclomotor": {
+        "title": "Motocicletas y ciclomotor",
+        "description": "Indica moto o ciclomotor al hacer la reserva. Ibiza–Formentera: 125 cc o inferiores embarcan gratis.",
+        "content": {
+          "0": "Si deseas viajar con motocicleta o ciclomotor solo lo tendrás que indicar en el momento que realices la reserva.",
+          "1": "H2: Ibiza – Formentera",
+          "2": "En el trayecto Ibiza–Formentera las motocicletas de 125 cilindradas o inferiores se embarcan de forma gratuita; no obstante, también se debe indicar al realizar la reserva."
+        }
+      },
+      "reservar-bicicleta": {
+        "title": "Cómo reservar tu bicicleta",
+        "description": "A pie: marcar casilla vehículo e indicar número de bicis. En coche: techo, portón, remolque; normas de longitud y altura.",
+        "content": {
+          "0": "H2: Si embarcas a pie",
+          "1": "Debes seleccionar la casilla vehículo e indicar el número de bicicletas. Se puede embarcar una bicicleta por pasajero.",
+          "2": "H2: Si embarcas en vehículo",
+          "3": "Si tu bicicleta o bicicletas van sujetas a tu vehículo: elige el tipo de vehículo (coche o furgoneta, caravana o autocaravana) y pulsa confirmar.",
+          "4": "H3: En la parte superior del vehículo (techo)",
+          "5": "Se considerará la altura total del vehículo desde el suelo a la parte más alta con la bicicleta y carga; puede incurrir en un cargo adicional por la altura extra.",
+          "6": "H3: En la parte posterior del vehículo",
+          "7": "Portón trasero, sobre plataforma o remolque sin motorizar: la longitud total del vehículo, desde el principio de la carrocería hasta el extremo trasero incluyendo el remolque, no podrá superar los 7 metros; si se superan se incurrirá en cargos adicionales por metro excedido. En furgonetas, vehículos comerciales, caravanas u otros vehículos especiales se reserva según la longitud total. Si las bicicletas van ancladas al portón del vehículo y el total no excede de 7 m, se consideran incluidas en las medidas del vehículo.",
+          "8": "H3: Remolque o enganche",
+          "9": "Enganche de plataforma: sujeto a una plataforma con ruedas remolcada por el vehículo (se tramita como remolque adicional). Enganche sencillo: enganche para bicicletas sin plataforma con ruedas. Remolque: se tramita como remolque adicional indicando la longitud."
+        }
+      },
+      "equipaje-en-coche": {
+        "title": "¿Puedo llevar el equipaje en el coche?",
+        "description": "Con Baleària puedes dejar las maletas dentro del vehículo durante la travesía. No se puede bajar a la bodega en navegación.",
+        "content": {
+          "0": "Una de las ventajas de viajar con Baleària es que puedes llevar todo tu equipaje contigo. Si viajas con tu vehículo (turismo, furgoneta, caravana o autocaravana) puedes dejar todas tus maletas dentro del vehículo sin necesidad de cargar con ellas durante la travesía.",
+          "1": "Recuerda coger lo indispensable para ti durante el viaje: durante la navegación no está permitido bajar a la zona de bodega donde se encuentran los vehículos.",
+          "2": "Todos los vehículos, en el momento del embarque, pasan por un control de seguridad en el que el contenido puede ser registrado por parte de las autoridades.",
+          "3": "H2: Mascotas",
+          "4": "En ningún caso las mascotas pueden viajar dentro de los vehículos durante la travesía; para ello hay acomodaciones específicas para mascotas. Si viajas sin vehículo puedes transportar como máximo el equipaje que puedas subir a bordo por ti mismo, sin ayuda y de una sola vez."
+        }
+      },
       "reserver-avec-mascota": { "title": "Cómo reservar con mascota", "content": { "0": "Indica la mascota al reservar. Plazas limitadas." } },
       "documentacion-mascota": { "title": "Documentación para tu mascota", "content": { "0": "Pasaporte europeo para animales (rabia al día). Para Marruecos y Argelia, requisitos específicos." } },
       "mascota-maroc-algerie": { "title": "Viajar con mascota a Marruecos o Argelia", "content": { "0": "Certificados veterinarios y tratamientos pueden ser obligatorios." } },

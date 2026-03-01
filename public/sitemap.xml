@@ -1176,4 +1176,52 @@
     <loc>https://bateaubillet.com/es/support/entrada-extranjeros-union-europea-ees</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/support/ficha-tecnica-diferente-web</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/support/ficha-tecnica-diferente-web</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/support/ficha-tecnica-diferente-web</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/support/motocicletas-ciclomotor</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/support/motocicletas-ciclomotor</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/support/motocicletas-ciclomotor</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/support/reservar-bicicleta</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/support/reservar-bicicleta</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/support/reservar-bicicleta</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/support/equipaje-en-coche</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/support/equipaje-en-coche</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/support/equipaje-en-coche</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>

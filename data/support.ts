@@ -121,7 +121,7 @@ const articleContentLength: Partial<Record<string, number>> = {
   "bus-lanzadera-valencia": 4,
   "bus-lanzadera-barcelona": 5,
   "ou-embarquer": 6,
-  "antelacion-embarquer-vehicule": 4,
+  "antelacion-embarquer-vehicule": 8,
   "pasos-embarcar-vehicule": 3,
   "reservas-vehicule-location": 4,
   "ficha-tecnica-diferente-web": 4,

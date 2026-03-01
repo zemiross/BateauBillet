@@ -300,7 +300,11 @@
           "0": "Si vous voyagez avec un véhicule, respectez l'anticipation à laquelle vous devez vous présenter à l'embarquement. Au-delà du délai fixé, l'embarquement ne peut être garanti.",
           "1": "H2: Tableau d'anticipation par route",
           "2": "TABLE: Route|Anticipation\nAlgeciras – Tánger Med|2 h avant\nAlmería – Nador|2 h\nArgel – València|9 h\nBarcelona – Argel|5 h\nCeuta – Algeciras|30 min\nIbiza – Formentera|30 min\nMostaganem – València|6 h\nMotril – Tánger Med|2 h\nOrán – València|7 h\nValència – Argel, València – Mostaganem, València – Orán|5 h\nAutres routes|90 min avant",
-          "3": "Sur la liaison Formentera – Dénia (sens Formentera vers Dénia uniquement), l'embarquement se fait 60 minutes avant le départ (et non dans le sens Dénia – Formentera). Merci de respecter ces horaires pour garantir votre embarquement."
+          "3": "Sur la liaison Formentera – Dénia (sens Formentera vers Dénia uniquement), l'embarquement se fait 60 minutes avant le départ (et non dans le sens Dénia – Formentera). Merci de respecter ces horaires pour garantir votre embarquement.",
+          "4": "H2: Orán – València : pourquoi une telle anticipation ?",
+          "5": "Pour voyager en ferry depuis Orán vers València avec un véhicule, l'anticipation recommandée est très élevée, généralement entre 7 et 9 heures avant le départ. Cette anticipation s'explique par des raisons opérationnelles et de sécurité, notamment au port d'Orán : contrôles douaniers stricts (frontière Algérie–Espagne, vérification des documents du passager et du véhicule par les autorités algériennes et la navire) ; chargement des véhicules dans la cale, processus lent effectué bien avant l'ouverture de l'embarquement des piétons.",
+          "6": "H2: Argel – València : pourquoi une telle anticipation ?",
+          "7": "Pour Argel – València avec véhicule, il faut se présenter au port avec une grande anticipation, idéalement entre 4 et 7 heures avant le départ (Baleària recommande au moins 6 à 7 heures pour les routes depuis l'Algérie avec véhicule). Raisons : formalités douanières et contrôle du véhicule (route internationale hors Schengen : sécurité, passeports, documents du véhicule — permis de circulation, autorisation si le véhicule n'est pas le vôtre) ; procédure d'embarquement plus lente que pour les piétons (placement du véhicule sur les ponts dédiés) ; gestion des bagages dans le véhicule pouvant entraîner des contrôles supplémentaires. Arriver en retard peut empêcher d'embarquer, l'embarquement des véhicules fermant bien avant celui des piétons."
         }
       },
       "pasos-embarcar-vehicule": {
@@ -358,14 +362,14 @@
         }
       },
       "equipaje-en-coche": {
-        "title": "Puis-je mettre l'équipage dans la voiture ?",
+        "title": "Puis-je mettre les bagages dans la voiture ?",
         "description": "Avec Baleària vous pouvez laisser les valises dans le véhicule pendant la traversée. Pas d'accès à la cale en navigation.",
         "content": {
-          "0": "Avec Baleària vous pouvez garder tout votre équipage avec vous. Si vous voyagez avec votre véhicule (voiture, fourgon, caravane ou autocaravana), vous pouvez laisser toutes vos valises dans le véhicule pendant la traversée, sans avoir à les porter.",
-          "1": "Prenez uniquement l'indispensable pour la traversée : pendant la navigation, l'accès à la bodega où se trouvent les véhicules n'est pas autorisé.",
+          "0": "Avec Baleària vous pouvez garder tout votre bagage avec vous. Si vous voyagez avec votre véhicule (voiture, fourgon, caravane ou autocaravana), vous pouvez laisser toutes vos valises dans le véhicule pendant la traversée, sans avoir à les porter.",
+          "1": "Prenez uniquement l'indispensable pour la traversée : pendant la navigation, l'accès à la cale où se trouvent les véhicules n'est pas autorisé.",
           "2": "Tous les véhicules passent un contrôle de sécurité à l'embarquement ; les autorités peuvent enregistrer le contenu.",
-          "3": "H2: Mascotas",
-          "4": "Les mascotas ne peuvent en aucun cas voyager à l'intérieur du véhicule pendant la traversée. Des acomodaciones spécifiques pour mascotas sont prévues à bord. Si vous voyagez sans véhicule, vous pouvez transporter au maximum l'équipage que vous pouvez monter à bord vous-même, en une seule fois et sans aide."
+          "3": "H2: Animaux",
+          "4": "Les animaux ne peuvent en aucun cas voyager à l'intérieur du véhicule pendant la traversée ; des espaces dédiés existent à bord. Si vous voyagez sans véhicule, vous pouvez transporter au maximum le bagage que vous pouvez monter à bord vous-même, en une seule fois et sans aide."
         }
       },
       "reserver-avec-mascota": {

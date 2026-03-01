@@ -220,8 +220,53 @@
       "ope-marhaba": "OPE – Marhaba"
     },
     "articles": {
-      "documentation-necessaire-embarcar": { "title": "Documentación necesaria para embarcar", "description": "Documentos requeridos para embarcar: tarjeta de embarque, DNI o pasaporte según destino.", "content": { "0": "Puedes dirigirte al embarque directamente con la documentación preparada.", "1": "H2: Documentación en todas las rutas", "2": "1. Tarjeta de embarque (impresa o digital). 2. DNI, NIE o pasaporte en vigor.", "3": "H2: Documentación para Marruecos", "4": "Para Marruecos se requiere pasaporte en vigor. Consulta si tu país necesita visado.", "5": "H2: Documentación para Argelia", "6": "Para Argelia: pasaporte en vigor, billete ida y vuelta. Con vehículo: documentación del coche y seguro." } },
-      "bus-lanzadera-valencia": { "title": "Bus lanzadera desembarque puerto de Valencia", "content": { "0": "Servicio de bus entre terminal y centro. Consulta horarios en el puerto." } },
+      "documentation-necessaire-embarcar": {
+        "title": "Documentación necesaria para embarcar",
+        "description": "Documentos requeridos para embarcar: tarjeta de embarque, DNI o pasaporte según destino.",
+        "content": {
+          "0": "Podrás dirigirte al embarque directamente, sin pasar por taquillas, si tienes preparada la siguiente documentación.",
+          "1": "H2: Documentación necesaria en todas las rutas",
+          "2": "1. Tarjeta de embarque (impresa o en formato digital). 2. Documento de identificación (DNI, NIE, pasaporte) en original y en vigor. En caso de no disponer de alguno de estos documentos por pérdida o robo y solo en rutas nacionales, el pasajero podrá embarcar con un documento acreditativo de identidad con foto (carné de conducir) siempre que no tenga que justificar ninguna bonificación ni descuento. En caso de robo del DNI, la denuncia solo será necesaria en destino si la autoridad pertinente la solicita. Los menores de 14 años sin documento de identificación podrán llevar el Libro de Familia o el certificado del Registro Civil; deben viajar siempre acompañados de un progenitor o del tutor legal. Si les acompaña otra persona, es imprescindible la presentación de un consentimiento del tutor o progenitor y la documentación mencionada.",
+          "3": "H2: Documentación extra en las rutas a Marruecos",
+          "4": "Para viajar a Marruecos todos los integrantes de la reserva deben presentar el pasaporte en vigor; si tu país lo requiere, también necesitarás visado (consulta los países que no requieren visado). Para acceder a Marruecos es necesario cumplimentar el documento que la compañía pone a disposición, imprimirlo y entregarlo durante la travesía al personal policial marroquí que encontrarás a bordo. ¡No lo olvides!",
+          "5": "H2: Documentación extra en las rutas a Argelia",
+          "6": "Para viajar a Argelia todos deben presentar billete de ida y vuelta y: pasajeros con nacionalidad argelina: carta de identidad biométrica argelina, o pasaporte de otro país junto a pasaporte argelino caducado, o pasaporte argelino; países que no necesitan visado: pasaporte en vigor; países que necesitan visado: pasaporte en vigor y visado durante toda la estancia; otras nacionalidades: consulta si tu país necesita visado. Las personas con nacionalidad israelí tienen prohibida la entrada en Argelia. En caso de no cumplir las condiciones anteriores, en el consulado de Argelia puedes solicitar un salvoconducto (Laissez Passer). Con vehículo (exportación o vehículo particular), consulta la documentación necesaria en el centro de ayuda de la compañía. Puedes hacer trámites aduaneros a través de alces.douane.gov.dz.",
+          "7": "H2: Casos en los que deberás pasar por taquilla",
+          "8": "Debes pasar por taquilla antes de embarcar, acreditando tu condición con el documento original y en vigor: para acreditar que eres residente si no se pudo validar telemáticamente durante la reserva (sistema SARA); para recoger la tarjeta de embarque porque tienes algún descuento que acreditar (Carné joven, jubilado, militares, familia numerosa). Puedes ir días antes del embarque para evitar colas y tener que ir con más antelación el día del viaje."
+        }
+      },
+      "pre-embarque-algeciras-ceuta-tanger": {
+        "title": "Pre-embarque Algeciras – Ceuta y Algeciras – Tánger",
+        "description": "Acceso a la zona de pre-embarque en las rutas Algeciras–Ceuta y Algeciras–Tánger Med: reserva o tarjeta de embarque con fecha en las 24 h.",
+        "content": {
+          "0": "El acceso a la zona de pre-embarque para los viajeros de la ruta en ferry Algeciras – Ceuta y Algeciras – Tánger Med solo será permitido a aquellos pasajeros con una reserva o tarjeta de embarque con fecha de viaje en las siguientes 24 horas.",
+          "1": "Esta medida, comunicada por la Autoridad Portuaria Bahía de Algeciras, conlleva un control más exhaustivo en los accesos a las zonas restringidas de embarque, de acuerdo con la Instrucción para la gestión del servicio de verificación de billetes y el control de los accesos de pasajeros y vehículos a las líneas marítimas regulares Algeciras–Ceuta y Algeciras–Tánger Med, en vigor desde el 27/02/23.",
+          "2": "H2: Criterio de aceptación o rechazo",
+          "3": "Si la reserva o tarjeta de embarque está fuera de las próximas 24 horas (es antigua o de otro día), se le denegará el acceso y se le dirigirá hacia la EMA para que cambie el billete.",
+          "4": "Si la reserva o tarjeta de embarque está dentro de las próximas 24 horas, se le permitirá el acceso."
+        }
+      },
+      "entrada-extranjeros-union-europea-ees": {
+        "title": "Nuevo sistema digitalizado para la entrada de extranjeros a la Unión Europea",
+        "description": "Sistema EES (Entry/Exit System): biometría, visado o ETIAS para entrar en Schengen. Verificación por la compañía antes del embarque.",
+        "content": {
+          "0": "La Unión Europea ha puesto en vigor un nuevo sistema que regula la entrada de viajeros extracomunitarios: el Entry/Exit System (EES). Afecta a todos los ciudadanos no europeos que quieran entrar en cualquier país Schengen.",
+          "1": "El nuevo sistema elimina los sellos clásicos en pasaporte y recopila de forma digital: registro de denegaciones de entrada, si las hubiera; biometría (imagen facial y huellas dactilares; los menores de 12 años solo aportan fotografía); fecha y lugar de entrada en los países Schengen (España, en este caso); información personal del viajero (nombre, fecha de nacimiento, nacionalidad).",
+          "2": "Esta información se recoge a través de máquinas instaladas en ciertos puertos; la implantación total será progresiva hasta abril de 2026.",
+          "3": "Antes de embarcar, asegúrate de tener un permiso válido para entrar en el espacio Schengen (visado o autorización ETIAS). Más información en el Ministerio de Asuntos Exteriores.",
+          "4": "Desde Baleària se verifica, a través de la plataforma eu-LISA (Carrier Interface), la validez del visado o el estado de la autorización ETIAS; puede no autorizarse el embarque si no se cumplen los requisitos."
+        }
+      },
+      "bus-lanzadera-valencia": {
+        "title": "Bus lanzadera para el desembarque en el puerto de València",
+        "description": "Servicio de autobús gratuito al desembarque desde Baleares o Argelia hasta el Edificio del Reloj.",
+        "content": {
+          "0": "Si viajas sin coche y llegas al puerto de València desde las Islas Baleares o desde Argelia, puedes salir del recinto portuario con el servicio de autobús gratuito que la compañía pone a tu disposición.",
+          "1": "El autobús recoge a los pasajeros en el punto de desembarque y los lleva hasta el Edificio del Reloj del Puerto de València (frente al final de la Avenida del Puerto). Los puntos exactos de recogida y destino están indicados en el puerto o en la información de la compañía.",
+          "2": "H2: Importante",
+          "3": "El servicio de autobús solo funciona para el desembarque. Para el embarque el cliente tiene que llegar por su cuenta hasta el punto de embarque, ya sea en taxi o coche propio. No hay transporte público dentro del recinto portuario."
+        }
+      },
       "bus-lanzadera-barcelona": { "title": "Bus lanzadera puerto de Barcelona", "content": { "0": "Navetta disponible entre terminal y Barcelona. Consulta la compañía." } },
       "ou-embarquer": { "title": "¿Dónde tengo que embarcar?", "content": { "0": "El punto de embarque figura en tu tarjeta. Verifica terminal y muelle antes de ir al puerto." } },
       "antelacion-embarquer-vehicule": { "title": "Antelación para embarcar con vehículo", "content": { "0": "Llega 90 min antes (pasajeros) o 120 min (con vehículo). En temporada alta, más margen." } },

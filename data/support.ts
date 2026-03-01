@@ -20,6 +20,8 @@ export const supportCategories: SupportCategory[] = [
     id: "embarque",
     articleSlugs: [
       "documentation-necessaire-embarcar",
+      "pre-embarque-algeciras-ceuta-tanger",
+      "entrada-extranjeros-union-europea-ees",
       "bus-lanzadera-valencia",
       "bus-lanzadera-barcelona",
       "ou-embarquer",

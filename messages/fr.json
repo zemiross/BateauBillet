@@ -227,14 +227,47 @@
           "0": "Vous pouvez vous diriger à l'embarquement directement, sans passer par les guichets, à condition d'avoir préparé la documentation suivante.",
           "1": "H2: Documentation requise sur toutes les routes",
           "2": "1. Carte d'embarquement (imprimée ou au format numérique).",
-          "3": "2. Pièce d'identité (DNI, NIE, passeport) en original et en cours de validité. Les mineurs de 14 ans sans pièce d'identité peuvent présenter le Livret de famille ou un certificat d'état civil, et doivent voyager accompagnés d'un parent ou tuteur.",
-          "4": "H2: Documentation supplémentaire pour le Maroc",
-          "5": "Pour voyager au Maroc, tous les passagers doivent présenter un passeport en cours de validité. Selon votre nationalité, un visa peut être requis. Un formulaire spécifique doit être complété avant l'accès au Maroc ; renseignez-vous auprès de la compagnie ou des autorités marocaines.",
-          "6": "H2: Documentation supplémentaire pour l'Algérie",
-          "7": "Pour l'Algérie, un passeport en cours de validité est obligatoire, ainsi qu'un billet aller et retour. Selon votre nationalité, un visa peut être requis. Avec un véhicule, la carte grise et l'assurance sont obligatoires. Consultez les exigences douanières algériennes avant le départ."
+          "3": "2. Pièce d'identité (DNI, NIE, passeport) en original et en cours de validité. En cas de perte ou vol et uniquement sur les routes nationales, vous pouvez embarquer avec un document d'identité avec photo (permis de conduire) si vous n'avez pas de réduction à justifier. En cas de vol du DNI, la dénonciation n'est requise qu'à destination, si les autorités le demandent. Les mineurs de 14 ans sans pièce d'identité peuvent présenter le Livret de famille ou un certificat du Registre civil ; ils doivent voyager accompagnés d'un parent ou tuteur. Si un tiers les accompagne, un consentement du tuteur ou du parent est indispensable, ainsi que les documents mentionnés.",
+          "4": "H2: Documentation supplémentaire pour les routes vers le Maroc",
+          "5": "Pour le Maroc, tous les passagers doivent présenter un passeport en cours de validité ; selon votre pays, un visa peut être requis. Consultez la liste des pays dispensés de visa. Vous devez en outre remplir un document spécifique à remettre pendant la traversée au personnel de police marocain présent à bord. Ne l'oubliez pas.",
+          "6": "H2: Documentation supplémentaire pour les routes vers l'Algérie",
+          "7": "Pour l'Algérie, tous les passagers doivent présenter un billet aller et retour et : passagers de nationalité algérienne : carte d'identité biométrique algérienne, ou passeport d'un autre pays avec passeport algérien périmé, ou passeport algérien ; pays dispensés de visa : passeport en cours de validité ; pays soumis à visa : passeport en cours de validité et visa couvrant toute la durée du séjour ; autres nationalités : consultez si votre pays exige un visa. L'entrée en Algérie est interdite aux ressortissants israéliens. À défaut, un laissez-passer peut être demandé au consulat d'Algérie. Avec un véhicule (export ou véhicule particulier), consultez la documentation requise auprès de la compagnie. Les formalités douanières peuvent se faire via alces.douane.gov.dz.",
+          "8": "H2: Cas où vous devez passer par le guichet",
+          "9": "Passez par le guichet avant d'embarquer, avec le justificatif original et en cours de validité : pour prouver votre résidence si la validation télématique (système SARA) a échoué lors de la réservation ; pour retirer la carte d'embarquement lorsque vous avez une réduction à justifier (carte jeune, retraité, militaire, famille nombreuse). Vous pouvez vous présenter au guichet plusieurs jours avant l'embarquement pour éviter les files d'attente le jour du départ."
         }
       },
-      "bus-lanzadera-valencia": { "title": "Bus lanzadera pour le débarquement au port de Valence", "content": { "0": "Un service de bus relie le terminal au centre-ville de Valence. Les horaires sont affichés au port. Consultez la compagnie pour les détails." } },
+      "pre-embarque-algeciras-ceuta-tanger": {
+        "title": "Pré-embarquement Algeciras – Ceuta et Algeciras – Tánger",
+        "description": "Accès à la zone de pré-embarquement pour les ferries Algeciras–Ceuta et Algeciras–Tánger Med : réservation ou carte d'embarquement dans les 24 h.",
+        "content": {
+          "0": "L'accès à la zone de pré-embarquement pour les passagers des lignes Algeciras – Ceuta et Algeciras – Tánger Med n'est autorisé qu'aux personnes disposant d'une réservation ou d'une carte d'embarquement dont la date de voyage est dans les 24 prochaines heures.",
+          "1": "Cette règle, fixée par l'Autoridad Portuaria Bahía de Algeciras, entraîne un contrôle plus strict aux accès des zones restreintes d'embarquement, conformément à l'instruction en vigueur depuis le 27/02/23 pour la vérification des billets et le contrôle des accès des passagers et véhicules sur les lignes maritimes régulières Algeciras–Ceuta et Algeciras–Tánger Med.",
+          "2": "H2: Critères d'accès",
+          "3": "Si la réservation ou la carte d'embarquement est en dehors des 24 prochaines heures (date antérieure ou un autre jour), l'accès est refusé et vous serez orienté vers l'EMA pour modifier votre billet.",
+          "4": "Si la réservation ou la carte d'embarquement est dans les 24 prochaines heures, l'accès est autorisé."
+        }
+      },
+      "entrada-extranjeros-union-europea-ees": {
+        "title": "Nouveau système digitalisé pour l'entrée des ressortissants extracommunautaires dans l'Union européenne",
+        "description": "Système EES (Entry/Exit System) : biométrie, visa ou ETIAS pour entrer dans l'espace Schengen. Vérification par la compagnie avant embarquement.",
+        "content": {
+          "0": "L'Union européenne a mis en place un nouveau système régissant l'entrée des voyageurs extracommunautaires : le Entry/Exit System (EES). Il s'applique à tous les ressortissants non européens souhaitant entrer dans un pays Schengen.",
+          "1": "Le système remplace le simple tampon des passeports et recueille de manière digitale : le registre des refus d'entrée éventuels ; les données biométriques (image faciale et empreintes digitales, sauf pour les moins de 12 ans qui ne fournissent qu'une photographie) ; la date et le lieu d'entrée dans l'espace Schengen (Espagne, le cas échéant) ; les données personnelles du voyageur (nom, date de naissance, nationalité).",
+          "2": "Ces données sont collectées via des bornes installées dans certains ports. Le déploiement complet sera progressif jusqu'en avril 2026.",
+          "3": "Avant d'embarquer, assurez-vous d'avoir un titre de séjour valide pour entrer dans l'espace Schengen (visa ou autorisation ETIAS). Des informations sont disponibles sur le site du ministère des Affaires étrangères de votre pays de destination.",
+          "4": "La compagnie vérifie, via la plateforme eu-LISA (Carrier Interface), la validité du visa ou le statut de l'autorisation ETIAS. L'embarquement peut être refusé en cas d'absence ou d'invalidité de ces titres."
+        }
+      },
+      "bus-lanzadera-valencia": {
+        "title": "Bus lanzadera pour le débarquement au port de Valence",
+        "description": "Service d'autobus gratuit au débarquement depuis les Baléares ou l'Algérie vers l'Edificio del Reloj.",
+        "content": {
+          "0": "Si vous voyagez sans véhicule et arrivez au port de Valence depuis les Baléares ou depuis l'Algérie, vous pouvez quitter l'enceinte portuaire grâce au service d'autobus gratuit mis à disposition.",
+          "1": "L'autobus prend les passagers au point de débarquement et les conduit jusqu'à l'Edificio del Reloj du port de Valence (face à l'extrémité de l'Avenida del Puerto). Les emplacements exacts (point de prise en charge et destination) sont indiqués sur les plans disponibles au port ou auprès de la compagnie.",
+          "2": "H2: Important",
+          "3": "Le bus ne fonctionne que pour le débarquement. Pour l'embarquement, vous devez vous rendre par vos propres moyens (taxi ou véhicule personnel) jusqu'au point d'embarquement. Il n'y a pas de transport public à l'intérieur de l'enceinte portuaire."
+        }
+      },
       "bus-lanzadera-barcelona": { "title": "Bus lanzadera port de Barcelone", "content": { "0": "Un service de navette est disponible entre le terminal et le centre de Barcelone. Renseignez-vous auprès de la compagnie pour les horaires et tarifs." } },
       "ou-embarquer": { "title": "Où dois-je embarquer ?", "content": { "0": "L'emplacement d'embarquement est indiqué sur votre carte d'embarquement. Chaque port a plusieurs terminaux ; vérifiez le terminal et le quai indiqués avant de vous rendre au port." } },
       "antelacion-embarquer-vehicule": { "title": "Anticipation nécessaire pour embarquer avec un véhicule", "content": { "0": "Arrivez au port au moins 90 minutes avant le départ pour les passagers à pied, et 120 minutes avec un véhicule. En haute saison, prévoyez davantage de marge." } },

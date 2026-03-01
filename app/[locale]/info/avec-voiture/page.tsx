@@ -57,6 +57,7 @@ export default async function BateauAvecVoiturePage({ params }: Props) {
     "@type": "Article",
     headline: title,
     description,
+    image: `${SITE_URL}/images/bateau-avec-voiture.jpg`,
     author: { "@type": "Organization", name: SITE_NAME },
     publisher: {
       "@type": "Organization",

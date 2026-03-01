@@ -1152,4 +1152,28 @@
     <loc>https://bateaubillet.com/es/support/modifications-billets-espagne-maroc</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/support/pre-embarque-algeciras-ceuta-tanger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/support/pre-embarque-algeciras-ceuta-tanger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/support/pre-embarque-algeciras-ceuta-tanger</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/fr/support/entrada-extranjeros-union-europea-ees</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/ar/support/entrada-extranjeros-union-europea-ees</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bateaubillet.com/es/support/entrada-extranjeros-union-europea-ees</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>

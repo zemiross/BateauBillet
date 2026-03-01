@@ -77,6 +77,16 @@ export default function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 </li>
                 <li>
                   <Link
+                    href={`/${locale}/support`}
+                    className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-ocean-100/90 transition-colors hover:bg-ocean-800 hover:text-white"
+                    onClick={onClose}
+                  >
+                    <Icon name="search" size={18} />
+                    {t("apoyoViajero")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href={`/${locale}/info/avec-voiture`}
                     className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm font-medium text-ocean-100/90 transition-colors hover:bg-ocean-800 hover:text-white"
                     onClick={onClose}

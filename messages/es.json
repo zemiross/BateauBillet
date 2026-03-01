@@ -4,6 +4,7 @@
     "compagnies": "Compañías",
     "avecVoiture": "Con coche",
     "guides": "Guías",
+    "apoyoViajero": "Apoyo al Viajero",
     "reserver": "Reservar",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
@@ -17,6 +18,7 @@
     "copyright": "Sitio informativo. Reserva a través de balearia.com.",
     "links": {
       "avecVoiture": "Ferry con coche",
+      "apoyoViajero": "Apoyo al Viajero",
       "balearia": "Balearia",
       "changements": "Cambios y devoluciones",
       "guides": "Guías de viaje",
@@ -199,6 +201,55 @@
   },
   "bookingCta": {
     "reserver": "Reserva tu billete"
+  },
+  "support": {
+    "pageTitle": "Apoyo al Viajero",
+    "pageDescription": "Respuestas a todas tus preguntas sobre las travesías en ferry: documentación, embarque, vehículos, animales, grupos, puertos y horarios.",
+    "metaTitle": "Apoyo al Viajero – Preguntas frecuentes ferry | BateauBillet",
+    "metaDescription": "Encuentra respuestas a tus preguntas sobre travesías en ferry por el Mediterráneo: documentación, embarque, vehículos, animales y más.",
+    "categoriesHeading": "Categorías de artículos",
+    "categories": {
+      "embarque": "Información sobre el embarque",
+      "vehicule": "Viajar con vehículo",
+      "mascota": "Viajar con mascota",
+      "groupe": "Viajar en grupo",
+      "puertos-horarios": "Puertos y horarios",
+      "acomodaciones": "Acomodaciones y servicios a bordo",
+      "espagne-algerie": "Reservas España – Argelia",
+      "tarifa-tanger": "Excursión Tarifa – Tánger",
+      "ope-marhaba": "OPE – Marhaba"
+    },
+    "articles": {
+      "documentation-necessaire-embarcar": { "title": "Documentación necesaria para embarcar", "description": "Documentos requeridos para embarcar: tarjeta de embarque, DNI o pasaporte según destino.", "content": { "0": "Puedes dirigirte al embarque directamente con la documentación preparada.", "1": "H2: Documentación en todas las rutas", "2": "1. Tarjeta de embarque (impresa o digital). 2. DNI, NIE o pasaporte en vigor.", "3": "H2: Documentación para Marruecos", "4": "Para Marruecos se requiere pasaporte en vigor. Consulta si tu país necesita visado.", "5": "H2: Documentación para Argelia", "6": "Para Argelia: pasaporte en vigor, billete ida y vuelta. Con vehículo: documentación del coche y seguro." } },
+      "bus-lanzadera-valencia": { "title": "Bus lanzadera desembarque puerto de Valencia", "content": { "0": "Servicio de bus entre terminal y centro. Consulta horarios en el puerto." } },
+      "bus-lanzadera-barcelona": { "title": "Bus lanzadera puerto de Barcelona", "content": { "0": "Navetta disponible entre terminal y Barcelona. Consulta la compañía." } },
+      "ou-embarquer": { "title": "¿Dónde tengo que embarcar?", "content": { "0": "El punto de embarque figura en tu tarjeta. Verifica terminal y muelle antes de ir al puerto." } },
+      "antelacion-embarquer-vehicule": { "title": "Antelación para embarcar con vehículo", "content": { "0": "Llega 90 min antes (pasajeros) o 120 min (con vehículo). En temporada alta, más margen." } },
+      "pasos-embarcar-vehicule": { "title": "Pasos para embarcar con vehículo", "content": { "0": "Control, facturación del vehículo, indicaciones para aparcar a bordo." } },
+      "reservas-vehicule-location": { "title": "Reservas con vehículo de alquiler", "content": { "0": "Comprueba con la agencia si el coche puede cruzar fronteras." } },
+      "reserver-avec-mascota": { "title": "Cómo reservar con mascota", "content": { "0": "Indica la mascota al reservar. Plazas limitadas." } },
+      "documentacion-mascota": { "title": "Documentación para tu mascota", "content": { "0": "Pasaporte europeo para animales (rabia al día). Para Marruecos y Argelia, requisitos específicos." } },
+      "mascota-maroc-algerie": { "title": "Viajar con mascota a Marruecos o Argelia", "content": { "0": "Certificados veterinarios y tratamientos pueden ser obligatorios." } },
+      "avantages-groupe": { "title": "Ventajas de viajar en grupo", "content": { "0": "Tarifas preferenciales. Contacta el servicio grupos." } },
+      "comment-reserver-groupe": { "title": "Cómo reservar para un grupo", "content": { "0": "Para grupos (10-15+ personas), contacta el servicio grupos de la compañía." } },
+      "nombre-personnes-groupe": { "title": "¿Cuántas personas forman un grupo?", "content": { "0": "Varía por compañía, normalmente 10-20 personas." } },
+      "parking-valencia": { "title": "Parking puerto de Valencia", "content": { "0": "Parkings de pago cerca del puerto. Reserva en temporada alta." } },
+      "parking-denia": { "title": "Parking puerto de Dénia", "content": { "0": "Parkings disponibles. Consulta tarifas en el puerto." } },
+      "parking-ibiza-botafoc": { "title": "Parking puerto de Ibiza – Botafoc", "content": { "0": "Parkings en terminal Botafoc. En verano, llega pronto." } },
+      "embarcar-port-barcelona": { "title": "Embarcar en el puerto de Barcelona", "content": { "0": "Puerto bien comunicado. Sigue las indicaciones a tu terminal." } },
+      "cabines-disponibles": { "title": "Acomodaciones disponibles a bordo", "content": { "0": "Cabinas, butacas reclinables, zonas comunes. Cabinas recomendadas para travesías nocturnas." } },
+      "ferries-fast-ferries": { "title": "Ferries y fast ferries", "content": { "0": "Fast ferries más rápidos, menos servicios. Ferries clásicos más confort para travesías largas." } },
+      "zones-exteriores-bord": { "title": "Zonas exteriores a bordo", "content": { "0": "La mayoría tienen cubiertas exteriores. Acceso según condiciones meteorológicas." } },
+      "info-voyage-espagne-algerie": { "title": "Información viaje España – Argelia", "content": { "0": "Pasaporte y posible visado. Documentación vehículo para Argelia." } },
+      "horaires-port-alger-oran-mostaganem": { "title": "Horarios acceso puertos Argel, Orán y Mostaganem", "content": { "0": "Llega con antelación (5-6 h en algunos puertos). Consulta la compañía." } },
+      "embarque-vehicules-algerie": { "title": "Embarque vehículos hacia/desde Argelia", "content": { "0": "Formalidades aduaneras específicas. Carta gris, seguro, documentos exportación." } },
+      "antelacion-tarifa-tanger": { "title": "Tarifa – Tánger: antelación embarque", "content": { "0": "Llega 90 min antes (120 min con vehículo)." } },
+      "bus-lanzadera-algeciras-tarifa": { "title": "Tarifa – Tánger: bus lanzadera Algeciras – Tarifa", "content": { "0": "Bus de enlace Algeciras–Tarifa. Consulta disponibilidad." } },
+      "excursion-tarifa-tanger-caracteristiques": { "title": "Excursión Tarifa – Tánger Ville: características", "content": { "0": "Excursión de un día a Tánger. Horarios en la web de la compañía." } },
+      "routes-marhaba": { "title": "Rutas Operación Marhaba", "content": { "0": "España–Marruecos, Ceuta, Melilla. Rutas: Algeciras–Tánger Med, Barcelona–Tánger Med, Sète–Nador." } },
+      "embarque-acces-port-marhaba": { "title": "Embarque y acceso puerto durante Marhaba", "content": { "0": "Puertos muy concurridos. Llega 3-5 h antes. Documentos preparados." } },
+      "modifications-billets-espagne-maroc": { "title": "Modificaciones billetes España – Marruecos", "content": { "0": "Condiciones según compañía y tipo de billete." } }
+    }
   },
   "port": {
     "title": "Puerto de {name}: ferry, horarios y travesías",

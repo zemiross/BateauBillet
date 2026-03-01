@@ -99,6 +99,28 @@ function main() {
     pathSet.add("guides");
   }
 
+  if (!pathSet.has("support")) {
+    entries.push({ path: "support", priority: "0.7" });
+    pathSet.add("support");
+  }
+
+  // Auto-discover support article slugs from data/support.ts
+  const supportPath = join(root, "data", "support.ts");
+  const supportContent = readFileSync(supportPath, "utf8");
+  const categoryBlockMatches = [...supportContent.matchAll(/articleSlugs:\s*\[([\s\S]*?)\]/g)];
+  const supportSlugs = new Set();
+  for (const m of categoryBlockMatches) {
+    const inner = m[1];
+    for (const sm of inner.matchAll(/"([^"]+)"/g)) supportSlugs.add(sm[1]);
+  }
+  for (const slug of supportSlugs) {
+    const p = `support/${slug}`;
+    if (!pathSet.has(p)) {
+      entries.push({ path: p, priority: "0.5" });
+      pathSet.add(p);
+    }
+  }
+
   let xml =
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 

@@ -64,6 +64,12 @@ export default function Navbar() {
           >
             {t("guides")}
           </Link>
+          <Link
+            href={`/${locale}/support`}
+            className="rounded-lg px-3 py-2 text-sm font-medium text-ocean-100/80 transition-colors hover:bg-ocean-800 hover:text-white"
+          >
+            {t("apoyoViajero")}
+          </Link>
           <LanguageSwitcher />
         </nav>
 

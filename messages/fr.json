@@ -4,6 +4,7 @@
     "compagnies": "Compagnies",
     "avecVoiture": "Avec voiture",
     "guides": "Guides",
+    "apoyoViajero": "Support voyageur",
     "reserver": "Réserver",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
@@ -17,6 +18,7 @@
     "copyright": "Site d'information. Réservation via balearia.com.",
     "links": {
       "avecVoiture": "Bateau avec voiture",
+      "apoyoViajero": "Support voyageur",
       "balearia": "Balearia",
       "changements": "Changements et échanges",
       "guides": "Guides de voyage",
@@ -199,6 +201,68 @@
   },
   "bookingCta": {
     "reserver": "Réserver votre billet"
+  },
+  "support": {
+    "pageTitle": "Apoyo al Viajero",
+    "pageDescription": "Réponses à toutes vos questions sur les traversées ferry : documents, embarquement, véhicules, animaux, groupes, ports et horaires.",
+    "metaTitle": "Support voyageur – Questions fréquentes ferry | BateauBillet",
+    "metaDescription": "Trouvez les réponses à vos questions sur les traversées ferry en Méditerranée : documents, embarquement, véhicules, animaux et plus.",
+    "categoriesHeading": "Catégories d'articles",
+    "categories": {
+      "embarque": "Informations sur l'embarquement",
+      "vehicule": "Voyager avec un véhicule",
+      "mascota": "Voyager avec un animal",
+      "groupe": "Voyager en groupe",
+      "puertos-horarios": "Ports et horaires",
+      "acomodaciones": "Hébergements et services à bord",
+      "espagne-algerie": "Réservations Espagne – Algérie",
+      "tarifa-tanger": "Excursion Tarifa – Tanger",
+      "ope-marhaba": "Opération Marhaba"
+    },
+    "articles": {
+      "documentation-necessaire-embarcar": {
+        "title": "Documentation nécessaire pour embarcar",
+        "description": "Documents requis pour embarquer en ferry : carte d'embarquement, pièce d'identité, passeport selon la destination.",
+        "content": {
+          "0": "Vous pouvez vous diriger à l'embarquement directement, sans passer par les guichets, à condition d'avoir préparé la documentation suivante.",
+          "1": "H2: Documentation requise sur toutes les routes",
+          "2": "1. Carte d'embarquement (imprimée ou au format numérique).",
+          "3": "2. Pièce d'identité (DNI, NIE, passeport) en original et en cours de validité. Les mineurs de 14 ans sans pièce d'identité peuvent présenter le Livret de famille ou un certificat d'état civil, et doivent voyager accompagnés d'un parent ou tuteur.",
+          "4": "H2: Documentation supplémentaire pour le Maroc",
+          "5": "Pour voyager au Maroc, tous les passagers doivent présenter un passeport en cours de validité. Selon votre nationalité, un visa peut être requis. Un formulaire spécifique doit être complété avant l'accès au Maroc ; renseignez-vous auprès de la compagnie ou des autorités marocaines.",
+          "6": "H2: Documentation supplémentaire pour l'Algérie",
+          "7": "Pour l'Algérie, un passeport en cours de validité est obligatoire, ainsi qu'un billet aller et retour. Selon votre nationalité, un visa peut être requis. Avec un véhicule, la carte grise et l'assurance sont obligatoires. Consultez les exigences douanières algériennes avant le départ."
+        }
+      },
+      "bus-lanzadera-valencia": { "title": "Bus lanzadera pour le débarquement au port de Valence", "content": { "0": "Un service de bus relie le terminal au centre-ville de Valence. Les horaires sont affichés au port. Consultez la compagnie pour les détails." } },
+      "bus-lanzadera-barcelona": { "title": "Bus lanzadera port de Barcelone", "content": { "0": "Un service de navette est disponible entre le terminal et le centre de Barcelone. Renseignez-vous auprès de la compagnie pour les horaires et tarifs." } },
+      "ou-embarquer": { "title": "Où dois-je embarquer ?", "content": { "0": "L'emplacement d'embarquement est indiqué sur votre carte d'embarquement. Chaque port a plusieurs terminaux ; vérifiez le terminal et le quai indiqués avant de vous rendre au port." } },
+      "antelacion-embarquer-vehicule": { "title": "Anticipation nécessaire pour embarquer avec un véhicule", "content": { "0": "Arrivez au port au moins 90 minutes avant le départ pour les passagers à pied, et 120 minutes avec un véhicule. En haute saison, prévoyez davantage de marge." } },
+      "pasos-embarcar-vehicule": { "title": "Étapes pour embarquer avec un véhicule", "content": { "0": "Présentez-vous au contrôle, faites enregistrer votre véhicule, puis suivez les indications pour le stationnement à bord. Gardez vos documents à portée de main." } },
+      "reservas-vehicule-location": { "title": "Réservations avec un véhicule de location", "content": { "0": "Vérifiez avec l'agence de location que le véhicule peut franchir les frontières. Certaines locations interdisent les traversées internationales." } },
+      "reserver-avec-mascota": { "title": "Comment réserver avec un animal", "content": { "0": "Indiquez la présence d'un animal lors de la réservation. Les places pour animaux sont limitées. Des espaces dédiés existent à bord." } },
+      "documentacion-mascota": { "title": "Documentation nécessaire pour votre animal", "content": { "0": "Passeport européen pour animaux (vaccination antirabique à jour) pour les chiens et chats. Pour le Maroc et l'Algérie, des exigences spécifiques s'appliquent." } },
+      "mascota-maroc-algerie": { "title": "Voyager avec un animal vers le Maroc ou l'Algérie", "content": { "0": "Des certificats vétérinaires et parfois des traitements antiparasitaires sont requis. Consultez les autorités du pays de destination avant le voyage." } },
+      "avantages-groupe": { "title": "Avantages de voyager en groupe", "content": { "0": "Les groupes bénéficient souvent de tarifs préférentiels. Contactez la compagnie pour une cotisation sur mesure." } },
+      "comment-reserver-groupe": { "title": "Comment réserver pour un groupe", "content": { "0": "Pour les groupes (généralement à partir de 10-15 personnes), contactez le service groupes de la compagnie pour une réservation dédiée." } },
+      "nombre-personnes-groupe": { "title": "Combien de personnes pour former un groupe ?", "content": { "0": "Le seuil varie selon les compagnies, généralement entre 10 et 20 personnes. Renseignez-vous auprès de la compagnie." } },
+      "parking-valencia": { "title": "Parking port de Valence", "content": { "0": "Des parkings payants sont disponibles à proximité du port. Réservez en avance en haute saison." } },
+      "parking-denia": { "title": "Parking port de Dénia", "content": { "0": "Le port de Dénia dispose de parkings. Consultez les tarifs et la capacité sur le site du port." } },
+      "parking-ibiza-botafoc": { "title": "Parking port d'Ibiza – Botafoc", "content": { "0": "Des parkings sont disponibles au terminal Botafoc. En été, arrivez tôt pour trouver une place." } },
+      "embarcar-port-barcelona": { "title": "Embarquer au port de Barcelone", "content": { "0": "Le port de Barcelone est bien desservi. Suivez les panneaux vers votre terminal. Un service de navette peut relier certains terminaux." } },
+      "cabines-disponibles": { "title": "Hébergements disponibles à bord", "content": { "0": "Les ferries proposent des cabines, des fauteuils inclinables et des espaces communs. Les cabines sont recommandées pour les traversées de nuit." } },
+      "ferries-fast-ferries": { "title": "Ferries et fast ferries : différences", "content": { "0": "Les fast ferries sont plus rapides mais proposent moins de services. Les ferries classiques offrent plus de confort pour les longues traversées." } },
+      "zones-exteriores-bord": { "title": "Zones extérieures à bord", "content": { "0": "La plupart des navires disposent de ponts extérieurs. L'accès peut être restreint selon les conditions météo." } },
+      "info-voyage-espagne-algerie": { "title": "Informations pour votre voyage Espagne – Algérie", "content": { "0": "Les traversées vers l'Algérie nécessitent un passeport et éventuellement un visa. Vérifiez les formalités douanières pour les véhicules." } },
+      "horaires-port-alger-oran-mostaganem": { "title": "Horaires d'accès aux ports d'Alger, Oran et Mostaganem", "content": { "0": "Les horaires d'accès varient. Arrivez avec anticipation (souvent 5 à 6 heures avant le départ pour certains ports). Consultez la compagnie." } },
+      "embarque-vehicules-algerie": { "title": "Embarquement de véhicules vers ou depuis l'Algérie", "content": { "0": "Des formalités douanières spécifiques s'appliquent. Préparez la carte grise, l'assurance et les documents d'exportation si nécessaire." } },
+      "antelacion-tarifa-tanger": { "title": "Tarifa – Tanger : anticipation pour l'embarquement", "content": { "0": "Pour la liaison Tarifa – Tanger, arrivez au moins 90 minutes avant le départ (120 min avec véhicule)." } },
+      "bus-lanzadera-algeciras-tarifa": { "title": "Tarifa – Tanger : bus lanzadera gratuit Algeciras – Tarifa", "content": { "0": "Un bus de liaison peut relier Algeciras à Tarifa. Renseignez-vous auprès de la compagnie pour la disponibilité et les horaires." } },
+      "excursion-tarifa-tanger-caracteristiques": { "title": "Excursion Tarifa – Tanger Ville : caractéristiques", "content": { "0": "L'excursion d'une journée permet de visiter Tanger. Les horaires et conditions sont disponibles sur le site de la compagnie." } },
+      "routes-marhaba": { "title": "Routes Opération Marhaba", "content": { "0": "L'Opération Marhaba concerne les liaisons Espagne – Maroc, Ceuta et Melilla. Les principales routes sont Algeciras–Tanger Med, Barcelone–Tanger Med, Sète–Nador." } },
+      "embarque-acces-port-marhaba": { "title": "Embarquement et accès au port pendant Marhaba", "content": { "0": "En période Marhaba, les ports sont très fréquentés. Arrivez au moins 3 à 5 heures avant le départ. Préparez tous vos documents à l'avance." } },
+      "modifications-billets-espagne-maroc": { "title": "Modifications de billets sur les routes Espagne – Maroc", "content": { "0": "Les conditions de modification varient selon la compagnie et le type de billet. Consultez les conditions générales avant de réserver." } }
+    }
   },
   "port": {
     "title": "Port de {name}: ferry, horaires et traversées",

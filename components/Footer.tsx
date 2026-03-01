@@ -12,6 +12,7 @@ const popularRoutes = [...routes]
   .slice(0, 6);
 
 const infoLinkKeys = [
+  { key: "apoyoViajero", href: "/support" },
   { key: "avecVoiture", href: "/info/avec-voiture" },
   { key: "balearia", href: "/navieras/balearia" },
   { key: "changements", href: "/changements-et-echanges" },

@@ -46,6 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BateauAvecVoiturePage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "info.avecVoiture" });
+  const tRoute = await getTranslations({ locale, namespace: "route" });
   const tPorts = await getTranslations({ locale, namespace: "ports" });
   const canonical = `${SITE_URL}/${locale}/info/avec-voiture`;
   const title = t("title");
@@ -167,7 +168,7 @@ export default async function BateauAvecVoiturePage({ params }: Props) {
         <section className="space-y-4 pt-6">
           <h2 className="text-xl font-bold text-sand-900">{t("h2Tarifs")}</h2>
           <p className="leading-relaxed text-sand-900/70">{t("tarifsDesc")}</p>
-          <BookingCTA />
+          <BookingCTA label={tRoute("voirHorairesPrix")} />
         </section>
       </article>
 

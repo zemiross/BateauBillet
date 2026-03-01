@@ -42,6 +42,7 @@ export default async function BaleariaPage({ params }: Props) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "navieras.balearia" });
   const tNavieras = await getTranslations({ locale, namespace: "navieras" });
+  const tRoute = await getTranslations({ locale, namespace: "route" });
   return (
     <div className="mx-auto max-w-6xl space-y-10 px-4 py-12">
       <h1 className="text-3xl font-bold text-sand-900 md:text-4xl">
@@ -77,7 +78,7 @@ export default async function BaleariaPage({ params }: Props) {
         <p className="mb-4 text-sand-900/70">
           {t("tarifsDesc")}
         </p>
-        <BookingCTA />
+        <BookingCTA label={tRoute("voirHorairesPrix")} />
       </section>
 
       <section>

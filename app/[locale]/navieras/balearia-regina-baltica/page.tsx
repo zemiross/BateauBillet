@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import BookingCTA from "@/components/BookingCTA";
 import Breadcrumb from "@/components/Breadcrumb";
 import { buildHreflang } from "@/lib/hreflang";
@@ -32,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BaleariaReginaBalticaPage({ params }: Props) {
   const { locale } = await params;
+  const tRoute = await getTranslations({ locale, namespace: "route" });
   return (
     <div className="mx-auto max-w-3xl space-y-10 px-4 py-12">
       <h1 className="text-3xl font-bold text-sand-900 md:text-4xl">
@@ -70,7 +72,7 @@ export default async function BaleariaReginaBalticaPage({ params }: Props) {
           liaison et de la date. Réservez en avance pour les meilleurs prix sur
           les traversées opérées par le Regina Baltica.
         </p>
-        <BookingCTA />
+        <BookingCTA label={tRoute("voirHorairesPrix")} />
       </section>
 
       <section>

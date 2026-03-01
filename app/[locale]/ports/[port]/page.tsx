@@ -55,6 +55,7 @@ export default async function PortPage({ params }: PageProps) {
   if (!portName) notFound();
 
   const t = await getTranslations({ locale, namespace: "port" });
+  const tRoute = await getTranslations({ locale, namespace: "route" });
   const tPorts = await getTranslations({ locale, namespace: "ports" });
 
   const nameDisplay = tPorts(portName) || portName;
@@ -119,7 +120,7 @@ export default async function PortPage({ params }: PageProps) {
             {t("reserverTitle", { name: nameDisplay })}
           </h3>
           <p className="mb-4 text-sand-900/70">{t("reserverDesc")}</p>
-          <BookingCTA />
+          <BookingCTA label={tRoute("voirHorairesPrix")} />
         </div>
       </section>
 

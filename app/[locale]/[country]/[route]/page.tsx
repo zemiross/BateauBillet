@@ -202,6 +202,20 @@ export default async function CountrySegmentPage({ params }: PageProps) {
   const routeData = getRouteByCountryAndSlug(country, route);
   if (!routeData) notFound();
 
+  const tCard = await getTranslations({ locale, namespace: "routeCard" });
+  /** Map route.frequency (FR from data) to routeCard.frequency.* key for translation */
+  const FREQUENCY_KEY_MAP: Record<string, string> = {
+    "1 a 2 itineraires hebdomadaires": "1-2-weekly",
+    "2+ departs quotidiens": "2-plus-daily",
+    "3 a 5 itineraires hebdomadaires": "3-5-weekly",
+    "1 depart quotidien": "1-daily",
+    "2+ departs hebdomadaires": "2-plus-weekly",
+  };
+  const frequencyKey = FREQUENCY_KEY_MAP[routeData.frequency];
+  const translatedFrequency = frequencyKey
+    ? tCard(`frequency.${frequencyKey}`)
+    : routeData.frequency;
+
   const altRoutes = getAlternativeRoutes(routeData, 4);
   const o = tPorts(routeData.origin);
   const d = tPorts(routeData.destination);
@@ -217,13 +231,14 @@ export default async function CountrySegmentPage({ params }: PageProps) {
           origin: o,
           destination: d,
           duration: routeData.duration,
-          frequency: routeData.frequency,
+          frequency: translatedFrequency,
           operators: routeData.operators.join(", "),
           price: routeData.priceFrom,
         })}
         ctaLabel={tRoute("voirHorairesPrix")}
         durationLabel={tRoute("durationLabel")}
         frequencyLabel={tRoute("schedule.frequence")}
+        frequencyDisplay={translatedFrequency}
         priceFromLabel={tRoute("priceFromLabel")}
       />
 
@@ -245,7 +260,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
               items={[
                 {
                   title: tRoute("schedule.frequence"),
-                  content: tRoute("scheduleDetails.frequence", { frequency: routeData.frequency }),
+                  content: tRoute("scheduleDetails.frequence", { frequency: translatedFrequency }),
                 },
                 {
                   title: tRoute("schedule.enregistrement"),
@@ -318,7 +333,7 @@ export default async function CountrySegmentPage({ params }: PageProps) {
               {tRoute("routeGuideTitle", { origin: o, destination: d })}
             </h2>
             <div className="prose prose-sand max-w-none text-base leading-relaxed text-sand-900/80">
-              <p>{tRoute("routeGuideContent", { origin: o, destination: d, duration: routeData.duration, frequency: routeData.frequency, operators: routeData.operators.join(", "), price: routeData.priceFrom })}</p>
+              <p>{tRoute("routeGuideContent", { origin: o, destination: d, duration: routeData.duration, frequency: translatedFrequency, operators: routeData.operators.join(", "), price: routeData.priceFrom })}</p>
             </div>
           </AnimatedSection>
         )}

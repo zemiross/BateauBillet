@@ -15,6 +15,8 @@ type RouteHeroProps = {
   ctaLabel?: string;
   durationLabel?: string;
   frequencyLabel?: string;
+  /** Translated frequency text (e.g. "2+ salidas/día"); when set, overrides route.frequency in quick info */
+  frequencyDisplay?: string;
   priceFromLabel?: string;
 };
 
@@ -27,6 +29,7 @@ export default function RouteHero({
   ctaLabel = "Voir les horaires et prix",
   durationLabel,
   frequencyLabel,
+  frequencyDisplay,
   priceFromLabel,
 }: RouteHeroProps) {
   const theme = getCountryTheme(route.country);
@@ -77,7 +80,7 @@ export default function RouteHero({
 
           <RouteQuickInfo
             duration={route.duration}
-            frequency={route.frequency}
+            frequency={frequencyDisplay ?? route.frequency}
             priceFrom={route.priceFrom}
             operators={route.operators}
             durationLabel={durationLabel}

@@ -203,7 +203,7 @@
     "reserver": "Réserver votre billet"
   },
   "support": {
-    "pageTitle": "Apoyo al Viajero",
+    "pageTitle": "Support voyageur",
     "pageDescription": "Réponses à toutes vos questions sur les traversées ferry : documents, embarquement, véhicules, animaux, groupes, ports et horaires.",
     "metaTitle": "Support voyageur – Questions fréquentes ferry | BateauBillet",
     "metaDescription": "Trouvez les réponses à vos questions sur les traversées ferry en Méditerranée : documents, embarquement, véhicules, animaux et plus.",
@@ -575,10 +575,136 @@
           "2": "Renseignez les données personnelles et les données du groupe. Dans « Motivo de la Solicitud », sélectionnez Grupo et Solicitud Cotización. Indiquez le type de client : Particular, Agencia ou Empresa."
         }
       },
-      "parking-valencia": { "title": "Parking port de Valence", "content": { "0": "Des parkings payants sont disponibles à proximité du port. Réservez en avance en haute saison." } },
-      "parking-denia": { "title": "Parking port de Dénia", "content": { "0": "Le port de Dénia dispose de parkings. Consultez les tarifs et la capacité sur le site du port." } },
-      "parking-ibiza-botafoc": { "title": "Parking port d'Ibiza – Botafoc", "content": { "0": "Des parkings sont disponibles au terminal Botafoc. En été, arrivez tôt pour trouver une place." } },
-      "embarcar-port-barcelona": { "title": "Embarquer au port de Barcelone", "content": { "0": "Le port de Barcelone est bien desservi. Suivez les panneaux vers votre terminal. Un service de navette peut relier certains terminaux." } },
+      "parking-valencia": {
+        "title": "Parking puerto de Valencia",
+        "description": "Accès, parkings et autobus Baleària au port de Valencia.",
+        "content": {
+          "0": "Al entrar al puerto de Valencia pasarás por unos arcos de aduana en los que tendrás que indicar que vas a viajar con Baleària; desde ahí a la terminal hay 1,5 km.",
+          "1": "H2: Estacionamiento",
+          "2": "Los vehículos que no embarquen no pueden quedarse en el parking (puerto comercial; riesgo de multa o inmovilización). Sí se puede llevar a alguien a la terminal pero no estacionar mucho tiempo ni dejar el coche durante el viaje. Los taxis pueden llegar hasta la terminal.",
+          "3": "Desde la terminal hasta el barco, los pasajeros sin coche pueden usar el autobús de Baleària."
+        }
+      },
+      "parking-denia": {
+        "title": "Parking puerto de Dénia",
+        "description": "P1 corta estancia, P2/P3 larga estancia; reserva de plaza como extra con Baleària.",
+        "content": {
+          "0": "La estación marítima de Dénia cuenta con dos tipos de estacionamiento.",
+          "1": "H2: Corta estancia (P1)",
+          "2": "Máximo 60 minutos. Indicado para gestiones, tarjetas de embarque o recogida de pasajeros. 1,50 €/hora (26 €/24 h). Los primeros 45 minutos son gratuitos en ambos parkings.",
+          "3": "H2: Larga estancia (P2 y P3)",
+          "4": "Para más de 60 minutos (visita o viaje). 1,10 €/hora (15 €/24 h).",
+          "5": "Puedes reservar tu plaza de aparcamiento como servicio adicional al comprar el billete en balearia.com, llamando al 912 660 215 o en taquilla."
+        }
+      },
+      "parking-ibiza-botafoc": {
+        "title": "Parking del puerto de Ibiza – Botafoc",
+        "description": "Parking gratuito frente a la estación marítima; bus y taxi con la ciudad.",
+        "content": {
+          "0": "El puerto de Botafoc está comunicado por bus y taxi con la ciudad. Si vas en coche hay un parking gratuito justo en frente de la estación marítima."
+        }
+      },
+      "embarcar-port-barcelona": {
+        "title": "Embarcar en el puerto de Barcelona",
+        "description": "Puntos de embarque según ruta: Terminal Norte WTC, San Beltran; a pie o en coche.",
+        "content": {
+          "0": "El puerto de Barcelona tiene distintos puntos de embarque según la ruta y si viajas a pie o en coche. A pie: la mayoría de rutas a Baleares (Alcúdia, Palma, Ciutadella, Mahón, Ibiza, Formentera) embarcan en la Oficina Baleària Terminal Norte WTC, muelle Barcelona Norte. Ruta Barcelona – Argel: Oficina Baleària TF2, muelle San Beltran.",
+          "1": "H2: En coche",
+          "2": "Salidas en ferry suelen usar Muelle Lepanto 27A; en fast ferry, Muelle Adosado TF1. Barcelona – Argel: Muelle San Beltran. Consulta la tabla exacta en el centro de ayuda de Baleària (enlaces a Google Maps por ruta).",
+          "3": "Los puntos pueden cambiar por meteorología u operativa portuaria; Baleària comunicará la ubicación definitiva por sus canales habituales."
+        }
+      },
+      "barcelona-zona-bajas-emisiones": {
+        "title": "El Puerto de Barcelona, Zona de Bajas Emisiones",
+        "description": "Restricciones de circulación; consultar si tu vehículo puede circular y alternativas de transporte.",
+        "content": {
+          "0": "El puerto de Barcelona es Zona de Bajas Emisiones: hay restricciones a la circulación de vehículos para proteger la atmósfera y la salud.",
+          "1": "H2: Antes de ir",
+          "2": "Consulta en la web oficial de la ZBE de Barcelona si tu vehículo puede transitar por estas zonas o si necesitas gestionar un permiso. Sin ello puedes incurrir en infracción y multa. En la misma web puedes consultar alternativas de transporte público."
+        }
+      },
+      "antelacion-sin-vehicule": {
+        "title": "Antelación para embarcar sin vehículo",
+        "description": "Hora límite de llegada al puerto por ruta cuando viajas a pie.",
+        "content": {
+          "0": "Te recomendamos ir antes de la hora límite para evitar imprevistos. Consulta la tabla de antelación según tu ruta.",
+          "1": "H2: Tabla por ruta",
+          "2": "TABLE: Ruta|Antelación\nAlgeciras – Tánger Med|60 min\nAlmería – Nador|60 min\nArgel – Barcelona / Argel – València|9 h\nBarcelona – Argel|5 h\nCeuta – Algeciras|30 min\nIbiza – Formentera|15 min\nMostaganem – València|6 h\nMotril – Tánger Med|5 h\nOrán – València|7 h\nValència – Argel, València – Mostaganem, València – Orán|5 h\nResto de rutas|60 min",
+          "3": "Si viajas con vehículo, consulta el artículo de antelación con vehículo en esta misma sección."
+        }
+      },
+      "taquillas-antes-embarque": {
+        "title": "Casos en los que se debe pasar por taquillas antes del embarque",
+        "description": "Cuándo es obligatorio pasar por taquilla: carnés con ventajas, acreditar residencia.",
+        "content": {
+          "0": "Normalmente puedes embarcar sin pasar por taquillas. Debes pasar por taquilla si tienes que: enseñar el carnet joven, mayor de 60, militar o cualquier grupo con ventajas; acreditar que eres residente cuando el programa SARA ha dado error."
+        }
+      },
+      "rutas-horarios-barcelona-baleares": {
+        "title": "Rutas y horarios entre Barcelona y Baleares",
+        "description": "Ferry diarios Barcelona – Mallorca, Ibiza, Formentera, Menorca; consultar horarios en la web.",
+        "content": {
+          "0": "Baleària opera servicios entre Barcelona y Baleares (Palma, Ibiza, Formentera, Alcúdia, Ciutadella, Mahón). Los puntos de embarque a pie están en Terminal Norte WTC; en coche varían (Lepanto 27A o Adosado TF1 según ruta y tipo de barco).",
+          "1": "H2: Horarios",
+          "2": "Consulta rutas, barcos y horarios actualizados en la sección rutas y horarios de balearia.com."
+        }
+      },
+      "rutas-horarios-valencia-baleares": {
+        "title": "Rutas y horarios entre Valencia y Baleares",
+        "description": "Ferry Valencia – Mallorca (Palma) e Ibiza; enlaces a horarios.",
+        "content": {
+          "0": "Baleària tiene servicios de ferry diarios entre Valencia y Mallorca (Palma) e Ibiza. Desde Baleares puedes volver a Valencia desde Palma o Ibiza.",
+          "1": "H2: Consultar horarios",
+          "2": "Rutas disponibles: Valencia – Mallorca (Palma), Valencia – Ibiza, Mallorca (Palma) – Valencia, Ibiza – Valencia. Consulta los horarios y barcos en la sección rutas y horarios de balearia.com."
+        }
+      },
+      "rutas-horarios-denia-baleares": {
+        "title": "Rutas y horarios entre Dénia y Baleares",
+        "description": "Dénia – Formentera, Alcúdia, Ibiza y vuelta; consultar horarios.",
+        "content": {
+          "0": "Desde Dénia: Ferry Dénia – Formentera, Dénia – Mallorca (Alcúdia), Dénia – Ibiza. Desde Baleares: Formentera – Dénia, Mallorca (Alcúdia) – Dénia, Ibiza – Dénia.",
+          "1": "H2: Horarios",
+          "2": "Consulta los horarios y la disponibilidad en la sección rutas y horarios de balearia.com para cada trayecto."
+        }
+      },
+      "rutas-horarios-tanger-med": {
+        "title": "Rutas y horarios Tánger Med",
+        "description": "Tánger Med – Motril, Algeciras; antelación; billete cerrado obligatorio.",
+        "content": {
+          "0": "Rutas con Tánger Med: Tánger Med – Motril, Motril – Tánger Med, Tánger Med – Algeciras, Algeciras – Tánger Med. Los horarios se consultan en la sección rutas y horarios de balearia.com.",
+          "1": "H2: Antelación",
+          "2": "Consulta el tiempo de antelación para embarcar con y sin vehículo en los artículos de antelación de esta sección.",
+          "3": "Para entrar al puerto de Tánger Med es obligatorio tener un billete cerrado; no sirven billetes abiertos."
+        }
+      },
+      "rutas-horarios-melilla-peninsula": {
+        "title": "Rutas y horarios Melilla – península",
+        "description": "Servicios entre Melilla y la península; horarios en balearia.com.",
+        "content": {
+          "0": "Baleària opera rutas entre Melilla y la península. Consulta rutas, frecuencias y horarios actualizados en balearia.com, sección rutas y horarios."
+        }
+      },
+      "rutas-horarios-almeria-nador": {
+        "title": "Rutas y horarios entre Almería y Nador",
+        "description": "Ferry Almería – Nador; horarios en la web.",
+        "content": {
+          "0": "Baleària ofrece servicios entre Almería y Nador. Consulta horarios y antelación de embarque en balearia.com."
+        }
+      },
+      "rutas-horarios-huelva-canarias": {
+        "title": "Rutas y horarios entre Huelva y el archipiélago Canario",
+        "description": "Ferry Huelva – Canarias; consultar en la web.",
+        "content": {
+          "0": "Baleària opera rutas entre Huelva y el archipiélago canario. Consulta frecuencias y horarios en balearia.com, sección rutas y horarios."
+        }
+      },
+      "rutas-horarios-interinsulares": {
+        "title": "Rutas y horarios interinsulares",
+        "description": "Rutas entre islas Baleares; horarios en la web.",
+        "content": {
+          "0": "Baleària ofrece rutas interinsulares entre las islas Baleares (Ibiza, Formentera, Mallorca, Menorca). Consulta trayectos y horarios en balearia.com."
+        }
+      },
       "cabines-disponibles": { "title": "Hébergements disponibles à bord", "content": { "0": "Les ferries proposent des cabines, des fauteuils inclinables et des espaces communs. Les cabines sont recommandées pour les traversées de nuit." } },
       "ferries-fast-ferries": { "title": "Ferries et fast ferries : différences", "content": { "0": "Les fast ferries sont plus rapides mais proposent moins de services. Les ferries classiques offrent plus de confort pour les longues traversées." } },
       "zones-exteriores-bord": { "title": "Zones extérieures à bord", "content": { "0": "La plupart des navires disposent de ponts extérieurs. L'accès peut être restreint selon les conditions météo." } },

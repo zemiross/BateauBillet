@@ -103,6 +103,38 @@ export default async function SupportArticlePage({ params }: Props) {
               </p>
             );
           }
+          if (block.startsWith("TABLE: ")) {
+            const tableText = block.slice(7).trim();
+            const rows = tableText.split("\n").map((line) => line.split("|").map((cell) => cell.trim()));
+            const [headerRow, ...bodyRows] = rows;
+            if (!headerRow?.length) return <p key={i}>{block}</p>;
+            return (
+              <div key={i} className="my-4 overflow-x-auto">
+                <table className="w-full min-w-[280px] border-collapse border border-sand-200 text-left text-sm">
+                  <thead>
+                    <tr className="bg-sand-100">
+                      {headerRow.map((cell, j) => (
+                        <th key={j} className="border border-sand-200 px-3 py-2 font-semibold text-sand-900">
+                          {cell}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {bodyRows.map((row, ri) => (
+                      <tr key={ri} className="bg-white even:bg-sand-50/50">
+                        {row.map((cell, ci) => (
+                          <td key={ci} className="border border-sand-200 px-3 py-2 text-sand-800">
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            );
+          }
           return <p key={i}>{block}</p>;
         })}
       </div>

@@ -280,14 +280,26 @@
           "4": "Le bus est réservé aux passagers à pied, quelle que soit la liaison. L'embarquement des véhicules est autorisé sur le ferry ; si vous voyagez en voiture, vous devez vous rendre par vos propres moyens au quai d'embarquement indiqué."
         }
       },
-      "ou-embarquer": { "title": "Où dois-je embarquer ?", "content": { "0": "L'emplacement d'embarquement est indiqué sur votre carte d'embarquement. Chaque port a plusieurs terminaux ; vérifiez le terminal et le quai indiqués avant de vous rendre au port." } },
+      "ou-embarquer": {
+        "title": "Où dois-je embarquer ?",
+        "description": "Terminal, quai et point d'embarquement : comment repérer votre navire et les accès selon votre carte d'embarquement.",
+        "content": {
+          "0": "Le point d'embarquement (terminal et quai ou poste à quai) figure sur votre carte d'embarquement, au format imprimé ou numérique. Vérifiez toujours le terminal et le quai avant de vous rendre au port pour ne pas vous diriger vers un accès incorrect.",
+          "1": "H2: Chaque port a plusieurs terminaux",
+          "2": "Les ports des lignes Méditerranée (Algeciras, Barcelone, Valence, Sète, Nador, Tanger Med, etc.) ont souvent plusieurs darses ou terminaux. La compagnie assigne l'embarquement et l'arrivée selon la liaison et le navire. Sur la carte apparaissent le nom ou le code du terminal et, le cas échéant, le quai ou l'amarrage. Suivez la signalisation du port une fois dans l'enceinte.",
+          "3": "H2: Passagers à pied et avec véhicule",
+          "4": "Les passagers à pied et ceux qui embarquent avec un véhicule n'empruntent pas toujours le même accès : le trafic routier a en général des rampes ou voies dédiées vers la cale, tandis que les piétons passent par les accès passagers. Respectez toujours les consignes du personnel portuaire et de la compagnie.",
+          "5": "H2: Arriver avec anticipation",
+          "6": "Pour ne pas rater le bateau, présentez-vous au port avec l'anticipation indiquée pour votre liaison (par exemple 90 minutes pour les passagers à pied et 2 heures avec véhicule sur nombre de lignes ; sur certaines routes l'anticipation est plus longue). Vous aurez ainsi le temps de trouver le bon terminal, de vous garer si besoin et de passer les contrôles. Consultez dans Apoyo al Viajero l'article sur l'anticipation nécessaire pour embarquer avec un véhicule et celui sur la documentation nécessaire pour embarcar."
+        }
+      },
       "antelacion-embarquer-vehicule": {
         "title": "Anticipation nécessaire pour embarquer avec un véhicule",
         "description": "Heures d'arrivée au port selon la route : de 30 min à 9 h avant le départ.",
         "content": {
           "0": "Si vous voyagez avec un véhicule, respectez l'anticipation à laquelle vous devez vous présenter à l'embarquement. Au-delà du délai fixé, l'embarquement ne peut être garanti.",
           "1": "H2: Tableau d'anticipation par route",
-          "2": "Algeciras – Tánger Med : 2 h avant. Almería – Nador : 2 h. Argel – València : 9 h. Barcelona – Argel : 5 h. Ceuta – Algeciras : 30 min. Ibiza – Formentera : 30 min. Mostaganem – València : 6 h. Motril – Tánger Med : 2 h. Orán – València : 7 h. València – Argel, València – Mostaganem, València – Orán : 5 h. Pour le reste des routes : 90 minutes avant le départ.",
+          "2": "TABLE: Route|Anticipation\nAlgeciras – Tánger Med|2 h avant\nAlmería – Nador|2 h\nArgel – València|9 h\nBarcelona – Argel|5 h\nCeuta – Algeciras|30 min\nIbiza – Formentera|30 min\nMostaganem – València|6 h\nMotril – Tánger Med|2 h\nOrán – València|7 h\nValència – Argel, València – Mostaganem, València – Orán|5 h\nAutres routes|90 min avant",
           "3": "Sur la liaison Formentera – Dénia (sens Formentera vers Dénia uniquement), l'embarquement se fait 60 minutes avant le départ (et non dans le sens Dénia – Formentera). Merci de respecter ces horaires pour garantir votre embarquement."
         }
       },
@@ -356,9 +368,170 @@
           "4": "Les mascotas ne peuvent en aucun cas voyager à l'intérieur du véhicule pendant la traversée. Des acomodaciones spécifiques pour mascotas sont prévues à bord. Si vous voyagez sans véhicule, vous pouvez transporter au maximum l'équipage que vous pouvez monter à bord vous-même, en une seule fois et sans aide."
         }
       },
-      "reserver-avec-mascota": { "title": "Comment réserver avec un animal", "content": { "0": "Indiquez la présence d'un animal lors de la réservation. Les places pour animaux sont limitées. Des espaces dédiés existent à bord." } },
-      "documentacion-mascota": { "title": "Documentation nécessaire pour votre animal", "content": { "0": "Passeport européen pour animaux (vaccination antirabique à jour) pour les chiens et chats. Pour le Maroc et l'Algérie, des exigences spécifiques s'appliquent." } },
-      "mascota-maroc-algerie": { "title": "Voyager avec un animal vers le Maroc ou l'Algérie", "content": { "0": "Des certificats vétérinaires et parfois des traitements antiparasitaires sont requis. Consultez les autorités du pays de destination avant le voyage." } },
+      "reserver-avec-mascota": {
+        "title": "Comment réserver avec un animal",
+        "description": "Étapes pour ajouter une mascota à la réservation : butaca, casita de calma ou camarote.",
+        "content": {
+          "0": "1. Choisissez la liaison et l'horaire. Dans cette même étape vous pouvez indiquer le nombre de mascotas qui voyagent avec vous et leur taille. 2. Choisissez l'acomodación : butaca (siège) ou camarote.",
+          "1": "H2: Si vous choisissez Butaca",
+          "2": "Plus tard vous pourrez ajouter votre mascota à la réservation : butaca pet friendly (à vos côtés pendant tout le voyage dans un transportín) ou casita de calma.",
+          "3": "H2: Si vous choisissez Camarote",
+          "4": "Plus tard vous pourrez ajouter votre mascota : butaca pet friendly, casita de calma ou camarote pet friendly."
+        }
+      },
+      "documentacion-mascota": {
+        "title": "Documentation nécessaire pour votre mascota",
+        "description": "Tarjeta de embarque, cartilla sanitaria et exigences UE / Maroc selon la ruta.",
+        "content": {
+          "0": "Vous devez emporter : la tarjeta de embarque relative à l'animal (camarote con mascota ou casita de calma) ; la cartilla sanitaria (carnet de santé) de l'animal en cours de validité.",
+          "1": "H2: Ruta Algeciras – Tánger",
+          "2": "Sur la liaison Algeciras–Tánger vous devez avoir la documentación exigée par l'Union européenne et par le Royaume du Maroc. Baleària n'est pas responsable du refus d'admission par les autorités du pays ; consultez les deux ambassades ou consulats."
+        }
+      },
+      "mascota-maroc-algerie": {
+        "title": "Voyager avec une mascota vers l'Algérie ou le Maroc",
+        "description": "Documentación extra : vacuna rabia, microchip, serología, pasaporte o certificado zoosanitario.",
+        "content": {
+          "0": "Si vous voyagez avec votre animal de compagnie vers le Maroc ou l'Algérie, une documentación extra est requise.",
+          "1": "H2: Exigences",
+          "2": "La vacuna (vaccination antirabique) ne peut pas être antérieure à l'identification ni avant 3 mois. Pas de renouvellement de serología si revaccination pendant la validité. Prueba de valoración de anticuerpos de rabia (pour pays hors liste Règlement 577/2013) : prélèvement au moins 30 jours après la vacunación et au moins 3 mois avant le voyage, título > 0,5 UI/ml. Vacunación rabia en vigor, identificación con microchip, documentación : pasaporte ou certificado zoosanitario (modelos según Reglamento 577/2013). Consultez la legislación (MAPA, laboratorios, serología) sur les sites officiels.",
+          "3": "H2: En cas de non-conformité",
+          "4": "Si l'un de ces requisitos n'est pas cumplido, les autorités sanitarias peuvent refuser l'entrée de l'animal et proposer au propriétaire trois options : sacrifice, quarantaine ou retour de l'animal au point de départ."
+        }
+      },
+      "mascota-ceuta-melilla": {
+        "title": "Pasajeros que viajan a Ceuta o Melilla con mascota",
+        "description": "Requisitos para viajar con mascota en rutas con origen o destino Ceuta o Melilla.",
+        "content": {
+          "0": "Los pasajeros con mascota en rutas con origen o destino Ceuta o Melilla deben cumplir requisitos específicos: identificación con microchip, cartilla de vacunación con antirrábica en vigor (últimos 12 meses) y pasaporte europeo de animales de compañía. Los animales solo pueden entrar por un puerto autorizado como Punto de Entrada de Viajeros.",
+          "1": "H2: Consulte a la compañía",
+          "2": "Verifique los requisitos actualizados en el centro de ayuda de Baleària o en su reserva antes de viajar."
+        }
+      },
+      "mascota-motril": {
+        "title": "Requisitos para viajar a Motril con mascota",
+        "description": "Test serológico, vacunación antirrábica, documentación e identificación para la ruta Tánger Med – Motril.",
+        "content": {
+          "0": "Los pasajeros con mascota en la ruta Tánger Med con destino Motril deben cumplir requisitos sanitarios del Ministerio de Sanidad; si no, el animal puede ser declarado no conforme y procederse a reexpedición al puerto de origen, aislamiento (coste abonado por el cliente) o eutanasia.",
+          "1": "H2: Requisitos",
+          "2": "Test serológico: requerido para animales de países no listados (p. ej. Marruecos), al menos 30 días después de la vacunación, resultado > 0,5 UI; esperar 3 meses tras la toma de muestra para ingresar en la UE. Vacunación antirrábica: por veterinario colegiado, vigente, al menos 21 días antes del viaje si primovacunación. Documentación: pasaporte UE o certificado sanitario oficial del país de origen con copia certificada de vacunación e identificación (pasaporte Reino Unido no válido; Irlanda del Norte sí). Identificación: perros, gatos y hurones con microchip o tatuaje (si anterior a 3 de julio de 2011).",
+          "3": "H2: En caso de incumplimiento",
+          "4": "Las autoridades pueden reexpedir al animal, aislarlo bajo control oficial o practicar eutanasia; los costes son a cargo del propietario. Consulte el documento oficial de requisitos sanitarios en la web de la compañía."
+        }
+      },
+      "acomodaciones-mascotas": {
+        "title": "Acomodaciones para mascotas",
+        "description": "Tres tipos : Casitas de calma, Butaca pet friendly y Camarote pet friendly.",
+        "content": {
+          "0": "Baleària dispone de tres tipos de acomodaciones para mascotas.",
+          "1": "H2: Casitas de calma",
+          "2": "Zonas acondicionadas con ventilación y limpieza especial. Según el buque podrás visitarlas durante la travesía y/o seguir el viaje de tu mascota por dispositivo móvil (SmartShip).",
+          "3": "H2: Butaca pet friendly",
+          "4": "Viajas acompañado de tu mascota durante todo el trayecto. Cualquier mascota de hasta 8 kg (incluido transportín). La mascota va en transportín en el regazo o a los pies. Consulta el artículo Butaca Pet Friendly en esta misma categoría."
+        }
+      },
+      "camarotes-animales": {
+        "title": "Camarotes para animales de compañía",
+        "description": "Camarotes adaptados con suelo vinílico y protocolo de limpieza; hasta 2 animales o 30 kg.",
+        "content": {
+          "0": "Camarotes adaptados con suelo vinílico y protocolo de limpieza especial. Puedes solicitar bebedero/comedero y plataforma con empapador a la tripulación, o llevar su cama. Puedes salir con tu mascota a la zona de paseo si el barco la incluye; también puede quedarse sola en el camarote o en el transportín si lo prefieres.",
+          "1": "H2: Condiciones",
+          "2": "Eres el único responsable del animal (comida, recogida de excrementos, desperfectos). Se pueden albergar 2 animales siempre que el peso conjunto no supere 30 kg; si superan 30 kg solo se admite un animal por camarote."
+        }
+      },
+      "casitas-calma": {
+        "title": "Casitas de calma",
+        "description": "Espacios para mascotas en cubierta o garaje, ventilados; diseño con etóloga; videovigilancia en SmartShip.",
+        "content": {
+          "0": "Espacios de casitas para animales, en su mayoría en cubierta, garaje u otros puntos del buque; protegidos y ventilados. Diseñadas con asesoramiento etológico: suelo con resina epoxi, puerta con pequeña apertura, desagüe y espacio suficiente. Puedes llevar juguetes o mantas familiares. La compañía proporciona bebedero y agua; tú debes llevar la comida y responsabilizarte del cuidado y de cualquier daño.",
+          "1": "H2: SmartShip",
+          "2": "En buques SmartShip hay videovigilancia para que puedas observar a tu mascota cuando quieras."
+        }
+      },
+      "butaca-pet-friendly": {
+        "title": "Butaca Pet Friendly",
+        "description": "Viajar con mascota junto a ti en butaca; mascota en transportín, máx. 8 kg. Disponible en varios ferries.",
+        "content": {
+          "0": "Butaca donde viajas acompañado de tu mascota durante todo el trayecto. Cualquier tipo de mascota siempre que no pese más de 8 kg incluido el transportín. La mascota debe ir en transportín en todo momento (regazo o a los pies). Una mascota por pasajero. El transportín debe ser máximo 60×35×35 cm y contar con dispositivo para residuos. La mascota no puede salir del transportín; según trayecto se puede disponer tiempo de paseo en zona específica autorizada por la tripulación.",
+          "1": "H2: Reserva",
+          "2": "Añade la mascota en «acomodación mascota» como Butaca Pet Friendly. Debe figurar en la tarjeta de embarque; no se aceptan mascotas en esta acomodación que no figuren en el billete. Coste adicional según ruta.",
+          "3": "H2: Ceuta y Melilla",
+          "4": "En rutas con origen o destino Ceuta o Melilla son imprescindibles: microchip, cartilla con antirrábica en vigor (últimos 12 meses) y pasaporte europeo. Entrada solo por puerto autorizado PEV. Motril tiene medidas sanitarias estrictas para mascotas con origen Marruecos."
+        }
+      },
+      "embarcar-mascotas": {
+        "title": "Embarcar con mascotas",
+        "description": "Últimos en desembarcar; correa o transportín; bozal obligatorio para PPP.",
+        "content": {
+          "0": "Los pasajeros con animales serán los últimos en desembarcar por seguridad y para evitar estrés. En embarque y a bordo es obligatorio llevarlo con correa o dentro de transportín/jaula; si es raza peligrosa o poco social, también bozal obligatorio. Sin bozal y correa no se permite el acceso."
+        }
+      },
+      "ubicacion-zona-mascotas": {
+        "title": "Ubicación zona de mascotas",
+        "description": "Dónde se encuentran las zonas y acomodaciones para mascotas a bordo.",
+        "content": {
+          "0": "Las zonas para mascotas (casitas de calma, zona de paseo) varían según el buque: cubierta, garaje o otros puntos. La tripulación y la señalización a bordo indican la ubicación. En los buques SmartShip las casitas pueden tener videovigilancia.",
+          "1": "H2: Consulte a bordo",
+          "2": "En la recepción del buque le indicarán la ubicación exacta y los horarios de visita si aplica."
+        }
+      },
+      "zona-paseo": {
+        "title": "Zona de paseo",
+        "description": "Zonas habilitadas para pasear a tu mascota durante la travesía.",
+        "content": {
+          "0": "En trayectos largos podrás sacar a tu mascota a pasear por las zonas habilitadas. El horario de visitas y uso de la zona de paseo se consulta en la recepción del buque. Siempre con correa y, si aplica, bozal; la tripulación puede autorizar o limitar el acceso según el tipo de animal y la normativa."
+        }
+      },
+      "mascotas-en-vehiculos": {
+        "title": "¿Está permitido que las mascotas viajen en los vehículos?",
+        "description": "No: está prohibido dejar animales dentro del vehículo durante la travesía.",
+        "content": {
+          "0": "Está totalmente prohibido dejar a los animales en los vehículos durante la travesía por su salud y seguridad. Deben usar las acomodaciones previstas (casita de calma, butaca pet friendly o camarote pet friendly)."
+        }
+      },
+      "acompanar-mascota-trayecto": {
+        "title": "¿Puedo acompañar a mi mascota durante el trayecto?",
+        "description": "Casita de calma: no acompañamiento; SmartShip videovigilancia. Camarote o butaca pet friendly: sí.",
+        "content": {
+          "0": "Si tu animal viaja en Casita de Calma no puedes acompañarlo durante la travesía. En buques SmartShip hay videovigilancia para controlar a tu mascota. Si el buque no es Smart, la tripulación te avisará si hay algún problema. En trayectos largos podrás visitarlo y sacarlo a pasear en zonas habilitadas; el horario de visitas se consulta en recepción.",
+          "1": "H2: Acompañar todo el trayecto",
+          "2": "Camarote pet friendly: tú y tu mascota viajáis juntos en el camarote. Butaca pet friendly: viajas con tu mascota en transportín en un salón especial. En el fast ferry Ramon Llull, con acomodación VIP tienes acceso exclusivo a terraza y puedes acompañar a tu mascota durante toda la travesía."
+        }
+      },
+      "perro-peligroso": {
+        "title": "¿Qué se considera perro peligroso?",
+        "description": "Perros PPP según Real Decreto 287/2002; correa y bozal obligatorios a bordo.",
+        "content": {
+          "0": "Según el Real Decreto 287/2002 (BOE) existe un listado y normas para tener y viajar con perros considerados potencialmente peligrosos (PPP).",
+          "1": "H2: A bordo",
+          "2": "Estos perros deben embarcar, desembarcar y estar en zonas habilitadas (zonas de paseo) con correa y bozal obligatoriamente; de lo contrario no se les permite el acceso al barco."
+        }
+      },
+      "perros-asistencia": {
+        "title": "Perros de asistencia",
+        "description": "Acceso libre a salones y embarque gratuito; documentación acreditativa puede ser solicitada.",
+        "content": {
+          "0": "Los perros de asistencia que acompañan a personas con discapacidad tienen, según la normativa, libre acceso a los salones del barco y embarque gratuito. Se incluyen animales de apoyo emocional si el pasajero muestra certificado de médico, psicólogo o psiquiatra.",
+          "1": "H2: Importante",
+          "2": "En cualquier momento pueden pedirte la documentación acreditativa; sin ella se aplicará cargo por la acomodación de la mascota. Consulta el Reglamento CE 1/2005 (transportistas, animales)."
+        }
+      },
+      "perros-caza": {
+        "title": "Perros de caza",
+        "description": "Pueden viajar en coche o remolque equipado o en zonas habilitadas para animales.",
+        "content": {
+          "0": "Si viajas con perros de caza y tienes coche o remolque equipado, pueden viajar en él. También en las zonas habilitadas para animales de compañía. Asegúrate de que tengan comida y bebida para la travesía.",
+          "1": "H2: Seguridad",
+          "2": "No se puede bajar a la bodega en navegación para visitar a los animales por seguridad."
+        }
+      },
+      "mascotas-especiales": {
+        "title": "Mascotas especiales",
+        "description": "Requisitos para animales que no son perro o gato (aves, hurones, etc.).",
+        "content": {
+          "0": "Para mascotas distintas de perro o gato (aves no de corral, hurones, conejos, etc.) pueden aplicarse requisitos y acomodaciones específicos. La butaca pet friendly admite cualquier tipo de mascota hasta 8 kg (incluido transportín). Consulte con la compañía antes de reservar para confirmar documentación y tipo de acomodación disponible."
+        }
+      },
       "avantages-groupe": { "title": "Avantages de voyager en groupe", "content": { "0": "Les groupes bénéficient souvent de tarifs préférentiels. Contactez la compagnie pour une cotisation sur mesure." } },
       "comment-reserver-groupe": { "title": "Comment réserver pour un groupe", "content": { "0": "Pour les groupes (généralement à partir de 10-15 personnes), contactez le service groupes de la compagnie pour une réservation dédiée." } },
       "nombre-personnes-groupe": { "title": "Combien de personnes pour former un groupe ?", "content": { "0": "Le seuil varie selon les compagnies, généralement entre 10 et 20 personnes. Renseignez-vous auprès de la compagnie." } },

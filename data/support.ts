@@ -104,6 +104,7 @@ const articleContentLength: Partial<Record<string, number>> = {
   "pre-embarque-algeciras-ceuta-tanger": 5,
   "entrada-extranjeros-union-europea-ees": 5,
   "bus-lanzadera-valencia": 4,
+  "bus-lanzadera-barcelona": 5,
   "antelacion-embarquer-vehicule": 4,
   "pasos-embarcar-vehicule": 3,
   "reservas-vehicule-location": 4,

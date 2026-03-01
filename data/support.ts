@@ -66,8 +66,9 @@ export const supportCategories: SupportCategory[] = [
     id: "groupe",
     articleSlugs: [
       "avantages-groupe",
-      "comment-reserver-groupe",
       "nombre-personnes-groupe",
+      "comment-reserver-groupe",
+      "cotizacion-groupe",
     ],
   },
   {
@@ -146,6 +147,10 @@ const articleContentLength: Partial<Record<string, number>> = {
   "perros-asistencia": 3,
   "perros-caza": 3,
   "mascotas-especiales": 1,
+  "avantages-groupe": 4,
+  "nombre-personnes-groupe": 5,
+  "comment-reserver-groupe": 3,
+  "cotizacion-groupe": 3,
 };
 
 /** Build article records with fallback content */

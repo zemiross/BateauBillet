@@ -536,9 +536,45 @@
           "0": "Para mascotas distintas de perro o gato (aves no de corral, hurones, conejos, etc.) pueden aplicarse requisitos y acomodaciones específicos. La butaca pet friendly admite cualquier tipo de mascota hasta 8 kg (incluido transportín). Consulte con la compañía antes de reservar para confirmar documentación y tipo de acomodación disponible."
         }
       },
-      "avantages-groupe": { "title": "Ventajas de viajar en grupo", "content": { "0": "Tarifas preferenciales. Contacta el servicio grupos." } },
-      "comment-reserver-groupe": { "title": "Cómo reservar para un grupo", "content": { "0": "Para grupos (10-15+ personas), contacta el servicio grupos de la compañía." } },
-      "nombre-personnes-groupe": { "title": "¿Cuántas personas forman un grupo?", "content": { "0": "Varía por compañía, normalmente 10-20 personas." } },
+      "avantages-groupe": {
+        "title": "Ventajas de viajar en grupo",
+        "description": "Atención especial, precios a bordo y tarifas con descuento para grupos.",
+        "content": {
+          "0": "Si vas a viajar en grupo con Baleària podrás beneficiarte de las siguientes ventajas.",
+          "1": "H2: Servicios y precios",
+          "2": "Puedes solicitar atención especial y servicios especializados, que la compañía estudiará para ofrecerte la opción que mejor se adapte al grupo. Precios especiales en servicios a bordo (menús, reserva de salas para eventos o reuniones). Tarifas con descuentos extraordinarios tanto para pasaje como para vehículo.",
+          "3": "Las ventajas para viajar en grupo se aplican tanto a reservas hechas por agencias como por particulares."
+        }
+      },
+      "comment-reserver-groupe": {
+        "title": "¿Cómo hago una reserva para viajar en grupo?",
+        "description": "Rellenar el formulario; seleccionar Grupo y Solicitud Reserva; el departamento de Atención a Grupos te contacta.",
+        "content": {
+          "0": "Para realizar una reserva de grupo, rellena el formulario de solicitud en el centro de ayuda de Baleària. El departamento de Atención a Grupos se pondrá en contacto contigo en un breve plazo.",
+          "1": "H2: Rellenar el formulario",
+          "2": "Indica los datos personales y los datos del grupo para que el departamento pueda atenderte de forma ágil. En Motivo de la Solicitud selecciona Grupo y Solicitud Reserva. Selecciona el tipo de cliente: Particular, Agencia o Empresa."
+        }
+      },
+      "cotizacion-groupe": {
+        "title": "¿Cómo solicito una cotización para un grupo?",
+        "description": "Rellenar el formulario; seleccionar Grupo y Solicitud Cotización; el departamento de Grupos envía un presupuesto.",
+        "content": {
+          "0": "Para solicitar una cotización para un grupo, rellena el formulario de solicitud en el centro de ayuda de Baleària. El departamento de Atención a Grupos se pondrá en contacto contigo en un breve plazo.",
+          "1": "H2: Rellenar el formulario",
+          "2": "Indica los datos personales y los datos del grupo. En Motivo de la Solicitud selecciona Grupo y Solicitud Cotización. Selecciona el tipo de cliente: Particular, Agencia o Empresa."
+        }
+      },
+      "nombre-personnes-groupe": {
+        "title": "¿Cuántas personas son necesarias para considerarse un grupo?",
+        "description": "Mínimo de pasajeros según zona: Estrecho/Alborán, Dénia–Baleares, Baleares.",
+        "content": {
+          "0": "Para poder realizar una reserva de grupos, el conjunto debe estar integrado por un mínimo de personas según la zona.",
+          "1": "H2: Estrecho y Alborán",
+          "2": "En rutas nacionales e internacionales del Estrecho y Alborán, se considera grupo una reserva a partir de 11 pasajeros.",
+          "3": "H2: Dénia – Formentera, Ibiza, Palma",
+          "4": "En las rutas Dénia – Formentera, Dénia – Ibiza y Dénia – Palma de Mallorca, del 13 de junio al 11 de septiembre (ambos incluidos), la tarifa de grupos se aplica a partir de 20 pasajeros. En Baleares (rutas interinsulares y península–Baleares) hay tarifas para grupos desde 10 pasajeros."
+        }
+      },
       "parking-valencia": { "title": "Parking puerto de Valencia", "content": { "0": "Parkings de pago cerca del puerto. Reserva en temporada alta." } },
       "parking-denia": { "title": "Parking puerto de Dénia", "content": { "0": "Parkings disponibles. Consulta tarifas en el puerto." } },
       "parking-ibiza-botafoc": { "title": "Parking puerto de Ibiza – Botafoc", "content": { "0": "Parkings en terminal Botafoc. En verano, llega pronto." } },

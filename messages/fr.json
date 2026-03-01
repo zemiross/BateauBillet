@@ -536,9 +536,45 @@
           "0": "Para mascotas distintas de perro o gato (aves no de corral, hurones, conejos, etc.) pueden aplicarse requisitos y acomodaciones específicos. La butaca pet friendly admite cualquier tipo de mascota hasta 8 kg (incluido transportín). Consulte con la compañía antes de reservar para confirmar documentación y tipo de acomodación disponible."
         }
       },
-      "avantages-groupe": { "title": "Avantages de voyager en groupe", "content": { "0": "Les groupes bénéficient souvent de tarifs préférentiels. Contactez la compagnie pour une cotisation sur mesure." } },
-      "comment-reserver-groupe": { "title": "Comment réserver pour un groupe", "content": { "0": "Pour les groupes (généralement à partir de 10-15 personnes), contactez le service groupes de la compagnie pour une réservation dédiée." } },
-      "nombre-personnes-groupe": { "title": "Combien de personnes pour former un groupe ?", "content": { "0": "Le seuil varie selon les compagnies, généralement entre 10 et 20 personnes. Renseignez-vous auprès de la compagnie." } },
+      "avantages-groupe": {
+        "title": "Avantages de voyager en groupe",
+        "description": "Attention spéciale, tarifs à bord et remises pour les groupes.",
+        "content": {
+          "0": "Si vous voyagez en groupe avec Baleària vous pouvez bénéficier des avantages suivants.",
+          "1": "H2: Services et tarifs",
+          "2": "Vous pouvez demander une attention spéciale et des services adaptés, que la compagnie étudiera pour proposer l'option la plus adaptée au groupe. Tarifs spéciaux à bord (menus, réservation de salles pour événements ou réunions). Tarifs avec remises importantes pour le passage et le véhicule.",
+          "3": "Ces avantages s'appliquent aux réservations effectuées par des agences comme par des particuliers."
+        }
+      },
+      "nombre-personnes-groupe": {
+        "title": "Combien de personnes pour former un groupe ?",
+        "description": "Nombre minimum selon la zone : détroit/Alborán, Dénia–Baléares, Baléares.",
+        "content": {
+          "0": "Pour effectuer une réservation de groupe, le nombre minimum de passagers varie selon la zone.",
+          "1": "H2: Détroit et Alborán",
+          "2": "Sur les routes nationales et internationales du détroit et de l'Alborán, un groupe est une réservation à partir de 11 passagers.",
+          "3": "H2: Dénia – Formentera, Ibiza, Palma",
+          "4": "Sur les routes Dénia – Formentera, Dénia – Ibiza et Dénia – Palma de Mallorca, du 13 juin au 11 septembre (inclus), la tarifa de grupos s'applique à partir de 20 passagers. Aux Baléares (routes interîles et péninsule–Baléares), des tarifs groupe existent à partir de 10 passagers."
+        }
+      },
+      "comment-reserver-groupe": {
+        "title": "Comment réserver pour voyager en groupe",
+        "description": "Remplir le formulaire ; choisir Groupe et Solicitud Reserva ; le service Groupes vous recontacte.",
+        "content": {
+          "0": "Pour effectuer une réservation de groupe, remplissez le formulaire de solicitud sur le centre d'aide de Baleària. Le département Atención a Grupos vous recontactera sous peu.",
+          "1": "H2: Remplir le formulaire",
+          "2": "Renseignez les données personnelles et les données du groupe pour une prise en charge rapide. Dans « Motivo de la Solicitud », sélectionnez Grupo et Solicitud Reserva. Indiquez le type de client : Particular (particulier), Agencia (agence) ou Empresa (entreprise)."
+        }
+      },
+      "cotizacion-groupe": {
+        "title": "Comment demander une cotisation pour un groupe",
+        "description": "Remplir le formulaire ; choisir Groupe et Solicitud Cotización ; le service Groupes envoie un devis.",
+        "content": {
+          "0": "Pour demander une cotisation pour un groupe, remplissez le formulaire de solicitud sur le centre d'aide de Baleària. Le département Atención a Grupos vous contactera sous peu.",
+          "1": "H2: Remplir le formulaire",
+          "2": "Renseignez les données personnelles et les données du groupe. Dans « Motivo de la Solicitud », sélectionnez Grupo et Solicitud Cotización. Indiquez le type de client : Particular, Agencia ou Empresa."
+        }
+      },
       "parking-valencia": { "title": "Parking port de Valence", "content": { "0": "Des parkings payants sont disponibles à proximité du port. Réservez en avance en haute saison." } },
       "parking-denia": { "title": "Parking port de Dénia", "content": { "0": "Le port de Dénia dispose de parkings. Consultez les tarifs et la capacité sur le site du port." } },
       "parking-ibiza-botafoc": { "title": "Parking port d'Ibiza – Botafoc", "content": { "0": "Des parkings sont disponibles au terminal Botafoc. En été, arrivez tôt pour trouver une place." } },
